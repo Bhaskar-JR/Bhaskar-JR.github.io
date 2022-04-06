@@ -1,12 +1,17 @@
 ---
 layout : single
 title : ML Projects
+toc: true
+toc_sticky: true
+author_profile: true
 ---
+
+
 
 # Working with code blocks
 {:.no_toc}  
 
-  
+
 * TOC
 {:toc}  
 
@@ -27,8 +32,8 @@ Check the [notebook](/assets/scripts/Credit Screening.html)
 ## Sales Transaction Weekly of 800 products (UCI)
 
 This dataset has been downloaded from UC Irvine Machine Learning Repository.  
-[https://archive.ics.uci.edu/ml/machine-learning-databases/00396/]
-[https://archive.ics.uci.edu/ml/datasets/Sales_Transactions_Dataset_Weekly]  
+<https://archive.ics.uci.edu/ml/machine-learning-databases/00396/>
+<https://archive.ics.uci.edu/ml/datasets/Sales_Transactions_Dataset_Weekly>  
 
 
 We have the sales quantity of 811 products over a period of 52 weeks.  
