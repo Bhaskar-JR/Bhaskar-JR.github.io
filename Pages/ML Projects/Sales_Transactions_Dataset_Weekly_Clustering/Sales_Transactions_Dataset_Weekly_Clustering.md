@@ -1,18 +1,18 @@
 ---
-layout : splash
-toc : true
-title : Sales Transactions Dataset Weekly (Clustering)
+layout : single
+author_profile: true
+toc: true
+toc_sticky: true
+toc_label: "Sales Transactions Dataset Weekly"
 ---
 
-
-
 # Sales Transactions Dataset Weekly
+{:.no_toc}  
 
-https://archive.ics.uci.edu/ml/machine-learning-databases/00396/  
-https://archive.ics.uci.edu/ml/datasets/Sales_Transactions_Dataset_Weekly
 
 The dataset contains weekly purchased quantities of 811 products over 52 weeks.  
-Normalised values are also provided.
+Normalised values are also provided.  
+Click for [classic jupyter version](../Sales_Transactions_Dataset_Weekly_Clustering.html)
 
 **The objective is here to build a clustering model to identify natural grouping of the product based on purchase patterns.**
 
@@ -28,6 +28,8 @@ Normalised values are also provided.
 
     Problem Identification                      : Unsupervised Learning (Clustering)
 
+<https://archive.ics.uci.edu/ml/machine-learning-databases/00396/>  
+<https://archive.ics.uci.edu/ml/datasets/Sales_Transactions_Dataset_Weekly>
 {:toc}
 
 # Loading necessary libraries
@@ -2711,15 +2713,15 @@ We had done below tasks on the data :
 
 - Grouping of Retail Items by Using K-Means Clustering Kusrini Kusrini  
 The Third Information Systems International Conference - Paper published by Elsevier in 2015
-- https://inseaddataanalytics.github.io/INSEADAnalytics/CourseSessions/Sessions45/ClusterAnalysisReading.html  
-- https://quantdare.com/hierarchical-clustering/
+- <https://inseaddataanalytics.github.io/INSEADAnalytics/CourseSessions/Sessions45/ClusterAnalysisReading.html>  
+- <https://quantdare.com/hierarchical-clustering/>
 - Silhouettes: A graphical aid to the interpretation and validation of cluster analysis  
-https://www.sciencedirect.com/science/article/pii/0377042787901257  
+  <https://www.sciencedirect.com/science/article/pii/0377042787901257>  
 - On kmeans and PCA  
-https://stats.stackexchange.com/questions/92985/when-plotting-clustering-results-in-the-pca-coordinates-does-one-do-pca-or-clus?rq=1  
+  <https://stats.stackexchange.com/questions/92985/when-plotting-clustering-results-in-the-pca-coordinates-does-one-do-pca-or-clus?rq=1>  
 - On drawbacks of k means and the no free lunch theorem  
-https://stats.stackexchange.com/questions/133656/how-to-understand-the-drawbacks-of-k-means  
+  <https://stats.stackexchange.com/questions/133656/how-to-understand-the-drawbacks-of-k-means>  
 - API design for machine learning software: experiences from the scikit-learn project  
-https://arxiv.org/pdf/1309.0238.pdf  
-- https://scikit-learn.org/stable/modules/clustering.html#clustering-evaluation  
-- https://en.wikipedia.org/wiki/Silhouette_(clustering)
+  <https://arxiv.org/pdf/1309.0238.pdf>  
+- <https://scikit-learn.org/stable/modules/clustering.html#clustering-evaluation>  
+- <https://en.wikipedia.org/wiki/Silhouette_(clustering)>
