@@ -7,8 +7,6 @@ author_profile: true
 ---
 
 
-
-# Working with code blocks
 {:.no_toc}  
 
 
