@@ -1,15 +1,21 @@
-<h1>Table of Contents<span class="tocSkip"></span></h1>
-<div class="toc"><ul class="toc-item"><li><span><a href="#Credit-Screening-Dataset" data-toc-modified-id="Credit-Screening-Dataset-1"><span class="toc-item-num">1&nbsp;&nbsp;</span>Credit Screening Dataset</a></span></li><li><span><a href="#Loading-necessary-libraries" data-toc-modified-id="Loading-necessary-libraries-2"><span class="toc-item-num">2&nbsp;&nbsp;</span>Loading necessary libraries</a></span></li><li><span><a href="#Importing-the-dataset" data-toc-modified-id="Importing-the-dataset-3"><span class="toc-item-num">3&nbsp;&nbsp;</span>Importing the dataset</a></span></li><li><span><a href="#Dataset-Information" data-toc-modified-id="Dataset-Information-4"><span class="toc-item-num">4&nbsp;&nbsp;</span>Dataset Information</a></span></li><li><span><a href="#Attributes-Information" data-toc-modified-id="Attributes-Information-5"><span class="toc-item-num">5&nbsp;&nbsp;</span>Attributes Information</a></span></li><li><span><a href="#Data-preprocessing" data-toc-modified-id="Data-preprocessing-6"><span class="toc-item-num">6&nbsp;&nbsp;</span>Data preprocessing</a></span><ul class="toc-item"><li><span><a href="#Converting-to-Dataframe-Format" data-toc-modified-id="Converting-to-Dataframe-Format-6.1"><span class="toc-item-num">6.1&nbsp;&nbsp;</span>Converting to Dataframe Format</a></span></li><li><span><a href="#Handling-Missing-values" data-toc-modified-id="Handling-Missing-values-6.2"><span class="toc-item-num">6.2&nbsp;&nbsp;</span>Handling Missing values</a></span></li><li><span><a href="#Converting-Class-symbols-of-Target-variable-to-binary-values" data-toc-modified-id="Converting-Class-symbols-of-Target-variable-to-binary-values-6.3"><span class="toc-item-num">6.3&nbsp;&nbsp;</span>Converting Class symbols of Target variable to binary values</a></span></li><li><span><a href="#Processing-Continous-Attributes" data-toc-modified-id="Processing-Continous-Attributes-6.4"><span class="toc-item-num">6.4&nbsp;&nbsp;</span>Processing Continous Attributes</a></span></li></ul></li><li><span><a href="#Univariate-Analysis---Continous-Variables" data-toc-modified-id="Univariate-Analysis---Continous-Variables-7"><span class="toc-item-num">7&nbsp;&nbsp;</span>Univariate Analysis - Continous Variables</a></span></li><li><span><a href="#Bivariate-Analysis---Continous-Variables" data-toc-modified-id="Bivariate-Analysis---Continous-Variables-8"><span class="toc-item-num">8&nbsp;&nbsp;</span>Bivariate Analysis - Continous Variables</a></span></li><li><span><a href="#Univariate-Analysis---Categorical-Variables" data-toc-modified-id="Univariate-Analysis---Categorical-Variables-9"><span class="toc-item-num">9&nbsp;&nbsp;</span>Univariate Analysis - Categorical Variables</a></span><ul class="toc-item"><li><span><a href="#Distribution-of-the-Target-Class" data-toc-modified-id="Distribution-of-the-Target-Class-9.1"><span class="toc-item-num">9.1&nbsp;&nbsp;</span>Distribution of the Target Class</a></span></li></ul></li><li><span><a href="#Train-Test-Split-the-dataset" data-toc-modified-id="Train-Test-Split-the-dataset-10"><span class="toc-item-num">10&nbsp;&nbsp;</span>Train Test Split the dataset</a></span></li><li><span><a href="#Transformation-Pipelines" data-toc-modified-id="Transformation-Pipelines-11"><span class="toc-item-num">11&nbsp;&nbsp;</span>Transformation Pipelines</a></span></li><li><span><a href="#Training-and-Testing-Models" data-toc-modified-id="Training-and-Testing-Models-12"><span class="toc-item-num">12&nbsp;&nbsp;</span>Training and Testing Models</a></span><ul class="toc-item"><li><span><a href="#Stochastic-Gradient-Descent-Classifier" data-toc-modified-id="Stochastic-Gradient-Descent-Classifier-12.1"><span class="toc-item-num">12.1&nbsp;&nbsp;</span>Stochastic Gradient Descent Classifier</a></span></li><li><span><a href="#Logistic-Regression-Classifier" data-toc-modified-id="Logistic-Regression-Classifier-12.2"><span class="toc-item-num">12.2&nbsp;&nbsp;</span>Logistic Regression Classifier</a></span></li><li><span><a href="#Random-Forest-Classifier" data-toc-modified-id="Random-Forest-Classifier-12.3"><span class="toc-item-num">12.3&nbsp;&nbsp;</span>Random Forest Classifier</a></span></li><li><span><a href="#KNN-Classifier" data-toc-modified-id="KNN-Classifier-12.4"><span class="toc-item-num">12.4&nbsp;&nbsp;</span>KNN Classifier</a></span></li><li><span><a href="#Naive-Bayes-Classifier" data-toc-modified-id="Naive-Bayes-Classifier-12.5"><span class="toc-item-num">12.5&nbsp;&nbsp;</span>Naive Bayes Classifier</a></span></li><li><span><a href="#Linear-Support-Vector-Classifier" data-toc-modified-id="Linear-Support-Vector-Classifier-12.6"><span class="toc-item-num">12.6&nbsp;&nbsp;</span>Linear Support Vector Classifier</a></span></li><li><span><a href="#Decision-Tree-Classifier" data-toc-modified-id="Decision-Tree-Classifier-12.7"><span class="toc-item-num">12.7&nbsp;&nbsp;</span>Decision Tree Classifier</a></span></li><li><span><a href="#Gradient-Boosting-Model" data-toc-modified-id="Gradient-Boosting-Model-12.8"><span class="toc-item-num">12.8&nbsp;&nbsp;</span>Gradient Boosting Model</a></span></li><li><span><a href="#Linear-Discriminant-Analysis-Model" data-toc-modified-id="Linear-Discriminant-Analysis-Model-12.9"><span class="toc-item-num">12.9&nbsp;&nbsp;</span>Linear Discriminant Analysis Model</a></span></li></ul></li><li><span><a href="#Listing-the-performance-from-all-the-models" data-toc-modified-id="Listing-the-performance-from-all-the-models-13"><span class="toc-item-num">13&nbsp;&nbsp;</span>Listing the performance from all the models</a></span></li><li><span><a href="#Model-Validation-using-K-Fold-CrossValidation" data-toc-modified-id="Model-Validation-using-K-Fold-CrossValidation-14"><span class="toc-item-num">14&nbsp;&nbsp;</span>Model Validation using K-Fold CrossValidation</a></span><ul class="toc-item"><li><span><a href="#Comparing-the-mean-and-standard-deviation-of-performance-measures" data-toc-modified-id="Comparing-the-mean-and-standard-deviation-of-performance-measures-14.1"><span class="toc-item-num">14.1&nbsp;&nbsp;</span>Comparing the mean and standard deviation of performance measures</a></span></li><li><span><a href="#Results-from-simple-Train-Test-split" data-toc-modified-id="Results-from-simple-Train-Test-split-14.2"><span class="toc-item-num">14.2&nbsp;&nbsp;</span>Results from simple Train Test split</a></span></li><li><span><a href="#Selecting-the-Algorithms-from-K-Fold-cross-validation" data-toc-modified-id="Selecting-the-Algorithms-from-K-Fold-cross-validation-14.3"><span class="toc-item-num">14.3&nbsp;&nbsp;</span>Selecting the Algorithms from K-Fold cross validation</a></span></li></ul></li><li><span><a href="#Tuning-the-Selected-Algorithm" data-toc-modified-id="Tuning-the-Selected-Algorithm-15"><span class="toc-item-num">15&nbsp;&nbsp;</span>Tuning the Selected Algorithm</a></span><ul class="toc-item"><li><span><a href="#Tuning-Logistic-Regression-Classifier" data-toc-modified-id="Tuning-Logistic-Regression-Classifier-15.1"><span class="toc-item-num">15.1&nbsp;&nbsp;</span>Tuning Logistic Regression Classifier</a></span></li><li><span><a href="#Tuning-RandomForest-Classifier" data-toc-modified-id="Tuning-RandomForest-Classifier-15.2"><span class="toc-item-num">15.2&nbsp;&nbsp;</span>Tuning RandomForest Classifier</a></span></li></ul></li><li><span><a href="#Training-the-final-Model-on-full-training-set" data-toc-modified-id="Training-the-final-Model-on-full-training-set-16"><span class="toc-item-num">16&nbsp;&nbsp;</span>Training the final Model on full training set</a></span><ul class="toc-item"><li><span><a href="#Testing-the-model-on-entire-train-set" data-toc-modified-id="Testing-the-model-on-entire-train-set-16.1"><span class="toc-item-num">16.1&nbsp;&nbsp;</span>Testing the model on entire train set</a></span></li></ul></li><li><span><a href="#Save-model-for-later-use" data-toc-modified-id="Save-model-for-later-use-17"><span class="toc-item-num">17&nbsp;&nbsp;</span>Save model for later use</a></span></li></ul></div>
+---
+layout : single
+author_profile: true
+toc: true
+toc_sticky: true
+toc_label: "Credit Screening Dataset"
+---
+
 
 # Credit Screening Dataset
 
 This dataset has been downloaded from  UC Irvine Machine Learning Repository.  
 https://archive.ics.uci.edu/ml/datasets/Credit+Approval  
-  
+
 
 This dataset is regarding credit card applications.  
 The target variable/label is whether the application has been granted credit or not.  
-All attribute names and values have been changed to meaningless symbols to protect 
+All attribute names and values have been changed to meaningless symbols to protect
 confidentiality of the data.
 
 **The objective is here to build a model to give binary output based on the input attributes.**
@@ -19,15 +25,15 @@ confidentiality of the data.
     Number of Instances/training examples          : 690  
     Number of Instances with missing attributes    :  37  
     Number of qualified Instances/training examples : 653
-    
+
     Number of Input Attributes                     : 15
     Number of categorical attributes               :  9
     Number of numerical attributes                 :  6
-    
+
     Target Attribute Type                          : Binary Class
     Target Class distribution                      : 54%:45%
     Problem Identification                         : Binary Classification with balanced data set
-    
+
 
 
 
@@ -57,8 +63,8 @@ import matplotlib.pyplot as plt
 
 from eda import eda_overview, axes_utils
 
-import category_encoders as ce 
-from sklearn.preprocessing import LabelEncoder 
+import category_encoders as ce
+from sklearn.preprocessing import LabelEncoder
 from sklearn.preprocessing import OrdinalEncoder
 
 from sklearn.model_selection import train_test_split, learning_curve, KFold, cross_val_score
@@ -96,7 +102,7 @@ path = "/Users/bhaskarroy/BHASKAR FILES/BHASKAR CAREER/Data Science/Practise/"  
 # crx.names
 
 
-path1 = path + "crx.data" 
+path1 = path + "crx.data"
 path_name = path + "credit.names"
 path_crxname = path + "crx.names"
 ```
@@ -175,75 +181,75 @@ len(datContent[0])
 
 
 ```python
-# Opening the file credit.names for the description of data set 
+# Opening the file credit.names for the description of data set
 with open(path_name) as f:
     print(f.read())
 ```
 
     1. Title: Japanese Credit Screening (examples & domain theory)
-    
+
     2. Source information:
-       -- Creators: Chiharu Sano 
+       -- Creators: Chiharu Sano
        -- Donor: Chiharu Sano
                  csano@bonnie.ICS.UCI.EDU
        -- Date: 3/19/92
-    
-    3. Past usage: 
+
+    3. Past usage:
        -- None Published
-    
+
     4. Relevant information:
-       --  Examples represent positive and negative instances of people who were and were not 
+       --  Examples represent positive and negative instances of people who were and were not
            granted credit.
        --  The theory was generated by talking to the individuals at a Japanese company that grants
            credit.
-    
+
     5. Number of instances: 125
-    
-    
-    
-    
+
+
+
+
 
 
 # Attributes Information
 
 
 ```python
-# Opening the file crx.names for the description of data set 
+# Opening the file crx.names for the description of data set
 with open(path_crxname) as f:
     print(f.read())
 ```
 
-    
+
     1. Title: Credit Approval
-    
-    2. Sources: 
+
+    2. Sources:
         (confidential)
         Submitted by quinlan@cs.su.oz.au
-    
+
     3.  Past Usage:
-    
+
         See Quinlan,
         * "Simplifying decision trees", Int J Man-Machine Studies 27,
           Dec 1987, pp. 221-234.
         * "C4.5: Programs for Machine Learning", Morgan Kaufmann, Oct 1992
-      
+
     4.  Relevant Information:
-    
+
         This file concerns credit card applications.  All attribute names
         and values have been changed to meaningless symbols to protect
         confidentiality of the data.
-      
+
         This dataset is interesting because there is a good mix of
         attributes -- continuous, nominal with small numbers of
         values, and nominal with larger numbers of values.  There
         are also a few missing values.
-      
+
     5.  Number of Instances: 690
-    
+
     6.  Number of Attributes: 15 + class attribute
-    
+
     7.  Attribute Information:
-    
+
         A1:	b, a.
         A2:	continuous.
         A3:	continuous.
@@ -260,11 +266,11 @@ with open(path_crxname) as f:
         A14:	continuous.
         A15:	continuous.
         A16: +,-         (class attribute)
-    
+
     8.  Missing Attribute Values:
         37 cases (5%) have one or more missing values.  The missing
         values from particular attributes are:
-    
+
         A1:  12
         A2:  12
         A4:   6
@@ -272,13 +278,13 @@ with open(path_crxname) as f:
         A6:   9
         A7:   9
         A14: 13
-    
+
     9.  Class Distribution
-      
+
         +: 307 (44.5%)
         -: 383 (55.5%)
-    
-    
+
+
 
 
 
@@ -288,13 +294,13 @@ with open(path+"Index") as f:
 ```
 
     Index of credit-screening
-    
+
     02 Dec 1996      182 Index
     19 Sep 1992    32218 crx.data
     19 Sep 1992     1486 crx.names
     16 Jul 1992    12314 credit.lisp
     16 Jul 1992      522 credit.names
-    
+
 
 
 
@@ -304,7 +310,7 @@ with open(path+"credit.lisp") as f:
 ```
 
     ;; positive examples represent people that were granted credit
-    (def-pred credit_screening :type (:person) 
+    (def-pred credit_screening :type (:person)
       :pos
       ((s1) (s2) (s4) (s5) (s6) (s7) (s8) (s9) (s14) (s15) (s17) (s18) (s19)
        (s21) (s22) (s24) (s28) (s29) (s31) (s32) (s35) (s38) (s40) (s41)
@@ -315,45 +321,45 @@ with open(path+"credit.lisp") as f:
        (s96) (s97) (s98) (s100) (s103) (s104) (s106) (s108) (s110) (s116)
        (s117) (s118) (s119) (s121) (s122) (s123) (s124))
       :neg
-      ((s3) (s10) (s11) (s12) (s13) (s16) (s20) (s23) (s25) (s26) (s27) 
+      ((s3) (s10) (s11) (s12) (s13) (s16) (s20) (s23) (s25) (s26) (s27)
        (s30) (s33) (s34) (s36) (s37) (s39) (s44) (s48) (s52) (s58) (s60)
        (s67) (s68) (s82) (s88) (s95) (s99) (s101) (s102) (s105) (s107)
        (s109) (s111) (s112) (s113) (s114) (s115) (s120) (s125)))
-    
+
     (def-pred jobless :type (:person) :pos
       ((s3) (s10) (s12) (s23) (s34) (s39) (s44) (s56) (s60) (s82) (s85) (s88)
        (s99) (s115)))
-    
+
     ;; item purchased that loan is for.
     (def-pred purchase_item  :type (:person :atom) :pos
-      ((s1 pc) (s2 pc) (s3 pc) (s4 pc) (s5 pc) (s6 pc) (s7 pc) (s8 pc) 
-       (s9 pc) (s10 pc) (s11 car) (s12 car) (s13 car) (s14 car) (s15 car) 
+      ((s1 pc) (s2 pc) (s3 pc) (s4 pc) (s5 pc) (s6 pc) (s7 pc) (s8 pc)
+       (s9 pc) (s10 pc) (s11 car) (s12 car) (s13 car) (s14 car) (s15 car)
        (s16 car) (s17 car) (s18 car) (s19 car) (s20 car) (s21 stereo)
-       (s22 stereo) (s23 stereo) (s24 stereo) (s25 stereo) (s26 stereo) 
-       (s27 stereo) (s28 stereo) (s29 stereo) (s30 stereo) (s31 stereo) 
-       (s32 stereo) (s33 stereo) (s34 stereo) (s35 stereo) (s36 stereo) 
-       (s37 stereo) (s38 stereo) (s39 stereo) (s40 stereo) (s41 stereo) 
-       (s42 jewel) (s43 jewel) (s44 jewel) (s45 jewel) (s46 jewel) 
-       (s47 jewel) (s48 jewel) (s49 jewel) (s50 jewel) (s51 jewel) 
-       (s52 jewel) (s53 jewel) (s54 jewel) (s55 jewel) (s56 jewel) 
-       (s57 jewel) (s58 jewel) (s59 jewel) (s60 jewel) (s61 jewel) 
-       (s62 jewel) (s63 medinstru) (s64 medinstru) (s65 medinstru) 
-       (s66 medinstru) (s67 medinstru) (s68 medinstru) (s69 medinstru) 
-       (s70 medinstru) (s71 medinstru) (s72 medinstru) (s73 medinstru) 
-       (s74 medinstru) (s75 medinstru) (s76 medinstru) (s77 medinstru) 
-       (s78 medinstru) (s79 medinstru) (s80 medinstru) (s81 medinstru) 
+       (s22 stereo) (s23 stereo) (s24 stereo) (s25 stereo) (s26 stereo)
+       (s27 stereo) (s28 stereo) (s29 stereo) (s30 stereo) (s31 stereo)
+       (s32 stereo) (s33 stereo) (s34 stereo) (s35 stereo) (s36 stereo)
+       (s37 stereo) (s38 stereo) (s39 stereo) (s40 stereo) (s41 stereo)
+       (s42 jewel) (s43 jewel) (s44 jewel) (s45 jewel) (s46 jewel)
+       (s47 jewel) (s48 jewel) (s49 jewel) (s50 jewel) (s51 jewel)
+       (s52 jewel) (s53 jewel) (s54 jewel) (s55 jewel) (s56 jewel)
+       (s57 jewel) (s58 jewel) (s59 jewel) (s60 jewel) (s61 jewel)
+       (s62 jewel) (s63 medinstru) (s64 medinstru) (s65 medinstru)
+       (s66 medinstru) (s67 medinstru) (s68 medinstru) (s69 medinstru)
+       (s70 medinstru) (s71 medinstru) (s72 medinstru) (s73 medinstru)
+       (s74 medinstru) (s75 medinstru) (s76 medinstru) (s77 medinstru)
+       (s78 medinstru) (s79 medinstru) (s80 medinstru) (s81 medinstru)
        (s82 medinstru) (s83 medinstru) (s84 jewel) (s85 stereo)
-       (s86 medinstru) (s87 stereo) (s88 stereo) (s89 stereo) 
-       (s90 stereo) (s91 stereo) (s92 medinstru) (s93 medinstru) 
-       (s94 medinstru) (s95 medinstru) (s96 jewel) (s97 jewel) 
-       (s98 jewel) (s99 jewel) (s100 jewel) (s101 jewel) (s102 jewel) 
-       (s103 jewel) (s104 jewel) (s105 jewel) (s106 bike) 
-       (s107 bike) (s108 bike) (s109 bike) (s110 bike) (s111 bike) 
-       (s112 bike) (s113 bike) (s114 bike) (s115 bike) (s116 furniture) 
-       (s117 furniture) (s118 furniture) (s119 furniture) 
-       (s120 furniture) (s121 furniture) (s122 furniture) 
+       (s86 medinstru) (s87 stereo) (s88 stereo) (s89 stereo)
+       (s90 stereo) (s91 stereo) (s92 medinstru) (s93 medinstru)
+       (s94 medinstru) (s95 medinstru) (s96 jewel) (s97 jewel)
+       (s98 jewel) (s99 jewel) (s100 jewel) (s101 jewel) (s102 jewel)
+       (s103 jewel) (s104 jewel) (s105 jewel) (s106 bike)
+       (s107 bike) (s108 bike) (s109 bike) (s110 bike) (s111 bike)
+       (s112 bike) (s113 bike) (s114 bike) (s115 bike) (s116 furniture)
+       (s117 furniture) (s118 furniture) (s119 furniture)
+       (s120 furniture) (s121 furniture) (s122 furniture)
        (s123 furniture) (s124 furniture) (s125 furniture)))
-    
+
     (def-pred male :type (:person) :pos
       ((s6) (s7) (s8) (s9) (s10) (s16) (s17) (s18) (s19) (s20) (s21) (s22)
        (s25) (s27) (s29) (s37) (s38) (s39) (s40) (s41) (s42) (s43) (s45)
@@ -361,7 +367,7 @@ with open(path+"credit.lisp") as f:
        (s71) (s72) (s74) (s76) (s77) (s79) (s80) (s82) (s84) (s86) (s89)
        (s90) (s91) (s92) (s94) (s97) (s98) (s102) (s103) (s104) (s105) (s106)
        (s107) (s108) (s109) (s110) (s121) (s122) (s123) (s124) (s125)))
-    
+
     (def-pred female :type (:person) :pos
       ((s1) (s2) (s3) (s4) (s5) (s11) (s12) (s13) (s14) (s15) (s23) (s24) (s26)
        (s28) (s30) (s31) (s32) (s33) (s34) (s35) (s36) (s44) (s46) (s47) (s50)
@@ -369,42 +375,42 @@ with open(path+"credit.lisp") as f:
        (s75) (s78) (s81) (s83) (s85) (s87) (s88) (s93) (s95) (s96) (s99) (s100)
        (s101) (s111) (s112) (s113) (s114) (s115) (s116) (s117) (s118) (s119)
        (s120)))
-    
+
     (def-pred unmarried :type (:person) :pos
       ((s1) (s2) (s5) (s6) (s7) (s11) (s13) (s14) (s16) (s18) (s22) (s25) (s26)
        (s28) (s30) (s31) (s32) (s33) (s34) (s37) (s41) (s43) (s46) (s48) (s50)
        (s52) (s53) (s54) (s55) (s59) (s60) (s63) (s68) (s70) (s74) (s75) (s76)
        (s78) (s82) (s84) (s86) (s87) (s90) (s93) (s95) (s96) (s97) (s100) (s101)
        (s102) (s104) (s105) (s106) (s107) (s108) (s109) (s114) (s118) (s123)))
-    
+
     ;; people who live in a problematic region
     (def-pred problematic_region :type (:person) :pos
-      ((s3) (s5) (s23) (s30) (s33) (s39) (s48) (s60) (s68) (s72) (s76) (s78) 
+      ((s3) (s5) (s23) (s30) (s33) (s39) (s48) (s60) (s68) (s72) (s76) (s78)
        (s84) (s105)))
-    
+
     (def-pred age :type (:person :number) :pos
       ((s1 18) (s2 20) (s3 25) (s4 40) (s5 50) (s6 18) (s7 22)
-       (s8 28) (s9 40) (s10 50) (s11 18) (s12 20) (s13 25) 
-       (s14 38) (s15 50) (s16 19) (s17 21) (s18 25) (s19 38) 
-       (s20 50) (s21 42) (s22 28) (s23 55) (s24 21) (s25 81) 
-       (s26 23) (s27 35) (s28 47) (s29 98) (s30 68) (s31 27) 
-       (s32 19) (s33 23) (s34 25) (s35 31) (s36 34) (s37 20) 
-       (s38 32) (s39 38) (s40 45) (s41 57) (s42 25) (s43 42) 
+       (s8 28) (s9 40) (s10 50) (s11 18) (s12 20) (s13 25)
+       (s14 38) (s15 50) (s16 19) (s17 21) (s18 25) (s19 38)
+       (s20 50) (s21 42) (s22 28) (s23 55) (s24 21) (s25 81)
+       (s26 23) (s27 35) (s28 47) (s29 98) (s30 68) (s31 27)
+       (s32 19) (s33 23) (s34 25) (s35 31) (s36 34) (s37 20)
+       (s38 32) (s39 38) (s40 45) (s41 57) (s42 25) (s43 42)
        (s44 61) (s45 48) (s46 29) (s47 35) (s48 40) (s49 31)
-       (s50 37) (s51 23) (s52 70) (s53 21) (s54 29) (s55 37) 
-       (s56 43) (s57 51) (s58 19) (s59 24) (s60 33) (s61 42) 
-       (s62 59) (s63 32) (s64 37) (s65 41) (s66 50) (s67 55) 
-       (s68 37) (s69 40) (s70 46) (s71 57) (s72 63) (s73 52) 
+       (s50 37) (s51 23) (s52 70) (s53 21) (s54 29) (s55 37)
+       (s56 43) (s57 51) (s58 19) (s59 24) (s60 33) (s61 42)
+       (s62 59) (s63 32) (s64 37) (s65 41) (s66 50) (s67 55)
+       (s68 37) (s69 40) (s70 46) (s71 57) (s72 63) (s73 52)
        (s74 27) (s75 35) (s76 26) (s77 59) (s78 23) (s79 51)
-       (s80 38) (s81 48) (s82 67) (s83 33) (s84 37) (s85 52) 
-       (s86 29) (s87 23) (s88 70) (s89 25) (s90 65) (s91 30) 
-       (s92 35) (s93 27) (s94 40) (s95 37) (s96 40) (s97 27) 
-       (s98 55) (s99 60) (s100 45) (s101 20) (s102 18) (s103 35) 
-       (s104 35) (s105 35) (s106 18) (s107 18) (s108 22) (s109 22) 
-       (s110 25) (s111 18) (s112 18) (s113 22) (s114 22) (s115 25) 
-       (s116 40) (s117 50) (s118 30) (s119 35) (s120 25) (s121 40) 
+       (s80 38) (s81 48) (s82 67) (s83 33) (s84 37) (s85 52)
+       (s86 29) (s87 23) (s88 70) (s89 25) (s90 65) (s91 30)
+       (s92 35) (s93 27) (s94 40) (s95 37) (s96 40) (s97 27)
+       (s98 55) (s99 60) (s100 45) (s101 20) (s102 18) (s103 35)
+       (s104 35) (s105 35) (s106 18) (s107 18) (s108 22) (s109 22)
+       (s110 25) (s111 18) (s112 18) (s113 22) (s114 22) (s115 25)
+       (s116 40) (s117 50) (s118 30) (s119 35) (s120 25) (s121 40)
        (s122 50) (s123 30) (s124 35) (s125 25)))
-    
+
     ;; Amount of money on deposit in bank, Unit of currency is 10000 yen
     (def-pred deposit :type (:person :number) :pos
       ((s1 20) (s2 10) (s3 5) (s4 5) (s5 5) (s6 10) (s7 10) (s8 15) (s9 20)
@@ -419,12 +425,12 @@ with open(path+"credit.lisp") as f:
        (s74 500) (s75 150) (s76 200) (s77 100) (s78 250) (s79 50) (s80 300)
        (s81 100) (s82 400) (s83 500) (s84 200) (s85 100) (s86 100) (s87 2)
        (s88 2) (s89 5) (s90 5) (s91 10) (s92 500) (s93 50) (s94 50) (s95 200)
-       (s96 30) (s97 15) (s98 50) (s99 5) (s100 20) (s101 20) (s102 10) 
+       (s96 30) (s97 15) (s98 50) (s99 5) (s100 20) (s101 20) (s102 10)
        (s103 20) (s104 10) (s105 10) (s106 15) (s107 10) (s108 20) (s109 10)
        (s110 10) (s111 10) (s112 10) (s113 20) (s114 10) (s115 10) (s116 50)
        (s117 100) (s118 50) (s119 20) (s120 30) (s121 60) (s122 90) (s123 70)
        (s124 20) (s125 20)))
-    
+
     ;; monthly loan payment amount, Unit of currency is 10000 yen ($70)
     (def-pred monthly_payment :type (:person :number) :pos
       ((s1 2) (s2 2) (s3 4) (s4 7) (s5 4) (s6 5) (s7 3) (s8 4) (s9 2)
@@ -439,12 +445,12 @@ with open(path+"credit.lisp") as f:
        (s74 10) (s75 18) (s76 20) (s77 20) (s78 10) (s79 20) (s80 10)
        (s81 20) (s82 15) (s83 12) (s84 50) (s85 5) (s86 30) (s87 2)
        (s88 10) (s89 2) (s90 2) (s91 10) (s92 20) (s93 50) (s94 50) (s95 40)
-       (s96 2) (s97 2) (s98 3) (s99 10) (s100 20) (s101 10) (s102 7) 
+       (s96 2) (s97 2) (s98 3) (s99 10) (s100 20) (s101 10) (s102 7)
        (s103 10) (s104 10) (s105 10) (s106 1) (s107 5) (s108 5) (s109 5)
        (s110 5) (s111 2) (s112 5) (s113 5) (s114 5) (s115 5) (s116 5)
        (s117 10) (s118 5) (s119 10) (s120 7) (s121 5) (s122 10) (s123 5)
        (s124 4) (s125 7)))
-    
+
     ;; number of months expected to pay off the loan
     (def-pred numb_of_months :type (:person :number) :pos
       ((s1 15) (s2 20) (s3 12) (s4 12) (s5 12) (s6 8) (s7 8) (s8 10) (s9 20)
@@ -459,22 +465,22 @@ with open(path+"credit.lisp") as f:
        (s74 5) (s75 12) (s76 10) (s77 20) (s78 10) (s79 20) (s80 10)
        (s81 20) (s82 5) (s83 5) (s84 10) (s85 5) (s86 20) (s87 10)
        (s88 5) (s89 10) (s90 10) (s91 10) (s92 20) (s93 20) (s94 20) (s95 20)
-       (s96 10) (s97 12) (s98 10) (s99 10) (s100 10) (s101 10) (s102 12) 
+       (s96 10) (s97 12) (s98 10) (s99 10) (s100 10) (s101 10) (s102 12)
        (s103 10) (s104 10) (s105 10) (s106 10) (s107 10) (s108 10) (s109 10)
        (s110 10) (s111 10) (s112 10) (s113 10) (s114 10) (s115 10) (s116 20)
        (s117 12) (s118 20) (s119 15) (s120 20) (s121 20) (s122 12) (s123 20)
        (s124 15) (s125 20)))
-    
+
     ;; number of years working at current company
     (def-pred numb_of_years_in_company :type (:person :number) :pos
       ((s1 1) (s2 2) (s3 0) (S4 2) (S5 25) (s6 1) (s7 4) (s8 5) (s9 15)
        (s10 0) (s11 1) (s12 2) (s13 5) (s14 15) (s16 2) (s17 3) (s18 2)
        (s19 15) (s20 2) (s21 7) (s22 3) (s23 0) (s24 1) (s25 0) (s26 1)
-       (s27 5) (s28 8) (s29 0) (s30 0) (s31 4) (s32 1) (s33 3) (s34 0) 
-       (s35 9) (s36 12) (s37 2) (s38 14) (s39 0) (s40 1) (s41 35) 
+       (s27 5) (s28 8) (s29 0) (s30 0) (s31 4) (s32 1) (s33 3) (s34 0)
+       (s35 9) (s36 12) (s37 2) (s38 14) (s39 0) (s40 1) (s41 35)
        (s42 3) (s43 7) (s44 0) (s45 11) (s46 5) (s47 13) (s48 1) (s49 6)
        (s50 9) (s51 2) (s52 0) (s53 3) (s54 7) (s55 13) (s56 0) (s57 11)
-       (s58 1) (s59 2) (s60 0) (s61 20) (s62 37) (s63 2) (s64 1) 
+       (s58 1) (s59 2) (s60 0) (s61 20) (s62 37) (s63 2) (s64 1)
        (s65 18) (s66 27) (s67 30) (s68 1) (s69 10) (s70 18) (s71 30)
        (s72 25) (s73 11) (s74 2)(s75 7) (s76 13) (s77 3)
        (s78 1) (s79 9) (s80 5) (s81 6) (s82 0) (s83 6)
@@ -485,27 +491,27 @@ with open(path+"credit.lisp") as f:
        (s108 5) (s109 2) (s110 5) (s111 1) (s112 1) (s113 5)
        (s114 2) (s115 5) (s116 20) (s117 20) (s118 3) (s119 13)
        (s120 2) (s121 20) (s122 20) (s123 10) (s124 13) (s125 1)))
-    
+
     (def-rule jobless_mascu_reject
-      (((jobles_mascu_reject ?s) 
-        (jobless ?s) 
+      (((jobles_mascu_reject ?s)
+        (jobless ?s)
         (male ?s))))
-    
+
     ;;This is a quite discriminatory rule against feminine, but the reality of
     ;;Japan presently seems so.
     (def-rule jobless_unmarried_fem_reject
-       (((jobless_unmarried_fem_reject ?s) 
-         (jobless ?s) 
-         (female ?s) 
+       (((jobless_unmarried_fem_reject ?s)
+         (jobless ?s)
+         (female ?s)
          (unmarried ?s))))
-    
+
     (def-rule jobless_unmatch_fem_reject
-       (((jobless_unmatch_fem_reject ?s) 
-         (jobless ?s) 
-         (female ?s) 
-         (not (unmarried ?s)) 
+       (((jobless_unmatch_fem_reject ?s)
+         (jobless ?s)
+         (female ?s)
+         (not (unmarried ?s))
          (unmatch_fem ?s))))
-    
+
     (def-rule unmatch_fem
       (((unmatch_fem ?s)
         (female ?s)
@@ -518,38 +524,38 @@ with open(path+"credit.lisp") as f:
         (numb_of_months ?s ?d)
         (is ?m (* ?c ?d))
         (>  ?m ?b))))
-    
+
     (def-rule discredit_bad_region
       (((discredit_bad_region ?s)
         (problematic_region ?s)
         (numb_of_years_in_company ?s ?n)
         (not (< 10 ?n)))))
-    				      
+
     (def-rule rejected_aged_unstable_work
       (((reject_aged_unstable_work ?s)
         (age ?s ?n1)
         (< 59 ?n1)
         (numb_of_years_in_company ?s ?n2)
         (< ?n2 3))))
-    
+
     (def-rule bad_credit
       (((bad_credit ?s)(rejected_aged_unstable_work ?s))
        ((bad_credit ?s )(discredit_bad_region ?s))
        ((bad_credit ?s )(jobless_unmatch_fem_reject ?s))
        ((bad_credit ?s )(jobless_unmarried_fem_reject ?s))
        ((bad_credit ?s )(jobless_mascu_reject ?s))))
-    
-    (def-rule ok_credit 
+
+    (def-rule ok_credit
       (((ok_credit ?s )
         ;(not (rejected_aged_unstable_work ?s))
         (not(discredit_bad_region ?s))
         (not(jobless_unmatch_fem_reject ?s))
         (not(jobless_unmarried_fem_reject ?s))
         (not(jobless_mascu_reject ?s)))))
-    
-    
-    
-    
+
+
+
+
 
 
 # Data preprocessing  
@@ -609,7 +615,7 @@ attrCount
 
 
 ```python
-# As all features names have been changed/anonymised, 
+# As all features names have been changed/anonymised,
 # we will create standard feature name starting with 'A' and suffixed with feature number
 colNames = ["A"+str(i+1) for i in range(attrCount)]
 print(colNames)
@@ -780,8 +786,8 @@ df.head()
 
 
 ```python
-# Inspecting the dataframe 
-# We find that features 'A2','A16' have symbols that would require further preprocessing 
+# Inspecting the dataframe
+# We find that features 'A2','A16' have symbols that would require further preprocessing
 df.describe()
 ```
 
@@ -916,8 +922,8 @@ df.info()
     <class 'pandas.core.frame.DataFrame'>
     RangeIndex: 690 entries, 0 to 689
     Data columns (total 16 columns):
-     #   Column  Non-Null Count  Dtype 
-    ---  ------  --------------  ----- 
+     #   Column  Non-Null Count  Dtype
+    ---  ------  --------------  -----
      0   A1      690 non-null    object
      1   A2      690 non-null    object
      2   A3      690 non-null    object
@@ -1372,7 +1378,7 @@ df2.head()
 
 ```python
 # Below code may return Setting with Copy warning
-# Use df._is_view to check if a dataframe is a view or copy 
+# Use df._is_view to check if a dataframe is a view or copy
 # df2.loc[:, 'A16'] = df2['A16'].map({"-": 0, "+":1}).values
 
 # Use df.assign instead.
@@ -2440,8 +2446,8 @@ df2
 
 
 # Univariate Analysis - Continous Variables  
-  
-  
+
+
 Findings from the distribution of numeric variables at overall level and considering the application status are as below:  
 - The dispersion/standard deviation of numeric variables for the applications granted credit extends over a wide range.
 - The shape of distribution is similar in both groups for the variables 'A2', 'A3' and 'A14'.
@@ -2453,16 +2459,16 @@ eda_overview.UVA_numeric(data = df2, var_group = contAttr)
 ```
 
 
-    
+
 ![png](output_48_0.png)
-    
+
 
 
 
 ```python
 # Apply the default theme
 sns.set_theme()
-t = eda_overview.UVA_numeric_classwise(df2, 'A16', ['A16'], 
+t = eda_overview.UVA_numeric_classwise(df2, 'A16', ['A16'],
                                        colcount = 3, colwidth = 3,
                                        rowheight = 4,
                                        plot_type = 'histogram', element = 'step')
@@ -2471,9 +2477,9 @@ plt.gcf().savefig(path+'Numeric_interaction_class.png', dpi = 150)
 ```
 
 
-    
+
 ![png](output_49_0.png)
-    
+
 
 
 
@@ -2650,7 +2656,7 @@ df2[contAttr].nunique()
 
 
 # Bivariate Analysis - Continous Variables  
-  
+
 Findings from the correlation plot are as below :  
 - No significant correlation between any pair of the features
 - No significant correlation between any pair of feature and target  
@@ -2831,9 +2837,9 @@ scatter_matrix(df2[contAttr+targetAttr], figsize = (12,8));
 ```
 
 
-    
+
 ![png](output_56_0.png)
-    
+
 
 
 
@@ -2853,9 +2859,9 @@ sns.pairplot(df2[contAttr+targetAttr],hue= 'A16',height = 2)
 
 
 
-    
+
 ![png](output_57_1.png)
-    
+
 
 
 
@@ -2980,9 +2986,9 @@ sns.heatmap(df2[contAttr].corr(), annot = True);
 ```
 
 
-    
+
 ![png](output_60_0.png)
-    
+
 
 
 
@@ -2992,9 +2998,9 @@ sns.heatmap(df2[df2['A16'] == 0][contAttr].corr(), annot = True);
 ```
 
 
-    
+
 ![png](output_61_0.png)
-    
+
 
 
 
@@ -3004,9 +3010,9 @@ sns.heatmap(df2[df2['A16'] == 1][contAttr].corr(), annot = True);
 ```
 
 
-    
+
 ![png](output_62_0.png)
-    
+
 
 
 # Univariate Analysis - Categorical Variables
@@ -3034,9 +3040,9 @@ eda_overview.UVA_category(df2, var_group = catAttr + targetAttr,
 ```
 
 
-    
+
 ![png](output_65_0.png)
-    
+
 
 
 ## Distribution of the Target Class  
@@ -3055,9 +3061,9 @@ axes_utils.Add_valuecountsinfo(ax, 'A16',df2)
 ```
 
 
-    
+
 ![png](output_67_0.png)
-    
+
 
 
 # Train Test Split the dataset
@@ -3231,7 +3237,7 @@ X_train.head()
 
 
 ```python
-# Creating numeric Pipeline for standard scaling of numeric features 
+# Creating numeric Pipeline for standard scaling of numeric features
 
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
@@ -3404,23 +3410,23 @@ pd.DataFrame(df2_num_tr)
 
 
 ```python
-from sklearn.compose import ColumnTransformer 
+from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 
 # Segregating the numeric and categorical features
 num_attribs = ['A2', 'A3','A8', 'A11', 'A14', 'A15']
-cat_attribs = ["A1","A4", "A5", "A6", "A7", "A9", "A10", "A12", "A13"] 
+cat_attribs = ["A1","A4", "A5", "A6", "A7", "A9", "A10", "A12", "A13"]
 
 # Creating Column Transformer for selectively applying tranformations
 # both standard scaling and one hot encoding
 full_pipeline = ColumnTransformer([
-    ("num", num_pipeline, num_attribs), 
+    ("num", num_pipeline, num_attribs),
     ("cat", OneHotEncoder(handle_unknown='ignore'), cat_attribs)])
 
 # Creating Column Transformer for selectively applying tranformations
 # only one hot encoding and no standard scaling
 categorical_pipeline = ColumnTransformer([
-    ("num_selector", "passthrough", num_attribs), 
+    ("num_selector", "passthrough", num_attribs),
     ("cat", OneHotEncoder(handle_unknown='ignore'), cat_attribs)])
 ```
 
@@ -3478,7 +3484,7 @@ categorical_pipeline
 
 
 ```python
-# Learning the parameters for transforming from train set using full_pipeline 
+# Learning the parameters for transforming from train set using full_pipeline
 # Transforming both train and test set
 X_train_tr1 = full_pipeline.fit_transform(X_train)
 X_test_tr1 = full_pipeline.transform(X_test)
@@ -3502,12 +3508,12 @@ X_test_tr2 = categorical_pipeline.transform(X_test)
 from sklearn.preprocessing import LabelEncoder
 
 # prepare input data
-def prepare_targets(y_train, y_test): 
+def prepare_targets(y_train, y_test):
     le = LabelEncoder()
     le.fit(np.ravel(y_train))
-    y_train_enc = le.transform(np.ravel(y_train)) 
-    y_test_enc = le.transform(np.ravel(y_test)) 
-    
+    y_train_enc = le.transform(np.ravel(y_train))
+    y_test_enc = le.transform(np.ravel(y_test))
+
     return y_train_enc, y_test_enc
 ```
 
@@ -3558,7 +3564,7 @@ def evaluation_parametrics(y_train,yp_train,y_test,yp_test,average_param = 'weig
     + "F1 Score on Train Data is: {}".format(round(f1_score(y_train,yp_train,average = average_param),d)) \
     + "\n" \
     + "F1 Score on Test Data is: {}".format(round(f1_score(y_test,yp_test,average = average_param),d)) \
-    + "\n" + "-"*60 + "\n" 
+    + "\n" + "-"*60 + "\n"
     return txt
 ```
 
@@ -3711,7 +3717,7 @@ def create_dict(model, modelname, y_train, yp_train, y_test, yp_test, average_pa
             https://scikit-learn.org/stable/modules/model_evaluation.html#scoring-parameter
             https://scikit-learn.org/stable/modules/classes.html#module-sklearn.metrics
             https://scikit-learn.org/stable/modules/generated/sklearn.metrics.precision_score.html#sklearn.metrics.precision_score
-    
+
     '''
     d = 4
     dict1 = {modelname :  {"Accuracy":{"Train": float(np.round(accuracy_score(y_train,yp_train), d)),
@@ -3751,7 +3757,7 @@ def display_results(dict_perf):
 
 
 ```python
-from sklearn.linear_model import SGDClassifier 
+from sklearn.linear_model import SGDClassifier
 from sklearn.calibration import CalibratedClassifierCV
 
 name = 'sgdclf'
@@ -3768,7 +3774,7 @@ print('Total time: {:.2f}s'.format(en_time-st_time))
 
 #print(evaluation_parametrics(y_train_tr,yp_train_tr,y_test_tr,yp_test_tr,average_param = 'weighted'))
 
-dict1 = create_dict(sgd_clf, "SGD Classifier", 
+dict1 = create_dict(sgd_clf, "SGD Classifier",
                     y_train_tr, yp_train_tr, y_test_tr, yp_test_tr)
 dict_perf.update(dict1)
 
@@ -3784,9 +3790,9 @@ fig.savefig(path+'StochasticGradientClassifier.png', dpi = 150)
 
 
 
-    
+
 ![png](output_92_1.png)
-    
+
 
 
 ## Logistic Regression Classifier
@@ -3817,9 +3823,9 @@ fig = Confusion_matrix_ROC_AUC('lr','Logistic Regression Classifier',lr, X_train
 
 
 
-    
+
 ![png](output_94_1.png)
-    
+
 
 
 ## Random Forest Classifier
@@ -3839,7 +3845,7 @@ print('Total time: {:.2f}s'.format(en_time-st_time))
 
 #print(evaluation_parametrics(y_train_tr,yp_train_tr,y_test_tr,yp_test_tr))
 
-dict1 = create_dict(rf_clf, "Random Forest Classifier", 
+dict1 = create_dict(rf_clf, "Random Forest Classifier",
                     y_train_tr, yp_train_tr, y_test_tr, yp_test_tr)
 dict_perf.update(dict1)
 
@@ -3852,9 +3858,9 @@ fig = Confusion_matrix_ROC_AUC('rf_clf','Random Forest Classifier',rf_clf,
 
 
 
-    
+
 ![png](output_96_1.png)
-    
+
 
 
 ## KNN Classifier
@@ -3887,9 +3893,9 @@ fig = Confusion_matrix_ROC_AUC('knn_clf', "k-Nearest Neighbor Classifier",knn_cl
 
 
 
-    
+
 ![png](output_98_1.png)
-    
+
 
 
 ## Naive Bayes Classifier
@@ -3923,9 +3929,9 @@ fig = Confusion_matrix_ROC_AUC('gnb_clf', "Gaussian Naive Bayes Classifier",gnb_
 
 
 
-    
+
 ![png](output_100_1.png)
-    
+
 
 
 ## Linear Support Vector Classifier
@@ -3957,16 +3963,16 @@ fig = Confusion_matrix_ROC_AUC('LinearSVC', "Support Vector Classifier",svm,
 
 
 
-    
+
 ![png](output_102_1.png)
-    
+
 
 
 ## Decision Tree Classifier
 
 
 ```python
-dt = DecisionTreeClassifier(max_depth = 5,random_state = 48) 
+dt = DecisionTreeClassifier(max_depth = 5,random_state = 48)
 # Keeping max_depth = 7 to avoid overfitting
 dt.fit(X_train_tr2,y_train_tr)
 
@@ -3991,9 +3997,9 @@ fig = Confusion_matrix_ROC_AUC('dt', "Decision Tree Classifier", dt,
 
 
 
-    
+
 ![png](output_104_1.png)
-    
+
 
 
 ## Gradient Boosting Model
@@ -4027,9 +4033,9 @@ fig = Confusion_matrix_ROC_AUC('gb_model', "Gradient Boosting Classifier", gb_mo
 
 
 
-    
+
 ![png](output_106_1.png)
-    
+
 
 
 ## Linear Discriminant Analysis Model
@@ -4061,9 +4067,9 @@ fig = Confusion_matrix_ROC_AUC('lda_model', "Linear Discriminant Analysis Classi
 
 
 
-    
+
 ![png](output_108_1.png)
-    
+
 
 
 
@@ -4071,17 +4077,17 @@ fig = Confusion_matrix_ROC_AUC('lda_model', "Linear Discriminant Analysis Classi
 from matplotlib import pyplot as plt
 import sklearn
 from sklearn.metrics import roc_curve, auc
-#from sklearn.cross_validation import train_test_split 
-from sklearn.linear_model import LogisticRegression 
+#from sklearn.cross_validation import train_test_split
+from sklearn.linear_model import LogisticRegression
 from sklearn.tree import DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier 
+from sklearn.ensemble import RandomForestClassifier
 from sklearn.naive_bayes import GaussianNB
 
-# name -> (line format, classifier) 
+# name -> (line format, classifier)
 CLASS_MAP = {
     'LogisticRegression':('-', LogisticRegression()),
     'Naive Bayes': ('--', GaussianNB()),
-    'Decision Tree':('.-', DecisionTreeClassifier(max_depth=5)), 
+    'Decision Tree':('.-', DecisionTreeClassifier(max_depth=5)),
     'Random Forest':(':', RandomForestClassifier( max_depth=5, n_estimators=10, max_features=1)),
 }
 
@@ -4096,19 +4102,19 @@ for name, (line_fmt, model) in CLASS_MAP.items():
     # array w one col per label
     preds = model.predict_proba(X_test_tr1)
     pred = pd.Series(preds[:,1])
-    fpr, tpr, thresholds = roc_curve(y_test_tr, pred) 
+    fpr, tpr, thresholds = roc_curve(y_test_tr, pred)
     auc_score = auc(fpr, tpr)
-    label='%s: auc=%f' % (name, auc_score) 
+    label='%s: auc=%f' % (name, auc_score)
     plt.plot(fpr, tpr, line_fmt,
              linewidth=1, label=label)
-    plt.legend(loc="lower right") 
+    plt.legend(loc="lower right")
     plt.title('Comparing Classifiers')
 ```
 
 
-    
+
 ![png](output_109_0.png)
-    
+
 
 
 # Listing the performance from all the models
@@ -4352,18 +4358,18 @@ scoring = 'accuracy'
 
 
 ```python
-# Creating ColumnTransformer for preprocessing the training data folds and testing data fold within the k-fold 
+# Creating ColumnTransformer for preprocessing the training data folds and testing data fold within the k-fold
 # Note that training data folds will be fitted and transformed
 # The test data folds will be transformed
 
-from sklearn.compose import ColumnTransformer 
+from sklearn.compose import ColumnTransformer
 from sklearn.preprocessing import OneHotEncoder
 
 num_attribs = ['A2', 'A3','A8', 'A11', 'A14', 'A15']
-cat_attribs = ["A1","A4", "A5", "A6", "A7", "A9", "A10", "A12", "A13"] 
+cat_attribs = ["A1","A4", "A5", "A6", "A7", "A9", "A10", "A12", "A13"]
 
 preprocessor1 = ColumnTransformer([
-    ("num", num_pipeline, num_attribs), 
+    ("num", num_pipeline, num_attribs),
     ("cat", OneHotEncoder(handle_unknown='ignore'), cat_attribs)])
 
 preprocessor2 = ColumnTransformer([("cat", OneHotEncoder(handle_unknown='ignore'), cat_attribs)],
@@ -4388,7 +4394,7 @@ models = [('SGD',SGDClassifier(random_state=42)),
 
 
 ```python
-# Creating the pipeline of model and the preprocessor for feeding into the k-fold crossvalidation 
+# Creating the pipeline of model and the preprocessor for feeding into the k-fold crossvalidation
 pipelines_list = []
 for i in models:
     if i[0] not in ['RF','CART', 'GBM']:
@@ -4526,14 +4532,14 @@ names = []
 st_time = time.time()
 for name, pipeline in pipelines_list:
     kfold = KFold(n_splits=num_folds, random_state=seed, shuffle = True)
-    cv_results = cross_val_score(pipeline, X_train, y_train, cv=kfold, scoring=scoring) 
+    cv_results = cross_val_score(pipeline, X_train, y_train, cv=kfold, scoring=scoring)
     print(type(pipeline))
     results.append(cv_results)
     names.append(name)
     msg = "{:<10}: {:<6} ({:^6})".format(name, cv_results.mean().round(4), cv_results.std().round(4))
     print(msg)
     print(X_train)
-    
+
 en_time = time.time()
 print('Total time: {:.4f}s'.format(en_time-st_time))
 ```
@@ -4552,7 +4558,7 @@ print('Total time: {:.4f}s'.format(en_time-st_time))
     156  a  28.50   3.040  y  p   x   h  2.540  t   t  1.0   f   g   70.0     0.0
     509  b  21.00   4.790  y  p   w   v  2.250  t   t  1.0   t   g   80.0   300.0
     119  a  20.75  10.335  u  g  cc   h  0.335  t   t  1.0   t   g   80.0    50.0
-    
+
     [489 rows x 15 columns]
     <class 'sklearn.pipeline.Pipeline'>
     ScaledLR  : 0.8569 (0.0481)
@@ -4568,7 +4574,7 @@ print('Total time: {:.4f}s'.format(en_time-st_time))
     156  a  28.50   3.040  y  p   x   h  2.540  t   t  1.0   f   g   70.0     0.0
     509  b  21.00   4.790  y  p   w   v  2.250  t   t  1.0   t   g   80.0   300.0
     119  a  20.75  10.335  u  g  cc   h  0.335  t   t  1.0   t   g   80.0    50.0
-    
+
     [489 rows x 15 columns]
     <class 'sklearn.pipeline.Pipeline'>
     RF        : 0.8589 (0.0494)
@@ -4584,7 +4590,7 @@ print('Total time: {:.4f}s'.format(en_time-st_time))
     156  a  28.50   3.040  y  p   x   h  2.540  t   t  1.0   f   g   70.0     0.0
     509  b  21.00   4.790  y  p   w   v  2.250  t   t  1.0   t   g   80.0   300.0
     119  a  20.75  10.335  u  g  cc   h  0.335  t   t  1.0   t   g   80.0    50.0
-    
+
     [489 rows x 15 columns]
     <class 'sklearn.pipeline.Pipeline'>
     ScaledKNN : 0.8406 (0.0622)
@@ -4600,7 +4606,7 @@ print('Total time: {:.4f}s'.format(en_time-st_time))
     156  a  28.50   3.040  y  p   x   h  2.540  t   t  1.0   f   g   70.0     0.0
     509  b  21.00   4.790  y  p   w   v  2.250  t   t  1.0   t   g   80.0   300.0
     119  a  20.75  10.335  u  g  cc   h  0.335  t   t  1.0   t   g   80.0    50.0
-    
+
     [489 rows x 15 columns]
     <class 'sklearn.pipeline.Pipeline'>
     ScaledNB  : 0.6685 (0.0645)
@@ -4616,7 +4622,7 @@ print('Total time: {:.4f}s'.format(en_time-st_time))
     156  a  28.50   3.040  y  p   x   h  2.540  t   t  1.0   f   g   70.0     0.0
     509  b  21.00   4.790  y  p   w   v  2.250  t   t  1.0   t   g   80.0   300.0
     119  a  20.75  10.335  u  g  cc   h  0.335  t   t  1.0   t   g   80.0    50.0
-    
+
     [489 rows x 15 columns]
     <class 'sklearn.pipeline.Pipeline'>
     ScaledSVC : 0.8529 (0.0424)
@@ -4632,7 +4638,7 @@ print('Total time: {:.4f}s'.format(en_time-st_time))
     156  a  28.50   3.040  y  p   x   h  2.540  t   t  1.0   f   g   70.0     0.0
     509  b  21.00   4.790  y  p   w   v  2.250  t   t  1.0   t   g   80.0   300.0
     119  a  20.75  10.335  u  g  cc   h  0.335  t   t  1.0   t   g   80.0    50.0
-    
+
     [489 rows x 15 columns]
     <class 'sklearn.pipeline.Pipeline'>
     CART      : 0.8283 (0.0387)
@@ -4648,7 +4654,7 @@ print('Total time: {:.4f}s'.format(en_time-st_time))
     156  a  28.50   3.040  y  p   x   h  2.540  t   t  1.0   f   g   70.0     0.0
     509  b  21.00   4.790  y  p   w   v  2.250  t   t  1.0   t   g   80.0   300.0
     119  a  20.75  10.335  u  g  cc   h  0.335  t   t  1.0   t   g   80.0    50.0
-    
+
     [489 rows x 15 columns]
     <class 'sklearn.pipeline.Pipeline'>
     GBM       : 0.8099 (0.0481)
@@ -4664,7 +4670,7 @@ print('Total time: {:.4f}s'.format(en_time-st_time))
     156  a  28.50   3.040  y  p   x   h  2.540  t   t  1.0   f   g   70.0     0.0
     509  b  21.00   4.790  y  p   w   v  2.250  t   t  1.0   t   g   80.0   300.0
     119  a  20.75  10.335  u  g  cc   h  0.335  t   t  1.0   t   g   80.0    50.0
-    
+
     [489 rows x 15 columns]
     <class 'sklearn.pipeline.Pipeline'>
     ScaledLDA : 0.8529 (0.0433)
@@ -4680,7 +4686,7 @@ print('Total time: {:.4f}s'.format(en_time-st_time))
     156  a  28.50   3.040  y  p   x   h  2.540  t   t  1.0   f   g   70.0     0.0
     509  b  21.00   4.790  y  p   w   v  2.250  t   t  1.0   t   g   80.0   300.0
     119  a  20.75  10.335  u  g  cc   h  0.335  t   t  1.0   t   g   80.0    50.0
-    
+
     [489 rows x 15 columns]
     Total time: 4.4356s
 
@@ -4887,7 +4893,7 @@ for alg, value in tmp.mean().sort_values(ascending = False)[0:4].iteritems():
     ScaledLDA            :  0.8529
 
 
-## Comparing the mean and standard deviation of performance measures 
+## Comparing the mean and standard deviation of performance measures
 
 
 ```python
@@ -5102,8 +5108,8 @@ type(tmp1['mean'].argsort()[0])
 ```python
 # Compare Algorithms
 plt.rcdefaults()
-fig = plt.figure(figsize = (6,3)) 
-ax = fig.add_subplot(111) 
+fig = plt.figure(figsize = (6,3))
+ax = fig.add_subplot(111)
 sns.boxplot(data = tmp, color = 'lightgrey', linewidth = 1, width = 0.5, orient = 'h')
 
 # Coloring box-plots of top 2 mean values
@@ -5149,9 +5155,9 @@ fig.savefig(path+'spotchecking algorithms using 10 fold CV.png', dpi = 175)
 ```
 
 
-    
+
 ![png](output_131_0.png)
-    
+
 
 
 ## Results from simple Train Test split
@@ -5419,11 +5425,11 @@ from sklearn.preprocessing import OneHotEncoder
 #cat_features=make_column_selector(dtype_exclude=np.number)
 
 num_attribs = ['A2', 'A3','A8', 'A11', 'A14', 'A15']
-cat_attribs = ["A1","A4", "A5", "A6", "A7", "A9", "A10", "A12", "A13"] 
+cat_attribs = ["A1","A4", "A5", "A6", "A7", "A9", "A10", "A12", "A13"]
 
 # Setting the pipeline for preprocessing numeric and categorical variables
 preprocessor = ColumnTransformer([
-    ("num", num_pipeline, num_attribs), 
+    ("num", num_pipeline, num_attribs),
     ("cat", OneHotEncoder(handle_unknown='ignore'), cat_attribs)])
 
 # Creating a composite estimator by appending classifier estimator to preprocessor pipeline
@@ -5444,7 +5450,7 @@ grid_lr = dict(logisticregression__solver=solvers,
 cv = RepeatedStratifiedKFold(n_splits=10, n_repeats=3, random_state=1)
 
 # Instantiating GridSearchCV object with composite estimator, parameter grid, CV(crossvalidation generator)
-grid_search_lr = GridSearchCV(estimator=model_lr, param_grid=grid_lr, 
+grid_search_lr = GridSearchCV(estimator=model_lr, param_grid=grid_lr,
                               n_jobs=-1, cv=cv, scoring='accuracy',error_score=0)
 
 grid_result_lr = grid_search_lr.fit(X, y)
@@ -5575,10 +5581,10 @@ from sklearn.preprocessing import OneHotEncoder
 #cat_features=make_column_selector(dtype_exclude=np.number)
 
 num_attribs = ['A2', 'A3','A8', 'A11', 'A14', 'A15']
-cat_attribs = ["A1","A4", "A5", "A6", "A7", "A9", "A10", "A12", "A13"] 
+cat_attribs = ["A1","A4", "A5", "A6", "A7", "A9", "A10", "A12", "A13"]
 
 preprocessor = ColumnTransformer([
-    ("num", num_pipeline, num_attribs), 
+    ("num", num_pipeline, num_attribs),
     ("cat", OneHotEncoder(handle_unknown='ignore'), cat_attribs)])
 
 model_rf = make_pipeline(preprocessor, RandomForestClassifier())
@@ -5621,7 +5627,7 @@ for mean, stdev, param in zip(means, stds, params):
 
 
 # Training the final Model on full training set  
-  
+
 Since, **refit = True** in grid_search_lr (The GridSearchCV for logistic Regression), the best estimator - grid_result_lr.best_estimator_ is the final model that is trained on the entire model.  
 We will use the trained model to make predictions and assess performance on both training and test sets.
 
@@ -5665,9 +5671,9 @@ print('Coefficients of Logistic Regression Model : \n {}'.format(final_estimator
 ```
 
     LogisticRegression(C=0.1, random_state=48, solver='liblinear')
-    
-    
-    Coefficients of Logistic Regression Model : 
+
+
+    Coefficients of Logistic Regression Model :
      [[-6.58541123e-03 -3.51822076e-03  3.09711492e-01  4.70027755e-01
       -1.13323153e-01  4.35822579e-01  1.68285927e-02 -8.75341871e-02
        7.47808800e-02  7.28776727e-02 -2.18364147e-01  7.28776727e-02
@@ -5682,7 +5688,7 @@ print('Coefficients of Logistic Regression Model : \n {}'.format(final_estimator
       -1.20565649e-02 -4.05966115e-02]]
 
 
-## Testing the model on entire train set 
+## Testing the model on entire train set
 
 
 ```python
@@ -5705,7 +5711,7 @@ cm = confusion_matrix(y_test,final_predictions, labels= final_model['logisticreg
 disp = ConfusionMatrixDisplay(confusion_matrix=cm,
                               display_labels= final_model['logisticregression'].classes_)
 
-sns.set(font_scale=1.5) # Adjust to fit 
+sns.set(font_scale=1.5) # Adjust to fit
 disp.plot()
 plt.gca().grid(False)
 plt.show()
@@ -5713,9 +5719,9 @@ plt.show()
 ```
 
 
-    
+
 ![png](output_150_0.png)
-    
+
 
 
 
@@ -5861,474 +5867,473 @@ clf.named_steps['logisticregression'].coef_
 
     /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
     STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
-    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
-    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
-    
-    Increase the number of iterations (max_iter) or scale the data as shown in:
-        https://scikit-learn.org/stable/modules/preprocessing.html
-    Please also refer to the documentation for alternative solver options:
-        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
-      n_iter_i = _check_optimize_result(
 
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
+    /Users/bhaskarroy/opt/anaconda3/lib/python3.8/site-packages/sklearn/linear_model/_logistic.py:814: ConvergenceWarning: lbfgs failed to converge (status=1):
+    STOP: TOTAL NO. of ITERATIONS REACHED LIMIT.
+
+    Increase the number of iterations (max_iter) or scale the data as shown in:
+        https://scikit-learn.org/stable/modules/preprocessing.html
+    Please also refer to the documentation for alternative solver options:
+        https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression
+      n_iter_i = _check_optimize_result(
