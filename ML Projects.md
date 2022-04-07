@@ -14,8 +14,8 @@ author_profile: true
 {:toc}  
 
 ## Credit screening (UCI)
-This dataset has been downloaded from UC Irvine Machine Learning Repository.
-<https://archive.ics.uci.edu/ml/datasets/Credit+Approval>
+This dataset has been downloaded from UC Irvine Machine Learning Repository.  
+><https://archive.ics.uci.edu/ml/datasets/Credit+Approval>
 
 This dataset is regarding credit card applications.
 The target variable/label is whether the application has been granted credit or not.
@@ -27,7 +27,8 @@ The dataset is balanced.
 We have spot-checked multiple classifier algorithms using both simple train/test split as well as k fold cross validation.
 Accuracy was chosen as the evaluation metric as the dataset is balanced. Two algorithms were shortlisted and taken forward for hyper-parameter tuning.
 
-Check the [notebook](/Pages/ML Projects/Credit Screening/Credit Screening.md)  
+Check the [notebook](/Pages/ML Projects/Credit Screening/Credit Screening_01.md)
+
 Check [classic jupyter version](/Pages/ML Projects/Credit Screening.html)
 
 
