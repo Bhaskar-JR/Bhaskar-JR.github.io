@@ -27,8 +27,8 @@ The dataset is balanced.
 We have spot-checked multiple classifier algorithms using both simple train/test split as well as k fold cross validation.
 Accuracy was chosen as the evaluation metric as the dataset is balanced. Two algorithms were shortlisted and taken forward for hyper-parameter tuning.
 
-Check the [notebook](/Pages/ML Projects/Credit Screening/Credit Screening.md)
-Check [classic jupyter version]((/Pages/ML Projects/Credit Screening.html)
+Check the [notebook](/Pages/ML Projects/Credit Screening/Credit Screening.md)  
+Check [classic jupyter version](/Pages/ML Projects/Credit Screening.html)
 
 
 ## Sales Transaction Weekly of 800 products (UCI)
