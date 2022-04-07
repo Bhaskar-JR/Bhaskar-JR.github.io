@@ -26,10 +26,9 @@ Click for [classic jupyter version](../Sales_Transactions_Dataset_Weekly_Cluster
     Number of categorical attributes            : 01(Product code)
     Number of numerical attributes              : 52(Sales qty for 52 weeeks)
 
-    Problem Identification                      : Unsupervised Learning (Clustering)
+    Problem Identification                      : Unsupervised Learning (Clustering)  
 
-<https://archive.ics.uci.edu/ml/machine-learning-databases/00396/>  
-<https://archive.ics.uci.edu/ml/datasets/Sales_Transactions_Dataset_Weekly>
+Links of datasets : [Link1](https://archive.ics.uci.edu/ml/machine-learning-databases/00396/) [Link2](https://archive.ics.uci.edu/ml/datasets/Sales_Transactions_Dataset_Weekly)  
 {:toc}
 
 # Loading necessary libraries
