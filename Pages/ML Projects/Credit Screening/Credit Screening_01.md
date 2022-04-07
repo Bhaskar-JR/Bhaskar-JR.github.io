@@ -6,9 +6,7 @@ toc_sticky: true
 author_profile: true
 toc_label : "Credit Screening Dataset - Part1"
 ---
-This dataset has been downloaded from  UC Irvine Machine Learning Repository.  
-><https://archive.ics.uci.edu/ml/datasets/Credit+Approval>  
-
+This dataset has been downloaded from  UC Irvine Machine Learning Repository. [Link](https://archive.ics.uci.edu/ml/datasets/Credit+Approval)  
 
 This dataset is regarding credit card applications.  
 The target variable/label is whether the application has been granted credit or not.  

@@ -10,8 +10,10 @@ toc_label : "Credit Screening Dataset - Part2"
 [Continued from](Credit Screening_01.md)  
 [Classic Jupyter notebook](../Sales_Transactions_Dataset_Weekly_Clustering.html)  
 
-# Train Test Split the dataset
+# Train Test Split the dataset  
 
+We will spot-check various algorithms using train test validation as well as kfold cross validation.  
+We shall first split the entire data as Train and test.
 
 ```python
 X, y = df2.drop(targetAttr, axis = 1), df2['A16']
@@ -177,8 +179,19 @@ X_train.head()
 
 
 
-# Transformation Pipelines
+## Transformation Pipelines
 
+We will create list of pipelines for Simple hold out validation. These list of pipelines will contain composite estimators/classifiers.  
+
+We will be iterating through the **individual pipelines** within the **pipeline list** specifically for simple holdout validation.
+In each iteration :
+- the results on train and test set will be displayed in the form of **classification report**.
+- the confusion matrix for prediction on test data will be displayed.
+- The measures 'Accuracy', 'F1 score', 'precision' and 'recall' will be extracted and stored in a dictionary.
+Note that the average parameter chosen is **'weighted'** for the three measures - accuracy, precision and recall.  
+
+
+Once an entire loop of training and testing of each model within the pipeline list is completed, the dictionary will be converted into a dataframe and a plot shall be drawn to compare the results from the different classifier models.  
 
 ```python
 # Creating numeric Pipeline for standard scaling of numeric features
@@ -332,11 +345,8 @@ pd.DataFrame(df2_num_tr)
 </div>
 
 
+## Transforming the X_train and X_test
 
-
-```python
-# Transforming the X_train and X_test
-```
 
 
 ```python
@@ -378,9 +388,9 @@ X_test_tr2 = categorical_pipeline.transform(X_test)
 ```
 
 
-```python
-# Transforming the target variable
-```
+
+## Transforming the target variable
+
 
 
 ```python
@@ -407,7 +417,7 @@ y_train_tr, y_test_tr = prepare_targets(y_train, y_test)
 ```python
 # Function for returning a string containing
 # Classification report and the accuracy, precision, recall and F1 measures on train and test data
-# The average parameter for the measures is 'macro' as the minority class is of importance.
+# The average parameter for the measures is 'weighted' as the dataset is balanced.
 
 from sklearn.metrics import recall_score, precision_score, accuracy_score, \
     confusion_matrix, ConfusionMatrixDisplay, classification_report, f1_score, \
@@ -980,10 +990,10 @@ for name, (line_fmt, model) in CLASS_MAP.items():
 ```
 
 
-![png](output_107_0.png)
+![png](output_107_0.png)  
 
 
-# Listing the performance from all the models
+## Listing the performance from all the models  
 
 
 ```python
@@ -1208,9 +1218,13 @@ display_results(dict_perf).style.background_gradient(cmap='Blues')
     </tbody></table>
 
 
-
 # Model Validation using K-Fold CrossValidation
 
+We will be iterating through the individual pipelines within the pipeline list specifically for k-fold cross-validation.  
+In each iteration :  
+- We will doing 10 fold stratified cross-validation on Train data using cross_val_score and specifying the composite model/estimator.
+The scoring used in cross_val_score is 'accuracy'.  
+- The scores will be extracted and stored in a dictionary. Once an entire loop of training and testing of each model within the pipeline list is completed, the dictionary will be converted into a dataframe and a plot to compare the results from the different classifier models.  
 
 ```python
 # Test options and evaluation metric
@@ -1743,7 +1757,7 @@ tmp.mean()
 
 
 ```python
-print('The top 4 algorithms based on crossvalidation performance are :')
+print('The top 4 algorithms based on cross-validation performance are :')
 
 for alg, value in tmp.mean().sort_values(ascending = False)[0:4].iteritems():
     print('{: <20} : {: 1.4f}'.format(alg, value))
