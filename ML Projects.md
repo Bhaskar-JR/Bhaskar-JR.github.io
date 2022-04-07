@@ -24,7 +24,10 @@ All attribute names and values have been changed to meaningless symbols to prote
 The objective is here to build a classifier model to give **binary output** based on the input attributes.  
 The dataset is balanced.
 
-Check the [notebook](/assets/scripts/Credit Screening.html)
+We have spot-checked multiple classifier algorithms using both simple train/test split as well as k fold cross validation.
+Accuracy was chosen as the evaluation metric as the dataset is balanced. Two algorithms were shortlisted and taken forward for hyper-parameter tuning.
+
+Check the [notebook](/Pages/ML Projects/Credit Screening/Credit Screening.md)
 
 
 ## Sales Transaction Weekly of 800 products (UCI)
