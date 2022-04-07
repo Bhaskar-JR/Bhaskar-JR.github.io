@@ -25,17 +25,17 @@ See: https://github.com/mmistakes/minimal-mistakes/issues/1219#issuecomment-3268
   https://github.com/mmistakes/minimal-mistakes/discussions/1219
 */
 html {
-  font-size: 12px; // change to whatever
+  font-size: 16px; // change to whatever
 
   @include breakpoint($medium) {
-    font-size: 14px; // change to whatever
+    font-size: 16px; // change to whatever
   }
   @include breakpoint($medium-wide) {
-    font-size: 14px; // change to whatever
+    font-size: 16px; // change to whatever
   }
 
   @include breakpoint($large) {
-    font-size: 16px; // change to whatever
+    font-size: 18px; // change to whatever
   }
 
   @include breakpoint($x-large) {
