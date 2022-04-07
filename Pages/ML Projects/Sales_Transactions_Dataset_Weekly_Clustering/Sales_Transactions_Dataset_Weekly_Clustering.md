@@ -4,10 +4,9 @@ author_profile: true
 toc: true
 toc_sticky: true
 toc_label: "Sales Transactions Dataset Weekly"
+title : Sales Transactions Dataset Weekly
 ---
-
-# Sales Transactions Dataset Weekly
-{:.no_toc}  
+ 
 
 
 The dataset contains weekly purchased quantities of 811 products over 52 weeks.  
