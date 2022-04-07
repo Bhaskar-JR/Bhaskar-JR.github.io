@@ -181,7 +181,7 @@ X_train.head()
 
 ## Transformation Pipelines
 
-We will create list of pipelines for Simple hold out validation. These list of pipelines will contain composite estimators/classifiers.  
+We will create list of pipelines for Simple hold out validation. This list of pipelines will contain composite estimators/classifiers.  
 
 We will be iterating through the **individual pipelines** within the **pipeline list** specifically for simple holdout validation.
 In each iteration :
@@ -189,9 +189,11 @@ In each iteration :
 - the confusion matrix for prediction on test data will be displayed.
 - The measures 'Accuracy', 'F1 score', 'precision' and 'recall' will be extracted and stored in a dictionary.
 Note that the average parameter chosen is **'weighted'** for the three measures - accuracy, precision and recall.  
+- A **confusion matrix** for performance of the model on test set will be displayed.  
+- An **ROC curve** with AUC scores will be plotted that will aid us in assessing the model's capability in distinguishing between classes.
 
 
-Once an entire loop of training and testing of each model within the pipeline list is completed, the dictionary will be converted into a dataframe and a plot shall be drawn to compare the results from the different classifier models.  
+Once an entire loop of **training and testing** of each model within the pipeline list is completed, the dictionary will be converted into a dataframe and a plot shall be drawn to compare the results from the different classifier models.  
 
 ```python
 # Creating numeric Pipeline for standard scaling of numeric features
@@ -413,6 +415,7 @@ y_train_tr, y_test_tr = prepare_targets(y_train, y_test)
 
 # Training and Testing Models
 
+As discussed in the [transformation pipelines section](#transformation-pipelines), an entire loop of **training and testing** of each model within the pipeline list will be done. The scores from each iteration will be extracted and stored in a dictionary. After complete run, the dictionary will be converted into a dataframe and comparison plot drawn to evaluate the different classifier models.
 
 ```python
 # Function for returning a string containing
@@ -950,6 +953,8 @@ fig = Confusion_matrix_ROC_AUC('lda_model', "Linear Discriminant Analysis Classi
 ![png](output_106_1.png)
 
 
+We also do a quick comparison of ROC curves with AUC scores as below.
+
 
 ```python
 from matplotlib import pyplot as plt
@@ -993,7 +998,9 @@ for name, (line_fmt, model) in CLASS_MAP.items():
 ![png](output_107_0.png)  
 
 
+
 ## Listing the performance from all the models  
+
 
 
 ```python
@@ -1215,16 +1222,18 @@ display_results(dict_perf).style.background_gradient(cmap='Blues')
                         <td id="T_35579_row8_col6" class="data row8 col6" >0.8789</td>
                         <td id="T_35579_row8_col7" class="data row8 col7" >0.8949</td>
             </tr>
-    </tbody></table>
+    </tbody></table>  
 
 
-# Model Validation using K-Fold CrossValidation
 
-We will be iterating through the individual pipelines within the pipeline list specifically for k-fold cross-validation.  
+# Model Validation using K-Fold CrossValidation  
+
+
+We will be iterating through the **individual pipelines** within the **pipeline list** specifically for k-fold cross-validation.  
 In each iteration :  
-- We will doing 10 fold stratified cross-validation on Train data using cross_val_score and specifying the composite model/estimator.
+- We will doing [**10 fold stratified CV**](https://scikit-learn.org/stable/modules/cross_validation.html#cross-validation) on Train data using [**cross_val_score**](https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.cross_val_score.html?highlight=cross_val_score#sklearn.model_selection.cross_val_score) and specifying the composite model/estimator.
 The scoring used in cross_val_score is 'accuracy'.  
-- The scores will be extracted and stored in a dictionary. Once an entire loop of training and testing of each model within the pipeline list is completed, the dictionary will be converted into a dataframe and a plot to compare the results from the different classifier models.  
+- The scores will be extracted and stored in a dictionary. Once an entire loop of **training and testing** of each model within the pipeline list is completed, the dictionary will be converted into a dataframe and a plot to compare the results from the different classifier models.  
 
 ```python
 # Test options and evaluation metric
@@ -2261,15 +2270,24 @@ display_results(dict_perf).style.background_gradient(cmap='Blues')
 
 
 
-## Selecting the Algorithms from K-Fold cross validation
+## Selecting the Algorithms from train-test split and  K-Fold CV
 
 From both simple train/test/split and cross validation methods, we have shortlisted the below two classifiers with the highest accuracy measures :  
--- Logistic Regression Classifier and   
--- Random Forest Classifier
+-- [Logistic Regression Classifier](#logistic-regression-classifier) and   
+-- [Random Forest Classifier](#random-forest-classifier)
 
-# Tuning the Selected Algorithm
+# Tuning the Selected Algorithm  
+
+
+We will use [GridsearchCV](https://scikit-learn.org/stable/modules/grid_search.html#exhaustive-grid-search) from scikitlearn to tune the shortlisted algorithms and find the best hyperparameter combinations for each. We will evaluate the tuned models and choose one for final deployment.  
 
 ## Tuning Logistic Regression Classifier
+
+
+A grid search is performed for the Logistic Regression Classifier by varying the **solver**, and **regularization strength** controlled by C in sklearn. Check this useful [link](https://machinelearningmastery.com/hyperparameters-for-classification-machine-learning-algorithms/).  
+
+
+Also, the solvers do not support all the penalties. Check [sklearn link](https://scikit-learn.org/stable/modules/linear_model.html#logistic-regression)  
 
 
 ```python
@@ -2382,7 +2400,12 @@ grid_result_lr.best_estimator_
 
 
 
-## Tuning RandomForest Classifier
+## Tuning RandomForest Classifier  
+
+
+
+A grid search is performed for the random forest model by varying the **number of estimators** and maximum number of **features**.
+These are the main parameters to adjust for ensemble methods. Check [sklearn link.](https://scikit-learn.org/stable/modules/ensemble.html#random-forest-parameters)  
 
 
 ```python
@@ -2457,7 +2480,9 @@ for mean, stdev, param in zip(means, stds, params):
 
 # Training the final Model on full training set  
 
-Since, **refit = True** in grid_search_lr (The GridSearchCV for logistic Regression), the best estimator - grid_result_lr.best_estimator_ is the final model that is trained on the entire model.  
+The CV performance of the tuned models for both logistic regression and random forest classifier are close. We are choosing to go ahead with Logistic regression classifier as it is a simpler model and there is not a significant upside if we use the random forest classifier instead.  
+
+Since, **refit = True** in grid_search_lr (The GridSearchCV for logistic Regression), the best estimator - **grid_result_lr.best_estimator_** is the final model that is trained on the entire model.  
 We will use the trained model to make predictions and assess performance on both training and test sets.
 
 
@@ -2616,7 +2641,10 @@ final_model['columntransformer'].named_transformers_['num'].named_steps['std_sca
 
 
 
-# Save model for later use
+# Save model for later use  
+
+
+Using pickle operations, trained model is saved in the serialized format to a file. Later, this serialized file can be loaded to deserialize the model for its usage.  
 
 
 ```python
@@ -2688,4 +2716,9 @@ clf.named_steps['logisticregression'].coef_
             -8.24031970e-02, -1.21443647e+00,  1.14373088e+00,
             -3.02496249e-01,  2.31790655e-01,  1.00373967e-02,
             -8.07429912e-02, -1.80524180e-02, -1.20565649e-02,
-            -4.05966115e-02]])
+            -4.05966115e-02]])  
+
+
+# Useful Resources  
+- Data Mining for Business Analytics - Concepts, Techniques, and Applications in Python by  Galit Shmueli, Nitin R. Patel, and Peter C. Bruce, Chapter 09
+- Machine Learning and Data Science Blueprints for Finance by Brad Lookabaugh, Hariom Tatsat, and Sahil Puri
