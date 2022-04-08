@@ -2542,7 +2542,8 @@ print('Coefficients of Logistic Regression Model : \n {}'.format(final_estimator
       -1.20565649e-02 -4.05966115e-02]]
 
 
-## Testing the model on entire train set
+
+# Testing the model on entire train set
 
 
 ```python
@@ -2550,7 +2551,36 @@ final_model = grid_result_lr.best_estimator_
 
 X_train_prepared = final_model['columntransformer'].transform(X_train)
 train_predictions = final_model.named_steps['logisticregression'].predict(X_train_prepared)
+
+print(classification_report(y_train,train_predictions))
+#evaluation_parametrics(y_train,train_predictions,y_test,final_predictions)
+
+cm = confusion_matrix(y_train,train_predictions, labels= final_model['logisticregression'].classes_)
+disp = ConfusionMatrixDisplay(confusion_matrix=cm,
+                              display_labels= final_model['logisticregression'].classes_)
+
+sns.set(font_scale=1.5) # Adjust to fit
+disp.plot()
+plt.gca().grid(False)
+plt.show()
 ```
+
+                  precision    recall  f1-score   support
+
+               0       0.91      0.85      0.88       267
+               1       0.83      0.91      0.87       222
+
+        accuracy                           0.87       489
+       macro avg       0.87      0.88      0.87       489
+    weighted avg       0.88      0.87      0.87       489
+
+
+
+
+![png](output_147_1.png)
+
+
+# Testing the final model on test set
 
 
 ```python
@@ -2559,7 +2589,7 @@ X_test, y_test = X_test, y_test
 X_test_prepared = final_model['columntransformer'].transform(X_test)
 final_predictions = final_model['logisticregression'].predict(X_test_prepared)
 
-evaluation_parametrics(y_train,train_predictions,y_test,final_predictions)
+print(classification_report(y_test, final_predictions))
 
 cm = confusion_matrix(y_test,final_predictions, labels= final_model['logisticregression'].classes_)
 disp = ConfusionMatrixDisplay(confusion_matrix=cm,
@@ -2572,8 +2602,21 @@ plt.show()
 
 ```
 
+                  precision    recall  f1-score   support
 
-![png](output_148_0.png)
+               0       0.94      0.84      0.89        90
+               1       0.83      0.93      0.88        74
+
+        accuracy                           0.88       164
+       macro avg       0.88      0.89      0.88       164
+    weighted avg       0.89      0.88      0.88       164
+
+
+
+
+![png](output_149_1.png)
+
+
 
 
 
