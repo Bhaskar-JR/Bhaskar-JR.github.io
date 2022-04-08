@@ -1,14 +1,12 @@
 ---
-
 layout : single
 author_profile : true
 toc_sticky : true
 toc : true
 ---
 
-
-# Usecase : SCDOT Data
-## Problem : Dependent Combo boxes
+# Usecase : SCDOT Data  
+# Problem : Dependent Combo boxes
 
 In this problem, client had got a contract to render services to another organisation.  
 The client had to maintain an excel dashboard for displaying service levels at a monthly
@@ -25,24 +23,24 @@ operational as on date -- Feb 2022. When User selects 2020, we want only
 Aug to Dec to be visible. When User selects 2021, all months should be
 visible. And on selection of 2022, months till Feb should be displayed.
 
-## Service level Dashboard snapshot
+# Service level Dashboard snapshot
 
 ![Dashboard Image](Images/media/image1.png)
 
-## Raw data  
+# Raw data  
 
 ![Dashboard Image](Images/media/rawdata.png)
 
 
-## Aggregating Data for staging the inputs in comboboxes  
+# Aggregating Data for staging the inputs in comboboxes  
 A new sheet named 'Support' has been created for data staging/preparation.  
 As we can see, the services were operational from May onwards in 2020 and ongoing.  
 
-### Calculated values
+## Calculated values
 
 ![](Images/media/image2.png)  
 
-### Data prep table housing year and months  
+## Data prep table housing year and months  
 
 Note the column AE from row 4 onwards will house the dynamic month range.
 For 2020, we will have months from May onwards. For other years, all the months are valid.  
@@ -52,7 +50,7 @@ For 2020, we will have months from May onwards. For other years, all the months 
 
 ![](Images/media/image3.png)  
 
-### Combobox connected to relevant year and months  
+## Combobox connected to relevant year and months  
 
 In case of year, its fairly straightforward. The year combobox has following parameters :  
 > input range : cell range containing the years (**Support!$H$2:$H$6**)    

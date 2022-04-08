@@ -3,7 +3,6 @@ layout : single
 toc_sticky : true
 toc : true
 author_profile : true
-
 ---
 # Premise  
 
