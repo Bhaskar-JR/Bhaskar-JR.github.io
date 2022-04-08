@@ -5,9 +5,9 @@ toc : true
 author_profile : true
 
 ---
-
 # Premise  
-Well created an Excel File for Shift Allocation to randomly assign shifts to different groups of available personnel. There is an immediate use case of this for small businesses, floor shop enterprises, salons, hospital/nursing departments, police departments for patrolling/beat, manpower based entities etc.  
+
+Hi everyone, I have created an Excel File for Shift Allocation to randomly assign shifts to different groups of available personnel. There is an immediate use case of this for small businesses, floor shop enterprises, salons, hospital/nursing departments, police departments for patrolling/beat, manpower based entities etc.  
 
 # Original Ask from client
 
@@ -22,7 +22,7 @@ Group E - 4 person
 
 Constraint: Each person must do equal shifts.  
 
-![Dashboard Image](Images/Requirement.jpg)
+![Requirement Image](Images/Requirement.jpg)
 
 # Constraint
 Each person should get equal/equitable number of shifts assigned in the month. There should not be successive shifts to same person.  
@@ -37,8 +37,11 @@ A simple approach can be.
 5. Complete one whole cycle of allotment for 29 members and 29 shifts.  
 6. Repeat the same process. Depending on monthly and bimonthly period, your choice of the available persons for selection for fresh new whole allotment will differ.  
 
+# Solution  
 
-# Learning Experience
+![Solution Image](Images/Solution.png)  
+
+# Behind the scenes
 Dabbling with some heavy duty macros behind the scenes. Extensive use of **Dynamic VBA Arrays**, Passing Arrays across subroutines, **Sorting/filtering, String Functions, formatting** all via **Macro coding**. Interesting experience indeed. Hope to make these modular codes that can be used like plug and play across problems. This is just a rough cut. Further customisation and window dressing possible as well.
 
 
