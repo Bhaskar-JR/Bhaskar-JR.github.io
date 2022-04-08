@@ -1,11 +1,11 @@
 ---
 layout : single
+author_profile : true
 toc_sticky : true
 toc : true
-author_profile : true
 ---
-# Premise  
 
+# Premise  
 Hi everyone, I have created an Excel File for Shift Allocation to randomly assign shifts to different groups of available personnel. There is an immediate use case of this for small businesses, floor shop enterprises, salons, hospital/nursing departments, police departments for patrolling/beat, manpower based entities etc.  
 
 # Original Ask from client
