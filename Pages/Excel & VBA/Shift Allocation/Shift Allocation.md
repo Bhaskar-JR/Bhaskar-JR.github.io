@@ -3,6 +3,7 @@ layout : single
 author_profile : true
 toc_sticky : true
 toc : true
+title : Shift Allocation Problem
 ---
 
 # Premise  
