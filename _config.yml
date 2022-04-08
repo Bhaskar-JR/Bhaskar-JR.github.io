@@ -231,6 +231,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-relative-links
   - jekyll-toc
+  - jekyll-titles-from-headings
 
 
 # mimic GitHub Pages with --safe
@@ -292,3 +293,10 @@ defaults:
       comments: # true
       share: true
       related: true
+
+#https://talk.jekyllrb.com/t/title-derived-from-heading-appears-twice-on-top-of-page/1686/3?u=mmistakes
+#https://talk.jekyllrb.com/t/title-derived-from-heading-appears-twice-on-top-of-page/1686/4?u=mmistakes
+titles_from_headings:
+  enabled:     true
+  strip_title: true
+  collections: true
