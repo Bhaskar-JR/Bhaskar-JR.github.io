@@ -12,7 +12,7 @@ main:
   #   url: /sitemap/
   - title: "ML Projects"
     url: ../ML Projects
-  - title: "VBA"
-    url: ../VBA
+  - title: "Excel & VBA"
+    url: ../Excel & VBA
   - title: "Eclectic"
     url: ../Eclectic
