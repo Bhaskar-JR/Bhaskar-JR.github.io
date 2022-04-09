@@ -24,4 +24,9 @@ toc_sticky : true
 
 ### Tryst with Murals  
 
+My first encounter with Murals, Frescoes at Palace of Versailles.  
+The sheer beauty, the Royalty and the grandeur make a lasting impression  
+One can lose sense of both space and time  
+"Merci beaucoup"  
+
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/697688198?h=46062e9021" width="640" height="360" frameborder="0" allowfullscreen></iframe>
