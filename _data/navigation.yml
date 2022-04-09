@@ -12,6 +12,8 @@ main:
   #   url: /sitemap/
   - title: "ML Projects"
     url: ../ML Projects
+  - title: "Python & R"
+    url: ../Python & R
   - title: "Excel & VBA"
     url: ../Excel & VBA
   - title: "Eclectic"
