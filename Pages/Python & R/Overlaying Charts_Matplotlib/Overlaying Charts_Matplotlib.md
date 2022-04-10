@@ -209,8 +209,8 @@ sales.columns
 We shall be using [cycle object](https://docs.python.org/3/library/itertools.html#itertools.cycle) along with [islice from itertools](https://docs.python.org/3/library/itertools.html#itertools.islice) module in Python.  
 islice allows us to always start cycling from a particular index position.
 
-https://stackoverflow.com/questions/8940737/cycle-through-list-starting-at-a-certain-element/8940984#8940984  
-https://docs.python.org/3/library/itertools.html
+[https://stackoverflow.com/questions/8940737/](https://stackoverflow.com/questions/8940737/cycle-through-list-starting-at-a-certain-element/8940984#8940984)  
+[https://docs.python.org/3/library/itertools.html](https://docs.python.org/3/library/itertools.html)  
 
 
 ```python
