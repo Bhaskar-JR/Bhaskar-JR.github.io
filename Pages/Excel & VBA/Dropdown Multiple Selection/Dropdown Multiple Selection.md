@@ -12,4 +12,8 @@ Let's take a simple use-case. Consider you have multiple rows of data out of whi
 So, I took up this challenge to create a solution with Excel VBA. Excel VBA programming is indeed very powerful. Anything and everything is possible in it. Although it may not be the best alternative every time, it perfectly suits the current use-case.  
 
 
-I have attached a video snippet of the proposed solution. It should work in both Windows and Mac. Note I had to avoid userforms as it is incompatible in Mac. I am sharing file in the comments. Let me know if you have some interesting take or suggestions on the proposed solution.
+I have attached a video snippet of the proposed solution. It should work in both Windows and Mac. Note I had to avoid userforms as it is incompatible in Mac. I am sharing file in the comments. Let me know if you have some interesting take or suggestions on the proposed solution.  
+
+<iframe title="vimeo-player" src="https://player.vimeo.com/video/697665623?h=839b4a1ddc" width="640" height="360" frameborder="0" allowfullscreen></iframe>  
+
+Download the file : [link](DropDown_MultipleSelection_MacroSolution_EndUser_Ver_1.0.xlsm)

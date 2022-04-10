@@ -3,6 +3,7 @@ layout : single
 author_profile : true
 ---
 
+[Real Life is anyways tough. Atleast, have an easy excel life](/Pages/Excel & VBA/Excel Navigational tips/Excel Navigational tips)  
 [Range Object](/Pages/Excel & VBA/RangeObject/RangeObject.md)  
 [Shift allocation](/Pages/Excel & VBA/Shift Allocation/Shift Allocation)  
 [Dependent Comboboxes](/Pages/Excel & VBA/Dependent Comboboxes/SCDOT)  
