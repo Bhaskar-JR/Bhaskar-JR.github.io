@@ -7,15 +7,17 @@ toc_sticky : true
 # Combo Charts (Overlaying charts)  
 
 The plot and data is inspired from the below link :  
-[https://pythondata.com/visualizing-data-overlaying-charts/](https://pythondata.com/visualizing-data-overlaying-charts/)   
+[https://pythondata.com/visualizing-data-overlaying-charts/](https://pythondata.com/visualizing-data-overlaying-charts/)  
 
+![png](output_34_0.png)  
 
-The data preparation steps and comments of original link has been retained as it is very informative. However, there are below major changes with regard to creation of the visualisation :  
+The data preparation steps and comments of original link has been retained as it is very informative. However, there are below **major changes** with regard to creation of the visualisation :  
 - Locator/formatter pairs created for placement of x-axis tick labels  
 - For loop to create the bar plots iteratively  
 - Cycler object with islice from itertools to assign colors to bars  
 - Addition of legend by mix of automatic detection and proxy artists  
 
+Voila, those are some heavy sounding keywords and may seem a bit overwhelming. But hold on, they are more easier to understand in action.  
 
 I will be showcasing two versions of the plot :  
 - a [basic barebones plot](#Basic Plot) of overlaying charts without any frills  
@@ -637,8 +639,9 @@ fy15_all = sales[(sales.index >= '2014-10-01') & (sales.index < '2015-10-01')]
 We shall be using [cycle object](https://docs.python.org/3/library/itertools.html#itertools.cycle) along with [islice from itertools](https://docs.python.org/3/library/itertools.html#itertools.islice) module in Python.  
 islice allows us to always start cycling from a particular index position.
 
-https://stackoverflow.com/questions/8940737/cycle-through-list-starting-at-a-certain-element/8940984#8940984  
-https://docs.python.org/3/library/itertools.html
+Few useful links on cycle objects and iter tools :  
+- [https://stackoverflow.com/questions/8940737/cycle-through-list-starting-at-a-certain-element/8940984#8940984](https://stackoverflow.com/questions/8940737/cycle-through-list-starting-at-a-certain-element/8940984#8940984)  
+- [https://docs.python.org/3/library/itertools.html](https://docs.python.org/3/library/itertools.html)  
 
 
 ```python
@@ -652,13 +655,14 @@ color_list = islice(cycle(['orange','grey']), 0, None)
 ## Creating locator formatter pairs  
 
 We shall now create the labels corresponding to the start of the financial years in the format : 'FY 2009'  
-We will use [**tick locator/formatter pairs**](https://matplotlib.org/stable/api/ticker_api.html) for **controlling tick position and string representation**.
 
-https://matplotlib.org/stable/api/ticker_api.html?highlight=locator%20formatter
-https://quantdare.com/how-to-create-calendars-in-finance/  
-https://stackoverflow.com/questions/3898572/what-is-the-standard-python-docstring-format  
-https://stackoverflow.com/questions/14822184/is-there-a-ceiling-equivalent-of-operator-in-python
-https://dateutil.readthedocs.io/en/stable/rrule.html
+We will use [**tick locator/formatter pairs**](https://matplotlib.org/stable/api/ticker_api.html?highlight=locator%20formatter) for **controlling tick position and string representation**.  
+
+Some useful links in parsing strings to datetime are :  
+- [https://quantdare.com/how-to-create-calendars-in-finance/](https://quantdare.com/how-to-create-calendars-in-finance/)  
+- [What-is-the-standard-python-docstring-format](https://stackoverflow.com/questions/3898572/what-is-the-standard-python-docstring-format)  
+- [https://stackoverflow.com/questions/14822184/is-there-a-ceiling-equivalent-of-operator-in-python](https://stackoverflow.com/questions/14822184/is-there-a-ceiling-equivalent-of-operator-in-python)
+- [https://dateutil.readthedocs.io/en/stable/rrule.html](https://dateutil.readthedocs.io/en/stable/rrule.html)
 
 
 ```python
@@ -1097,9 +1101,9 @@ plt.show()
 
 ![png](output_34_0.png)  
 
-## Summary
+# Summary
 We have created a combo chart with monthly sales revenue plotted as line plot overalying over monthly quantity sold as bar plots. To achieve that, we have utilised number of features available in matplotlib.
 
-## Download link  
+# Download link  
 
 [Jupyter notebook](Overlaying Charts_Matplotlib.ipynb)
