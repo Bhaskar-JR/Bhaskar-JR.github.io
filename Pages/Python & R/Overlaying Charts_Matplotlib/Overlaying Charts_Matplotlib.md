@@ -4,14 +4,16 @@ author_profile : true
 toc : true
 toc_sticky : true
 ---
-# Combo Charts (Overlaying charts)  
+# Combo Charts (Overlaying charts)   
+
+[Jupyter notebook version](Overlaying Charts_Matplotlib_jupyter.html)
 
 The plot and data is inspired from the below link :  
 [https://pythondata.com/visualizing-data-overlaying-charts/](https://pythondata.com/visualizing-data-overlaying-charts/)  
 
 ![png](output_34_0.png)  
 
-The data preparation steps and comments of original link has been retained as it is very informative. However, there are below **major changes** with regard to creation of the visualisation :  
+The data preparation steps and comments of original link has been retained as it is very informative. However, there are **major changes** as tabulated below for creating the plot :  
 - Locator/formatter pairs created for placement of x-axis tick labels  
 - For loop to create the bar plots iteratively  
 - Cycler object with islice from itertools to assign colors to bars  
@@ -23,7 +25,6 @@ I will be showcasing two versions of the plot :
 - a [basic barebones plot](#Basic Plot) of overlaying charts without any frills  
 - a [Refined version](#Refined Plot) of the plot  
 
-Check [Jupyter notebook version](Overlaying Charts_Matplotlib_jupyter.html)
 
 # <a name="Basic Plot"></a>Basic Plot
 
