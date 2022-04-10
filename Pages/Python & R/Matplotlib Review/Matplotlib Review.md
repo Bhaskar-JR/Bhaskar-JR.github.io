@@ -18,6 +18,12 @@ Matplotlib is the core library for data visualization in Python. I had majorly b
 
 However, in trying to make tweaks in the plots through Seaborn and Pandas, it is inevitable to come across Matplotlib. So, thus began my journey to understand Matplotlib and the outcome is a Matplotlib Review document spanning 350+ Pages.  
 
+## Teaser of the Matplotlib Review doc  
+
+Also, checkout this video showcasing excerpts from the pdf.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/8KMiCr5YfEw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
+
 ## Diving into Matplotlib  
 
 The initial reservations I had towards the verbose code scripts in matplotlib gave away to appreciation of the inherent philosophy in the Matplotlib API. For beginners in Matplotlib, instead of straight away deep diving into the sea of code, a more "perspective redefining experience" can be gained by reading and understanding the architecture of Matplotlib API first. And then following it up with the Anatomy of a figure and the Artist tutorial.
@@ -35,12 +41,6 @@ Check out the visual index in the [pdf](Matplotlib_Review_2021_Complete.pdf) whe
 ![Visual index](/Matplotlib Charts.jpeg)  
 
 
-## Teaser of the Matplotlib Review doc  
-
-Also, checkout this video showcasing excerpts from the pdf.
-
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8KMiCr5YfEw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
 
 ## Download Links
