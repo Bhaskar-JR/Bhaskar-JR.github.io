@@ -21,7 +21,7 @@ I will be showcasing two versions of the plot :
 - a [basic barebones plot](#Basic Plot) of overlaying charts without any frills  
 - a [Refined version](#Refined Plot) of the plot  
 
-Check [Jupyter notebook version](Overlaying Charts_Matplotlib.html)
+Check [Jupyter notebook version](Overlaying Charts_Matplotlib_jupyter.html)
 
 # <a name="Basic Plot"></a>Basic Plot
 
