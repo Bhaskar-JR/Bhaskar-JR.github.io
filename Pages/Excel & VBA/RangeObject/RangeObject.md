@@ -22,7 +22,7 @@ We are broadly going to cover **Range declaration and Assignment**, **Range.Cell
 
 
 
-# Range Cells Property  
+## Range Cells Property  
 
 Range Cells   
 
@@ -30,7 +30,7 @@ Range Cells
 <iframe width="560" height="315" src="https://www.youtube.com/embed/cFdIPkdWVhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>  
 
 
-# Range Offset Method  
+## Range Offset Method  
 
 Offsetting   
 
@@ -38,10 +38,10 @@ Offsetting
 
 
 
-# Range Resize Method  
+## Range Resize Method  
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/QrpS4C-Gmds" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
-# Range Readonly properties  
+## Range Readonly properties  
 
 <iframe width="950" height="534" src="https://www.youtube.com/embed/bXx5rEnX0HU?list=PLeE_zyX_pEtnqxy3pZp6kiUwC8OKpGgS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
