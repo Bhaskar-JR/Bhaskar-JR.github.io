@@ -10,7 +10,7 @@ toc_sticky : true
 
 ## Introduction
 
-Matplotlib can be used to create plots ranging from basic to aesthetically pleasing. There is flexibiility to customise the plots in any manner of choosing. In this post, we will exploring one such usecase.
+Matplotlib can be used to create plots ranging from basic to aesthetically pleasing. There is flexibility to customise the plots in any manner of choosing. In this post, we will be exploring one such usecase.
 
 
 ## Visualization
