@@ -65,4 +65,3 @@ Check the [regression notebook](/assets/scripts/Sales_Transactions_Dataset_Weekl
 
 
 ## Flight Fare Prediction
-## LasVegas Strip Dataset
