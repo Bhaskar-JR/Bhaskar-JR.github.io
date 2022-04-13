@@ -7,7 +7,7 @@ toc_sticky : true
 
 ### A New Generalized Weighted Weibull Distribution
 
-In this post, we will plot generalized Weighted Weibull Distribution by
+In this post, we will use R to plot generalized Weighted Weibull Distribution by
 varying the parameters alpha,lambda and gamma.  
 
 For the theory, We have referred to the paper "A New Generalized Weighted Weibull Distribution" by
@@ -77,13 +77,14 @@ The formula for cdf
 for *x*, *α*, *λ* \> 0  
 
 ##### Legend Creation  
-We have used bquote and as.expression to create the legend labels.
+We have used bquote and as.expression are powerful tools for annotating figures with mathematical notation in R.  
 
 bquote(““\~ alpha == 2,lambda == 1.5\~”“)  
 as.expression(bquote(”“\~alpha == 2, gamma == 2.5, lambda == 1.5\~”“))
 
-##### expression in R :
+##### expression in R  
 
+Highly recommended links on expressions :  
 -   <https://quantpalaeo.wordpress.com/2015/04/20/expressions-in-r/>  
 -   <https://stackoverflow.com/questions/57455827/r-using-expression-in-plot-legends>
 
@@ -96,6 +97,8 @@ expression is ‘special’: it does not evaluate its arguments.
 > par_labels1  
 > eval(par_labels1)
 
+
+##### R code and plot
 ``` r
 #Cumulative Density Function
 x <- seq(0,1, length = 1000)
