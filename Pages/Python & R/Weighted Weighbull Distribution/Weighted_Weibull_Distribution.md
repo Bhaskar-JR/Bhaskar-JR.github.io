@@ -28,8 +28,8 @@ likelihood method. The effectiveness of proposed model is analyzed by
 means of a real data sets. Finally, some concluding remarks are given.
 
 #### Probability Density Function
-
-*f*(*x*) = (1+*λ*<sup>*γ*</sup>)*α**γ**x*<sup>*γ* − 1</sup>*e*<sup>−*α**x*<sup>*γ*</sup>(1+*λ*<sup>*γ*</sup>)</sup>
+The formula for pdf  
+>*f*(*x*) = (1+*λ*<sup>*γ*</sup>)*α**γ**x*<sup>*γ* − 1</sup>*e*<sup>−*α**x*<sup>*γ*</sup>(1+*λ*<sup>*γ*</sup>)</sup>
 
 ``` r
 # Probability Density Function
@@ -125,4 +125,6 @@ legend("topright",lwd=1, cex = 1, col = c("blue", "green","red"),
 abline(h = 1, col = "lightsalmon", lty = 2)
 ```
 
-![](Weighted_Weibull_Distribution_files/figure-markdown_github/unnamed-chunk-3-1.png)
+![](Weighted_Weibull_Distribution_files/figure-markdown_github/unnamed-chunk-3-1.png)  
+
+** Note : This file was originally in Rmarkdown format and converted into rgular markdown. Know more : <https://bookdown.org/yihui/rmarkdown/markdown-document.html>
