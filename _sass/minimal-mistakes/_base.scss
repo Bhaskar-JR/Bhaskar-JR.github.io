@@ -127,13 +127,13 @@ blockquote {
 /*https://www.xul.fr/en/css/blockquote.php*/
 /*https://forum.obsidian.md/t/blockquotes-with-different-border-background-colors/11429*/
 
-blockquote.red { border-color:#f00; background-color:#f001; }
-blockquote.green { border-color:#0f0; background-color:#0f01; }
-blockquote.blue { border-color:#00f; background-color:#00f1; }
-blockquote.magenta { border-color:#f0f; background-color:#f0f1; }
-blockquote.cyan { border-color:#0ff; background-color:#0ff1; }
-blockquote.yellow { border-color:#ff0; background-color:#ff01; }
-blockquote.pink { border-color:#f9f; background-color:#f9f1; }
+blockquote.red { border-color:#f00; background-color:#f001; font-size: 0.9em;}
+blockquote.green { border-color:#0f0; background-color:#0f01; font-size: 0.9em; padding-top: 0.25em;font-style: normal;}
+blockquote.blue { border-color:#00f; background-color:#00f1; font-size: 0.9em;}
+blockquote.magenta { border-color:#f0f; background-color:#f0f1;font-size: 0.9em; }
+blockquote.cyan { border-color:#0ff; background-color:#0ff1;font-size: 0.9em; }
+blockquote.yellow { border-color:#ff0; background-color:#ff01;font-size: 0.9em; }
+blockquote.pink { border-color:#f9f; background-color:#f9f1;font-size: 0.9em; }
 
 
 /* links */
