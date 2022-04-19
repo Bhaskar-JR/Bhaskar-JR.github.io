@@ -1,6 +1,7 @@
 ---
 layout : single
 author_profile : true
+classes : wide
 
 ---
 # Posts
@@ -17,4 +18,4 @@ author_profile : true
 
 <img src="/Pages/Python & R/Beautiful Plots/beautiful plot_0.png" alt="drawing" width="250"/>  
 
-[Weighted weighbull distributions](/Pages/Python & R/Weighted Weighbull Distribution/Weighted_Weibull_Distribution)
+[Weighted weighbull distributions](/Pages/Python & R/Weighted Weighbull Distribution/Weighted_Weibull_Distribution)  
