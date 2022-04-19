@@ -57,7 +57,21 @@ The [grammar for the contents of the string](https://docs.python.org/3/reference
 
 The [grammar for a replacement field](https://docs.python.org/3/library/string.html#format-string-syntax) is as follows:
 
-![replacement field grammar](Grammar for replacement field.png)
+>-![replacement field grammar](Grammar for replacement field.png)  
+
+<p style="text-align:justify: font-size: 18px;">Blah, blah, blah</p>
+<blockquote class = "green">
+<div><pre><strong id="grammar-token-format-string-replacement_field"><span id="grammar-token-replacement-field"></span>replacement_field</strong> ::=  "{" [<a class="reference internal" href="#grammar-token-format-string-field_name"><code class="xref docutils literal notranslate"><span class="pre">field_name</span></code></a>] ["!" <a class="reference internal" href="#grammar-token-format-string-conversion"><code class="xref docutils literal notranslate"><span class="pre">conversion</span></code></a>] [":" <a class="reference internal" href="#grammar-token-format-string-format_spec"><code class="xref docutils literal notranslate"><span class="pre">format_spec</span></code></a>] "}"
+<strong id="grammar-token-format-string-field_name"><span id="grammar-token-field-name"></span>field_name       </strong> ::=  arg_name ("." <a class="reference internal" href="#grammar-token-format-string-attribute_name"><code class="xref docutils literal notranslate"><span class="pre">attribute_name</span></code></a> | "[" <a class="reference internal" href="#grammar-token-format-string-element_index"><code class="xref docutils literal notranslate"><span class="pre">element_index</span></code></a> "]")*
+<strong id="grammar-token-format-string-arg_name"><span id="grammar-token-arg-name"></span>arg_name         </strong> ::=  [<code class="xref docutils literal notranslate"><span class="pre">identifier</span></code> | <code class="xref docutils literal notranslate"><span class="pre">digit</span></code>+]
+<strong id="grammar-token-format-string-attribute_name"><span id="grammar-token-attribute-name"></span>attribute_name   </strong> ::=  <code class="xref docutils literal notranslate"><span class="pre">identifier</span></code>
+<strong id="grammar-token-format-string-element_index"><span id="grammar-token-element-index"></span>element_index    </strong> ::=  <code class="xref docutils literal notranslate"><span class="pre">digit</span></code>+ | <a class="reference internal" href="#grammar-token-format-string-index_string"><code class="xref docutils literal notranslate"><span class="pre">index_string</span></code></a>
+<strong id="grammar-token-format-string-index_string"><span id="grammar-token-index-string"></span>index_string     </strong> ::=  &lt;any source character except "]"&gt; +
+<strong id="grammar-token-format-string-conversion"><span id="grammar-token-conversion"></span>conversion       </strong> ::=  "r" | "s" | "a"
+<strong id="grammar-token-format-string-format_spec"><span id="grammar-token-format-spec"></span>format_spec      </strong> ::=  &lt;described in the next section&gt;
+</pre>
+</div></blockquote>
+
 
 
 ## Format Specification for mini language   
