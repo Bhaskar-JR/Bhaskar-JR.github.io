@@ -50,16 +50,33 @@ print(list(dir('abcdef')))
 
 The [grammar for the contents of the string](https://docs.python.org/3/reference/lexical_analysis.html#f-strings) is :  
 
-![grammar for content of string](Grammar for contents of string.png)
+<!---![grammar for content of string](Grammar for contents of string.png)  
+-->
+
+<blockquote class = "green">
+<div>
+<pre><strong id="grammar-token-python-grammar-f_string"><span id="grammar-token-f-string"></span>f_string         </strong> ::=  (<a class="reference internal" href="#grammar-token-python-grammar-literal_char"><code class="xref docutils literal notranslate"><span class="pre">literal_char</span></code></a> | "{{" | "}}" | <a class="reference internal" href="#grammar-token-python-grammar-replacement_field"><code class="xref docutils literal notranslate"><span class="pre">replacement_field</span></code></a>)*
+<strong id="grammar-token-python-grammar-replacement_field"><span id="grammar-token-replacement-field"></span>replacement_field</strong> ::=  "{" <a class="reference internal" href="#grammar-token-python-grammar-f_expression"><code class="xref docutils literal notranslate"><span class="pre">f_expression</span></code></a> ["="] ["!" <a class="reference internal" href="#grammar-token-python-grammar-conversion"><code class="xref docutils literal notranslate"><span class="pre">conversion</span></code></a>] [":" <a class="reference internal" href="#grammar-token-python-grammar-format_spec"><code class="xref docutils literal notranslate"><span class="pre">format_spec</span></code></a>] "}"
+<strong id="grammar-token-python-grammar-f_expression"><span id="grammar-token-f-expression"></span>f_expression     </strong> ::=  (<a class="reference internal" href="https://docs.python.org/3/reference/expressions.html#grammar-token-python-grammar-conditional_expression"><code class="xref docutils literal notranslate"><span class="pre">conditional_expression</span></code></a> | "*" <a class="reference internal" href="https://docs.python.org/3/reference/expressions.html#grammar-token-python-grammar-or_expr"><code class="xref docutils literal notranslate"><span class="pre">or_expr</span></code></a>)
+                         ("," <a class="reference internal" href="https://docs.python.org/3/reference/expressions.html#grammar-token-python-grammar-conditional_expression"><code class="xref docutils literal notranslate"><span class="pre">conditional_expression</span></code></a> | "," "*" <a class="reference internal" href="https://docs.python.org/3/reference/expressions.html#grammar-token-python-grammar-conditional_expression"><code class="xref docutils literal notranslate"><span class="pre">or_expr</span></code></a>)* [","]
+                       | <a class="reference internal" href="https://docs.python.org/3/reference/expressions.html#grammar-token-python-grammar-yield_expression"><code class="xref docutils literal notranslate"><span class="pre">yield_expression</span></code></a>
+<strong id="grammar-token-python-grammar-conversion"><span id="grammar-token-conversion"></span>conversion       </strong> ::=  "s" | "r" | "a"
+<strong id="grammar-token-python-grammar-format_spec"><span id="grammar-token-format-spec"></span>format_spec      </strong> ::=  (<a class="reference internal" href="#grammar-token-python-grammar-literal_char"><code class="xref docutils literal notranslate"><span class="pre">literal_char</span></code></a> | NULL | <a class="reference internal" href="#grammar-token-python-grammar-replacement_field"><code class="xref docutils literal notranslate"><span class="pre">replacement_field</span></code></a>)*
+<strong id="grammar-token-python-grammar-literal_char"><span id="grammar-token-literal-char"></span>literal_char     </strong> ::=  &lt;any code point except "{", "}" or NULL&gt;
+</pre>
+</div></blockquote>
+
 
 
 ## Replacement field  
 
 The [grammar for a replacement field](https://docs.python.org/3/library/string.html#format-string-syntax) is as follows:
 
->-![replacement field grammar](Grammar for replacement field.png)  
-
+<!---![replacement field grammar](Grammar for replacement field.png)  
 <p style="text-align:justify: font-size: 18px;">Blah, blah, blah</p>
+-->  
+
+
 <blockquote class = "green">
 <div><pre><strong id="grammar-token-format-string-replacement_field"><span id="grammar-token-replacement-field"></span>replacement_field</strong> ::=  "{" [<a class="reference internal" href="#grammar-token-format-string-field_name"><code class="xref docutils literal notranslate"><span class="pre">field_name</span></code></a>] ["!" <a class="reference internal" href="#grammar-token-format-string-conversion"><code class="xref docutils literal notranslate"><span class="pre">conversion</span></code></a>] [":" <a class="reference internal" href="#grammar-token-format-string-format_spec"><code class="xref docutils literal notranslate"><span class="pre">format_spec</span></code></a>] "}"
 <strong id="grammar-token-format-string-field_name"><span id="grammar-token-field-name"></span>field_name       </strong> ::=  arg_name ("." <a class="reference internal" href="#grammar-token-format-string-attribute_name"><code class="xref docutils literal notranslate"><span class="pre">attribute_name</span></code></a> | "[" <a class="reference internal" href="#grammar-token-format-string-element_index"><code class="xref docutils literal notranslate"><span class="pre">element_index</span></code></a> "]")*
@@ -78,8 +95,21 @@ The [grammar for a replacement field](https://docs.python.org/3/library/string.h
 The general form of a [standard format specifier](https://docs.python.org/3/library/string.html#format-specification-mini-language) is:  
 
 
-![format specifier](Format specifier mini language.png)  
+<blockquote class = "green">
+<div><pre><strong id="grammar-token-format-spec-format_spec">format_spec    </strong> ::=  [[<a class="reference internal" href="#grammar-token-format-spec-fill"><code class="xref docutils literal notranslate"><span class="pre">fill</span></code></a>]<a class="reference internal" href="#grammar-token-format-spec-align"><code class="xref docutils literal notranslate"><span class="pre">align</span></code></a>][<a class="reference internal" href="#grammar-token-format-spec-sign"><code class="xref docutils literal notranslate"><span class="pre">sign</span></code></a>][#][0][<a class="reference internal" href="#grammar-token-format-spec-width"><code class="xref docutils literal notranslate"><span class="pre">width</span></code></a>][<a class="reference internal" href="#grammar-token-format-spec-grouping_option"><code class="xref docutils literal notranslate"><span class="pre">grouping_option</span></code></a>][.<a class="reference internal" href="#grammar-token-format-spec-precision"><code class="xref docutils literal notranslate"><span class="pre">precision</span></code></a>][<a class="reference internal" href="#grammar-token-format-spec-type"><code class="xref docutils literal notranslate"><span class="pre">type</span></code></a>]
+<strong id="grammar-token-format-spec-fill"><span id="grammar-token-fill"></span>fill           </strong> ::=  &lt;any character&gt;
+<strong id="grammar-token-format-spec-align"><span id="grammar-token-align"></span>align          </strong> ::=  "&lt;" | "&gt;" | "=" | "^"
+<strong id="grammar-token-format-spec-sign"><span id="grammar-token-sign"></span>sign           </strong> ::=  "+" | "-" | " "
+<strong id="grammar-token-format-spec-width"><span id="grammar-token-width"></span>width          </strong> ::=  <code class="xref docutils literal notranslate"><span class="pre">digit</span></code>+
+<strong id="grammar-token-format-spec-grouping_option"><span id="grammar-token-grouping-option"></span>grouping_option</strong> ::=  "_" | ","
+<strong id="grammar-token-format-spec-precision"><span id="grammar-token-precision"></span>precision      </strong> ::=  <code class="xref docutils literal notranslate"><span class="pre">digit</span></code>+
+<strong id="grammar-token-format-spec-type"><span id="grammar-token-type"></span>type           </strong> ::=  "b" | "c" | "d" | "e" | "E" | "f" | "F" | "g" | "G" | "n" | "o" | "s" | "x" | "X" | "%"
+</pre>
+</div></blockquote>
 
+<!---
+![format specifier](Format specifier mini language.png)  
+-->
 
 
 
