@@ -10,6 +10,9 @@ comments: true
 
 ## Introduction  
 
+[jupyternote file](Python String Formatting.ipynb)  
+[jupyternote html](Python String Formatting.html)  
+
 In this post, we will explore string objects and the formatting syntax. There will be ample use of practical examples. Useful links will be shared.  
 
 The topic progression shall be :  
@@ -22,7 +25,7 @@ how individual values are presented.
 **Usecase**   
 
 
-This post can be referred for string formatting in python.
+This post can be referred for string formatting in python.  
 
 ## Python String methods  
 - Formatting :  
