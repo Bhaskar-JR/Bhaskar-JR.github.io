@@ -18,4 +18,8 @@ classes : wide
 
 <img src="/Pages/Python & R/Beautiful Plots/beautiful plot_0.png" alt="drawing" width="250"/>  
 
+[Custom function in Python for Univariate categorical overview](/Pages/Python & R/Custom function for Univariate categorical overview/Custom function for Univariate categorical overview)  
+
+<img src="/Pages/Python & R/Custom function for Univariate categorical overview/output_49_1.png" alt="drawing" width="430"/>
+
 [Weighted weighbull distributions](/Pages/Python & R/Weighted Weighbull Distribution/Weighted_Weibull_Distribution)  
