@@ -10,8 +10,8 @@ comments: true
 
 # Introduction  
 
-[jupyternote file](Custom function for EDA categorical overview.ipynb)  
-[jupyternote html](Custom function for EDA categorical overview.html)
+[jupyter notebook file](Custom function for EDA categorical overview.ipynb)  
+[jupyter notebook html](Custom function for EDA categorical overview.html)
 
 Quite often we start out with a dataframe and  want a quick overview of categorical features. We ideally want to check the number of categories/levels of each categorical attribute. We want to check the count/proportion for each of the discrete labels/categories of a categorical feature.  
 
@@ -163,7 +163,7 @@ def UVA_category(data_frame, var_group = [], **kargs):
   #print(colcount)
   rowcount = size//colcount+(size%colcount != 0)*1
 
-  plt.figure(figsize = (colwidth*colcount,rowheight*rowcount), dpi = 150)
+  fig = plt.figure(figsize = (colwidth*colcount,rowheight*rowcount), dpi = 150)
 
 
   # Converting the filtered columns as categorical
@@ -271,7 +271,8 @@ def UVA_category(data_frame, var_group = [], **kargs):
     if ax.patches[1].get_height() >= barwidth_threshold*(ax.get_ylim()[1]-ax.get_ylim()[0]):
         Change_barWidth(ax.patches, change_ratio= change_ratio, orient = 'h')
 
-    plt.gcf().tight_layout()
+  fig.tight_layout()
+  return fig
 ```
 
 # Implementing the custom function for overview of categorical features
