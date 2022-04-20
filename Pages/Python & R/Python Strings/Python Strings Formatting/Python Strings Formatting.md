@@ -10,8 +10,8 @@ comments: true
 
 ## Introduction  
 
-[jupyternote file](Python String Formatting.ipynb)  
-[jupyternote html](Python String Formatting.html)  
+[jupyter notebook file](Python String Formatting.ipynb)  
+[jupyter notebook html](Python String Formatting.html)  
 
 In this post, we will explore string objects and the formatting syntax. There will be ample use of practical examples. Useful links will be shared.  
 
