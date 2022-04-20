@@ -15,9 +15,8 @@ comments: true
 
 Quite often we start out with a dataframe and  want a quick overview of categorical features. We ideally want to check the number of categories/levels of each categorical attribute. We want to check the count/proportion for each of the discrete labels/categories of a categorical feature.  
 
-
 This is such a common usecase that I have created a [**custom module**](UVA_category.py) in Python.  
-The output will be barplots of all the categories and adjacent axes containing the count/proportion of the categorical levels. This will become amply clear on seeing the output.  
+The output will be barplots of all the categories and annotating the axes with count/proportion of the categorical levels. This will become amply clear on seeing the output.  
 
 While calling the function, I have kept the provision to pass a number of keyword arguments
 that would allow immense flexibility. This would also take into account multiple scenarios.  
@@ -28,6 +27,7 @@ The keyword arguments fall under following categories :
 - font family  
 - font size parameter for xtick-labels, y-tick labels, axis labels
 - Maximum Number of categorical levels per attribute to display  
+- Configuring the text annotation of categorical levelwise count/proportion
 
 The function requires atleast a dataframe to retun a output.
 
@@ -1548,4 +1548,9 @@ UVA_category(df3, list2,normalize = False,
 
 
 
-![png](output_49_1.png)
+![png](output_49_1.png)  
+
+# Useful links  
+- [Set opacity of background colour in matplotlib](https://stackoverflow.com/questions/4581504/how-to-set-opacity-of-background-colour-of-graph-with-matplotlib)  
+- [PEP style guide for python code](https://peps.python.org/pep-0008/)  
+- [Python for marketing research and analytics Notebooks](https://github.com/python-marketing-research/python-marketing-research-1ed)
