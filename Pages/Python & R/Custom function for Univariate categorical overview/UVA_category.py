@@ -116,7 +116,7 @@ def UVA_category(data_frame, var_group = [], **kargs):
   #print(colcount)
   rowcount = size//colcount+(size%colcount != 0)*1
 
-  plt.figure(figsize = (colwidth*colcount,rowheight*rowcount), dpi = 150)
+  fig = plt.figure(figsize = (colwidth*colcount,rowheight*rowcount), dpi = 150)
 
 
   # Converting the filtered columns as categorical
@@ -222,4 +222,5 @@ def UVA_category(data_frame, var_group = [], **kargs):
     if ax.patches[1].get_height() >= barwidth_threshold*(ax.get_ylim()[1]-ax.get_ylim()[0]):
         Change_barWidth(ax.patches, change_ratio= change_ratio, orient = 'h')
 
-    plt.gcf().tight_layout()
+  fig.tight_layout()
+  return fig
