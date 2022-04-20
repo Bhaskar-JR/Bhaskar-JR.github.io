@@ -20,6 +20,6 @@ classes : wide
 
 [Custom function in Python for Univariate categorical overview](/Pages/Python & R/Custom function for Univariate categorical overview/Custom function for Univariate categorical overview)  
 
-<img src="/Pages/Python & R/Custom function for Univariate categorical overview/output_49_1.png" alt="drawing" width="430"/>
+<img src="/Pages/Python & R/Custom function for Univariate categorical overview/online_shopper_purchasing_intention_dataset.png" alt="drawing" width="430"/>
 
 [Weighted weighbull distributions](/Pages/Python & R/Weighted Weighbull Distribution/Weighted_Weibull_Distribution)  
