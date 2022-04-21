@@ -9,6 +9,7 @@ comments: true
 ---
 
 This post is currently under construction.  
+Check out [html version](Statistics-Using-R_Markdown.html).  
 <!---
 https://stackoverflow.com/questions/32530722/how-can-i-set-the-font-family-font-size-inside-of-a-div
 -->
