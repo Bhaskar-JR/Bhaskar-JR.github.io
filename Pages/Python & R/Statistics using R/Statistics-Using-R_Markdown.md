@@ -2941,7 +2941,7 @@ summary(aov(income ~ sports, data = Income1))
     ## sports       5   3932   786.4   11.95 7.04e-06 ***
     ## Residuals   24   1580    65.8                     
     ## ---
-    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+    ## Signif. codes:  0 '\*\*\*' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 p value is very small. Hence, it is statistically significant.  
 We shall reject the null hypothesis.
@@ -3057,8 +3057,8 @@ Three uses of Chi Square Test
 
 \#<https://stattrek.com/chi-square-test/goodness-of-fit.aspx>
 
-#### Importance of syntatical validity of column names with work with dplyr
-verbs [linked phrase](https://github.com/tidyverse/dplyr/issues/2243)
+#### Importance of syntatical validity of column names with work with dplyr verbs  
+[linked phrase](https://github.com/tidyverse/dplyr/issues/2243)
 
 64.594-0.591\*.924 (s/n^(0.5)) n^(0.5)
 
@@ -3069,7 +3069,6 @@ verbs [linked phrase](https://github.com/tidyverse/dplyr/issues/2243)
 2/sqrt(61)
 
 Latex References :  
-<https://www.math.mcgill.ca/yyang/regression/RMarkdown/example.html>  
-<http://www.malinc.se/math/latex/basiccodeen.php>
-
-<https://dereksonderegger.github.io/570L/3-statistical-tables.html>
+- [An Example R Markdown](https://www.math.mcgill.ca/yyang/regression/RMarkdown/example.html)
+- [Latex on the web](http://www.malinc.se/math/latex/basiccodeen.php)
+- [Statistical Tables](https://dereksonderegger.github.io/570L/3-statistical-tables.html)
