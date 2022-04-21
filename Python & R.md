@@ -23,4 +23,5 @@ classes : wide
 <img src="/Pages/Python & R/Custom function for Univariate categorical overview/online_shopper_purchasing_intention_dataset.png" alt="drawing" width="430"/>
 
 [Weighted weighbull distributions using R](/Pages/Python & R/Weighted Weighbull Distribution/Weighted_Weibull_Distribution)  
-[Statistics using R](/Pages/Python & R/Statistics using R/Statistics-Using-R_Markdown)
+[Statistics using R](/Pages/Python & R/Statistics using R/Statistics-Using-R_Markdown)  
+[Lattice package in R for multivariate Visualization](/Pages/Python & R/Lattice/Lattice.md)
