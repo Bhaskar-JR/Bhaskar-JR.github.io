@@ -4,8 +4,7 @@ author_profile : true
 classes : wide
 
 ---
-# Posts
-
+# Posts  
 [Python Strings Formatting](/Pages/Python & R/Python Strings/Python Strings Formatting/Python Strings Formatting)  
 [Convert strings to multiline strings](/Pages/Python & R/Python Strings/Convert strings to multiline strings/Convert string to multiline strings)  
 [Matplotlib Review Document](/Pages/Python & R/Matplotlib Review/Matplotlib Review)  
@@ -22,6 +21,9 @@ classes : wide
 
 <img src="/Pages/Python & R/Custom function for Univariate categorical overview/online_shopper_purchasing_intention_dataset.png" alt="drawing" width="430"/>
 
-[Weighted weighbull distributions using R](/Pages/Python & R/Weighted Weighbull Distribution/Weighted_Weibull_Distribution)  
-[Statistics using R](/Pages/Python & R/Statistics using R/Statistics-Using-R_Markdown)  
+[Weighted weighbull distributions using R](/Pages/Python & R/Weighted Weighbull Distribution/Weighted_Weibull_Distribution.md)  
+[Statistics using R](/Pages/Python & R/Statistics using R/Statistics-Using-R_Markdown.md)  
+
+<img src="/Pages/Python & R/Statistics using R/Statistics-Using-R_Markdown_files/figure-markdown_github/CLT.png" alt="drawing" width="500"/>
+
 [Lattice package in R for multivariate Visualization](/Pages/Python & R/Lattice/Lattice.md)
