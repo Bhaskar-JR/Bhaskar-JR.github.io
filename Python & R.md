@@ -26,4 +26,6 @@ classes : wide
 
 <img src="/Pages/Python & R/Statistics using R/Statistics-Using-R_Markdown_files/figure-markdown_github/CLT.png" alt="drawing" width="500"/>
 
-[Lattice package in R for multivariate Visualization](/Pages/Python & R/Lattice/Lattice.md)
+[Lattice package in R for multivariate Visualization](/Pages/Python & R/Lattice/Lattice.md)  
+
+[Numeric Univariate and Multivariate analysis in R](/Pages/Python & R/Numeric Univariate and Multivariate Analysis in R/Numeric-Univariate-Analysis.md)  
