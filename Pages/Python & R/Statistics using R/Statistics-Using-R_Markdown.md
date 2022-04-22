@@ -182,7 +182,11 @@ We will consider an example to illustrate the Central Limit Theorem.
 Suppose we roll a twice dice 10000 times and plot a histogram of the
 average score of the five, ten and twenty rolls.
 
-``` r
+``` r  
+png(file="/Users/bhaskarroy/BHASKAR FILES/BHASKAR CAREER/Data Science/Projects/" \
+"Portfolio/minimal-mistakes-portfolio/Pages/Python & R/Statistics using R/CLT.png",
+width = 8, height = 4,units = 'in', res = 800, bg = 'transparent')  
+
 RollTwo <- c()
 RollFive <- c()
 RollTen <- c()
@@ -192,8 +196,11 @@ for (i in 1:10000){
   RollFive[i] = mean(sample(1:6, 5, replace = TRUE))
   RollTen[i] = mean(sample(1:6, 10, replace = TRUE))
   RollTwenty[i] = mean(sample(1:6, 20, replace = TRUE))
-}
+}  
+
 par(mfrow=c(1,4))
+par(mar = rep(2, 4))
+
 hist(RollTwo, col ="green",main="Rolls = 2",
                      prob=TRUE, ylim=c(0,1), xlab="Outcome")
 curve(dnorm(x, mean(RollTwo), sd(RollTwo)), col="blue",
@@ -209,10 +216,19 @@ curve(dnorm(x, mean(RollTen), sd(RollTen)), col="blue",
 hist(RollTwenty, col ="orange",main="Rolls = 20",
                      prob=TRUE, ylim=c(0,1), xlab="Outcome")
 curve(dnorm(x, mean(RollTwenty), sd(RollTwenty)), col="blue",
-                     lwd=2, add=TRUE)
+                     lwd=2, add=TRUE)  
+dev.off()
 ```
 
-![](Statistics-Using-R_Markdown_files/figure-markdown_github/unnamed-chunk-8-1.png)
+![](Statistics-Using-R_Markdown_files/figure-markdown_github/unnamed-chunk-8-1.png)  
+
+<blockquote>
+Useful Links  
+- [tips for great graphics](https://www.r-bloggers.com/2018/05/tips-for-great-graphics/)  
+- [Arranging plots with parmfrow and layout](https://bookdown.org/ndphillips/YaRrr/arranging-plots-with-parmfrow-and-layout.html)
+- [pdf, png and dev.off() for explorting R graphs](http://rfunction.com/archives/812)
+</blockquote>  
+
 
 ## Using rnorm for creating random probability distribution
 
@@ -318,7 +334,7 @@ Statistics in R}
 Mean of Binomial Probability Distribution = np  
 Variance of BPD = npq
 
-#Applied Statistics with R  
+**Applied Statistics with R**  
 Two parameters for Binomial distribution :  
 – p = probability of success in each trial  
 – n = no. of fixed trials
@@ -329,7 +345,6 @@ distribution
 ``` r
 rbinom(10, 1, 0.5)
 ```
-
     ##  [1] 0 0 0 1 1 0 1 1 1 0
 
 ``` r
@@ -3026,7 +3041,7 @@ summary(IIFluids.test)
     ## company      2 113646   56823   5.808 0.0136 *
     ## Residuals   15 146754    9784                 
     ## ---
-    ## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+    ## Signif. codes:  0 '\*\*\*' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 
 Decision : Reject the null hypothesis
 
