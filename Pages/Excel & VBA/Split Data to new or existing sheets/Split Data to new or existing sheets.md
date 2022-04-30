@@ -16,10 +16,13 @@ This is relevant for marketing managers, account managers, budget control, reven
 In this particular file, client was maintaining a sheet of **budget obligated, allocated and committed** for multiple accounts (**CI**) for different activities on a monthly basis. The source file would be updated every month for all the accounts.  
 
 Using the data from the source file, Client would maintain a separate worksheet for each of the accounts.  
-Let's deepdive into the account specific worksheet. The different activities under which budget was obligated, allocated and committed would be listed. There would additonally be a total summary for every month. Further, there would be plot of the budget obligated, allocated and committed on a monthly basis.
+Let's deepdive into the account specific worksheet. The different activities under which budget was obligated, allocated and committed would be listed. There would additonally be a total summary for every month. Further, there would be plot of the budget obligated, allocated and committed on a monthly basis.  
+
+> *The Client wanted **automation** of this entire sequence of tasks on updation of the source sheet.*
 
 
 ## Input File  
+Source File [link](SourceFile.xlsx)
 ![Source](SourceFile.png)
 
 ## Desired output
