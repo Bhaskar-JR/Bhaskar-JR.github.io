@@ -128,10 +128,14 @@ blockquote {
 /*https://forum.obsidian.md/t/blockquotes-with-different-border-background-colors/11429*/
 
 blockquote.red { border-color:#f00; background-color:#f001; font-size: 0.9em;}
-blockquote.green { border-color:#0f0; background-color:#0f01;
+blockquote.green { border-color:#94C973; background-color:#0f01;
                    font-size: 0.9em; padding-top: 0.25em;
                    font-style: normal; font-family : Verdana,sans-serif; }
-blockquote.blue { border-color:#00f; background-color:#00f1; font-size: 0.9em;}
+blockquote.blue { border-color:#8FDDE7; background-color:#EAFBFF;
+                  font-size: 0.9em; padding-top: 0.25em;
+                  font-style: normal; font-family : Verdana,sans-serif; }
+/*#0f0 for green color; #00f for blue color; #00f1 for blue background color*/
+/*https://www.canva.com/colors/color-palettes/green-blaze/*/
 blockquote.magenta { border-color:#f0f; background-color:#f0f1;font-size: 0.9em; }
 blockquote.cyan { border-color:#0ff; background-color:#0ff1;font-size: 0.9em; }
 blockquote.yellow { border-color:#ff0; background-color:#ff01;font-size: 0.9em; }
