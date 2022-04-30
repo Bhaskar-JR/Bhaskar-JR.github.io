@@ -10,4 +10,5 @@ author_profile : true
 [Dropdown Multiple Selection](/Pages/Excel & VBA/Dropdown Multiple Selection/Dropdown Multiple Selection)  
 [Employee Data Extraction from JSON file](/Pages/Excel & VBA/Data Extraction from JSON files/Data Extraction from JSON files)  
 [Convert Long to Wide](/Pages/Excel & VBA/Convert Long to Wide/Convert Long to Wide)  
-[Machinewise running cycle data](/Pages/Excel & VBA/Machinewise running cycle data/Machinewise running cycle data)
+[Machinewise running cycle data](/Pages/Excel & VBA/Machinewise running cycle data/Machinewise running cycle data)  
+[Split Data to new or existing sheets](/Pages/Excel & VBA/Split Data to new or existing sheets/Split Data to new or existing sheets)
