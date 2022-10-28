@@ -16,8 +16,8 @@ Day 7 - Visit to Napier Museum, Natural history Museum and Zoo in the day follow
 
 ### Kathakali  
 
-![Narakasuravadham Kathakali](Media/Day 2/IMG_1429.jpg)  
+![Narakasuravadham Kathakali]("Media/Day 2/IMG_1429.jpg")  
 
 ### Image with Kalaripayattu Practitioners
 
-![Kalaripayattu](Media/Day 2/IMG_1472.jpg)  
+![Kalaripayattu]("Media/Day 2/IMG_1472.jpg")  
