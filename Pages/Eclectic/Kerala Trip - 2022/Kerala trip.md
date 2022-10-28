@@ -16,7 +16,7 @@ Day 7 - Visit to Napier Museum, Natural history Museum and Zoo in the day follow
 
 ### Kathakali  
 
-![Narakasuravadham Kathakali]("Media/Day 2/IMG_1429.jpg")  
+![Narakasuravadham Kathakali]("Pages/Eclectic/Kerala Trip - 2022/Media/Day 2/IMG_1429.jpg")  
 
 ### Image with Kalaripayattu Practitioners
 
