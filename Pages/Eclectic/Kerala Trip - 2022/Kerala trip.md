@@ -14,4 +14,11 @@ Day 7 - Visit to Napier Museum, Natural history Museum and Zoo in the day follow
 
 
 
+# Kathakali  
+
+![Narakasuravadham Kathakali](/Media/Day 2/IMG_1429.HEIC)  
+
+
+
+
 <iframe title="vimeo-player" src="https://player.vimeo.com/video/697704627?h=454e0015cd" width="640" height="360" frameborder="0" allowfullscreen></iframe>
