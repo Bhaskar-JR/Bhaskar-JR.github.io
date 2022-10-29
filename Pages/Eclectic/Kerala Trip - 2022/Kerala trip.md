@@ -22,6 +22,8 @@ Day 7 - Visit to Napier Museum, Natural history Museum and Zoo in the day follow
 
 ![Kalaripayattu](Media/Day 2/IMG_1472.jpg)  
 
+### Stage for Performing Arts  
+![Mandapam](Media/Day 2/IMG_1450.jpg)
 
 ### Fort Cochin  
 ![Fort Cochin History](Media/Day 4/IMG_1806.jpg)  
@@ -30,3 +32,6 @@ Day 7 - Visit to Napier Museum, Natural history Museum and Zoo in the day follow
 
 ### Jew Market  
 ![Pardesi Synagogue Lane](Media/Day 4/IMG_2126.jpg)
+
+### Backwaters in Poovar Island  
+![Backwaters](Media/Day 5/IMG_2411.jpg)
