@@ -4,7 +4,7 @@
 ---
 
 
-[Kerala Trip - 2022](/Pages/Eclectic/Kerala Trip - 2022/Kerala trip.md)
+[Kerala Trip - 2022](/Pages/Eclectic/Kerala Trip - 2022/Kerala trip.md)  
 [Evening in Himalayas](/Pages/Eclectic/Evening in Himalayas/Evening in Himalayas)  
 [Few more snaps from Himalayas](/Pages/Eclectic/Few more Snaps from Himalayas/Few more Snaps from Himalayas)  
 [Sandhan Valley](/Pages/Eclectic/Sandhan Valley/Sandhan Valley)  
