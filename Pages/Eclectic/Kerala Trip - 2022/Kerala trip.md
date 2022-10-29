@@ -21,3 +21,12 @@ Day 7 - Visit to Napier Museum, Natural history Museum and Zoo in the day follow
 ### Image with Kalaripayattu Practitioners
 
 ![Kalaripayattu](Media/Day 2/IMG_1472.jpg)  
+
+
+### Fort Cochin  
+![Fort Cochin History](Media/Day 4/IMG_1806.jpg)  
+
+![Fort Cochin History Invasion](/Media/Day 4/IMG_1938.jpg)  
+
+### Jew Market  
+![Pardesi Synagogue Lane](Media/Day 4/IMG_2126.jpg)
