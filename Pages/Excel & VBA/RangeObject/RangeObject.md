@@ -19,8 +19,8 @@ We are broadly going to cover **Range declaration and Assignment**, **Range.Cell
 
 
 Download File :  
-[link](Range_VBA_Basics.pdf)  
-[link](Range_VBA_Basics.bas)  
+[Range Property and Methods](Range_VBA_Basics.pdf)  
+[VBA procedure file to be added to xlsm in Developer mode](Range_Basics.bas)  
 
 
 
