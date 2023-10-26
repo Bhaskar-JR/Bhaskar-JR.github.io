@@ -31,7 +31,7 @@ Check [classic jupyter version](/Pages/ML Projects/Credit Screening.html)
 
 ## Sales Transaction Weekly of 800 products (UCI)
 
-This dataset has been downloaded from UC Irvine Machine Learning Repository. [Link1](https://archive.ics.uci.edu/ml/machine-learning-databases/00396/) [Link2](https://archive.ics.uci.edu/ml/datasets/Sales_Transactions_Dataset_Weekly)  
+This dataset has been downloaded from UC Irvine Machine Learning Repository. [Link](https://archive.ics.uci.edu/ml/datasets/Sales_Transactions_Dataset_Weekly)  
 
 We have the sales quantity of 811 products over a period of 52 weeks.  
 The available information can be used for two kinds of problems.
@@ -53,10 +53,10 @@ The target variable/label is car acceptability and has four categories : unaccep
 
 
 The input attributes fall under two broad categories - Price and Technical Characteristics.  
-Under Price, the attributes are buying price and maintenance price.  
-Under Technical characteristics, the attributes are doors, persons, size of luggage boot and safety.
+- Under Price, the attributes are buying price and maintenance price.  
+- Under Technical characteristics, the attributes are doors, persons, size of luggage boot and safety.
 
-We have identified : this is an imbalanced dataset with skewed class (output category/label) proportions.
+We have identified : this is an **"imbalanced dataset"** with skewed class (output category/label) proportions.
   
 **The objective is here to build a model to give multiclass classifier model based on the input attributes.**  
 
