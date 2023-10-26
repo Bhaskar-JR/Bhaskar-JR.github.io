@@ -1,17 +1,15 @@
 ---
 layout : single
-title : Car evaluation - Imbalanced dataset
+title : Car Evaluation - Imbalanced Dataset
 toc: true
 toc_sticky: true
 author_profile: true
-toc_label : "Car evaluation - Imbalanced dataset"
+toc_label : "Car Evaluation Imbalanced Dataset"
 ---
 
 This dataset has been downloaded from  UC Irvine Machine Learning Repository.  
 - <https://archive.ics.uci.edu/ml/datasets/Car+Evaluation>  
 - <https://www.kaggle.com/mykeysid10/car-evaluation>
-
-The jupyter notebook is available in [html](Pages/ML Projects/Car Evaluation/Car Evaluation.html) and [ipynb](Pages/ML Projects/Car Evaluation/Car Evaluation.ipynb) versions.
 
 This dataset is regarding evaluation of cars.  
 The target variable/label is car acceptability and has four categories : unacceptable, acceptable, good and very good.
