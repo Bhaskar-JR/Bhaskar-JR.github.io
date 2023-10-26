@@ -7,8 +7,6 @@ author_profile: true
 toc_label : "Car evaluation - Imbalanced dataset"
 ---
 
-# Car Evaluation 
-
 This dataset has been downloaded from  UC Irvine Machine Learning Repository.  
 - <https://archive.ics.uci.edu/ml/datasets/Car+Evaluation>  
 - <https://www.kaggle.com/mykeysid10/car-evaluation>

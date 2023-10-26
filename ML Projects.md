@@ -40,15 +40,13 @@ The available information can be used for two kinds of problems.
 - Secondly, we can build a clustering model to identify natural groupings of the product based on the weekly sales pattern.
 
 Check the [clustering notebook](/Pages/ML Projects/Sales_Transactions_Dataset_Weekly_Clustering/Sales_Transactions_Dataset_Weekly_Clustering.md)  
-Check the [regression notebook](/assets/scripts/Sales_Transactions_Dataset_Weekly_Clustering/Sales_Transactions_Dataset_Weekly_Clustering)
+
 
 ## Car Evaluation
 
 This dataset has been downloaded from  UC Irvine Machine Learning Repository.  
 - <https://archive.ics.uci.edu/ml/datasets/Car+Evaluation>  
 - <https://www.kaggle.com/mykeysid10/car-evaluation>
-
-The jupyter notebook is available in [html](Pages/ML Projects/Car Evaluation/Car Evaluation.html) and [ipynb](Pages/ML Projects/Car Evaluation/Car Evaluation.ipynb) versions.
 
 This dataset is regarding evaluation of cars.  
 The target variable/label is car acceptability and has four categories : unacceptable, acceptable, good and very good.
@@ -63,6 +61,8 @@ We have identified : this is an **"imbalanced dataset"** with skewed class (outp
 **The objective is here to build a model to give multiclass classifier model based on the input attributes.**  
 
 Check the [notebook](Pages/ML Projects/Car Evaluation/Car Evaluation.md)
+Check the classic jupyter notebook[html](Pages/ML Projects/Car Evaluation/Car Evaluation.html) and [ipynb](Pages/ML Projects/Car Evaluation/Car Evaluation.ipynb) versions.
+
 
 
 ## Online Purchasing Intention Dataset
