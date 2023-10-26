@@ -70,6 +70,8 @@ Check the [notebook](Pages/ML Projects/Car Evaluation/Car Evaluation.md)
 
 ## Online Purchasing Intention Dataset
 
+Check
+
 
 
 
