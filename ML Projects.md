@@ -61,7 +61,7 @@ We have identified : this is an **"imbalanced dataset"** with skewed class (outp
 **The objective is here to build a model to give multiclass classifier model based on the input attributes.**  
 
 Check the [notebook](Pages/ML Projects/Car Evaluation/Car Evaluation.md).
-Check the classic jupyter notebook[html](Pages/ML Projects/Car Evaluation/Car Evaluation.html) and [ipynb](Pages/ML Projects/Car Evaluation/Car Evaluation.ipynb) versions.
+Check the classic jupyter notebook [html](Pages/ML Projects/Car Evaluation/Car Evaluation.html) and [ipynb](Pages/ML Projects/Car Evaluation/Car Evaluation.ipynb) versions.
 
 
 
