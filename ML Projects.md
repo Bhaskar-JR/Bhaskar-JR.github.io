@@ -44,7 +44,23 @@ Check the [regression notebook](/assets/scripts/Sales_Transactions_Dataset_Weekl
 
 ## Car Evaluation
 
+This dataset has been downloaded from  UC Irvine Machine Learning Repository.  
+<https://archive.ics.uci.edu/ml/datasets/Car+Evaluation>  
+<https://www.kaggle.com/mykeysid10/car-evaluation>
 
+This dataset is regarding evaluation of cars.  
+The target variable/label is car acceptability and has four categories : unacceptable, acceptable, good and very good.
+
+
+The input attributes fall under two broad categories - Price and Technical Characteristics.  
+Under Price, the attributes are buying price and maintenance price.  
+Under Technical characteristics, the attributes are doors, persons, size of luggage boot and safety.
+
+We have identified : this is an imbalanced dataset with skewed class (output category/label) proportions.
+  
+**The objective is here to build a model to give multiclass classifier model based on the input attributes.**  
+
+Check the [notebook](Pages/ML Projects/Car Evaluation/Car Evaluation.md)
 
 
 ## Online Purchasing Intention Dataset
