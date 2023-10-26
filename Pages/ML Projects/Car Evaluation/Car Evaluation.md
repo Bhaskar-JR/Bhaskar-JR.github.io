@@ -848,7 +848,7 @@ eda_overview.UVA_category(data, data.columns,
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_32_1.png)
+![png](Car Evaluation_files/Car Evaluation_32_1.png)
 
 
 
