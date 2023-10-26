@@ -1,25 +1,27 @@
 ---
 layout : single
-title : Car Evaluation Dataset
+title : Car evaluation - Imbalanced dataset
 toc: true
 toc_sticky: true
 author_profile: true
-toc_label : "Credit Evaluation Dataset - Part1"
+toc_label : "Car evaluation - Imbalanced dataset"
 ---
 
 # Car Evaluation 
 
 This dataset has been downloaded from  UC Irvine Machine Learning Repository.  
-<https://archive.ics.uci.edu/ml/datasets/Car+Evaluation>  
-<https://www.kaggle.com/mykeysid10/car-evaluation>
+- <https://archive.ics.uci.edu/ml/datasets/Car+Evaluation>  
+- <https://www.kaggle.com/mykeysid10/car-evaluation>
+
+The jupyter notebook is available in [html](Pages/ML Projects/Car Evaluation/Car Evaluation.html) and [ipynb](Pages/ML Projects/Car Evaluation/Car Evaluation.ipynb) versions.
 
 This dataset is regarding evaluation of cars.  
 The target variable/label is car acceptability and has four categories : unacceptable, acceptable, good and very good.
 
 
 The input attributes fall under two broad categories - Price and Technical Characteristics.  
-Under Price, the attributes are buying price and maintenance price.  
-Under Technical characteristics, the attributes are doors, persons, size of luggage boot and safety.
+- Under Price, the attributes are buying price and maintenance price.  
+- Under Technical characteristics, the attributes are doors, persons, size of luggage boot and safety.
 
 We have identified : this is an imbalanced dataset with skewed class (output category/label) proportions.
   
@@ -453,12 +455,12 @@ data.describe()
     </tr>
     <tr>
       <th>top</th>
-      <td>high</td>
-      <td>high</td>
+      <td>low</td>
+      <td>low</td>
       <td>5more</td>
       <td>4</td>
-      <td>small</td>
-      <td>high</td>
+      <td>big</td>
+      <td>low</td>
       <td>unacc</td>
     </tr>
     <tr>
@@ -1084,7 +1086,7 @@ plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 
 
 
-    <matplotlib.legend.Legend at 0x7f8427da8340>
+    <matplotlib.legend.Legend at 0x7facb264ac10>
 
 
 
@@ -1113,478 +1115,478 @@ df4.style.background_gradient(cmap='Blues')
 
 
 <style  type="text/css" >
-#T_0e0d3_row0_col3,#T_0e0d3_row4_col3,#T_0e0d3_row8_col3,#T_0e0d3_row16_col3,#T_0e0d3_row20_col3{
+#T_f6c04_row0_col3,#T_f6c04_row4_col3,#T_f6c04_row8_col3,#T_f6c04_row16_col3,#T_f6c04_row20_col3{
             background-color:  #539ecd;
             color:  #000000;
-        }#T_0e0d3_row1_col3,#T_0e0d3_row5_col3,#T_0e0d3_row17_col3{
+        }#T_f6c04_row1_col3,#T_f6c04_row5_col3,#T_f6c04_row17_col3{
             background-color:  #e5eff9;
             color:  #000000;
-        }#T_0e0d3_row2_col3,#T_0e0d3_row6_col3,#T_0e0d3_row18_col3{
+        }#T_f6c04_row2_col3,#T_f6c04_row6_col3,#T_f6c04_row18_col3{
             background-color:  #cde0f1;
             color:  #000000;
-        }#T_0e0d3_row3_col3,#T_0e0d3_row7_col3,#T_0e0d3_row10_col3,#T_0e0d3_row11_col3,#T_0e0d3_row14_col3,#T_0e0d3_row15_col3,#T_0e0d3_row19_col3,#T_0e0d3_row22_col3,#T_0e0d3_row23_col3,#T_0e0d3_row26_col3,#T_0e0d3_row27_col3,#T_0e0d3_row30_col3,#T_0e0d3_row31_col3,#T_0e0d3_row34_col3,#T_0e0d3_row35_col3,#T_0e0d3_row38_col3,#T_0e0d3_row39_col3,#T_0e0d3_row42_col3,#T_0e0d3_row43_col3,#T_0e0d3_row45_col3,#T_0e0d3_row46_col3,#T_0e0d3_row47_col3,#T_0e0d3_row50_col3,#T_0e0d3_row51_col3,#T_0e0d3_row54_col3,#T_0e0d3_row55_col3,#T_0e0d3_row57_col3,#T_0e0d3_row58_col3,#T_0e0d3_row59_col3,#T_0e0d3_row61_col3,#T_0e0d3_row62_col3,#T_0e0d3_row63_col3{
+        }#T_f6c04_row3_col3,#T_f6c04_row7_col3,#T_f6c04_row10_col3,#T_f6c04_row11_col3,#T_f6c04_row14_col3,#T_f6c04_row15_col3,#T_f6c04_row19_col3,#T_f6c04_row22_col3,#T_f6c04_row23_col3,#T_f6c04_row26_col3,#T_f6c04_row27_col3,#T_f6c04_row30_col3,#T_f6c04_row31_col3,#T_f6c04_row34_col3,#T_f6c04_row35_col3,#T_f6c04_row38_col3,#T_f6c04_row39_col3,#T_f6c04_row42_col3,#T_f6c04_row43_col3,#T_f6c04_row45_col3,#T_f6c04_row46_col3,#T_f6c04_row47_col3,#T_f6c04_row50_col3,#T_f6c04_row51_col3,#T_f6c04_row54_col3,#T_f6c04_row55_col3,#T_f6c04_row57_col3,#T_f6c04_row58_col3,#T_f6c04_row59_col3,#T_f6c04_row61_col3,#T_f6c04_row62_col3,#T_f6c04_row63_col3{
             background-color:  #f7fbff;
             color:  #000000;
-        }#T_0e0d3_row9_col3,#T_0e0d3_row21_col3{
+        }#T_f6c04_row9_col3,#T_f6c04_row21_col3{
             background-color:  #b4d3e9;
             color:  #000000;
-        }#T_0e0d3_row12_col3,#T_0e0d3_row24_col3,#T_0e0d3_row28_col3,#T_0e0d3_row32_col3,#T_0e0d3_row36_col3,#T_0e0d3_row40_col3,#T_0e0d3_row48_col3,#T_0e0d3_row52_col3{
+        }#T_f6c04_row12_col3,#T_f6c04_row24_col3,#T_f6c04_row28_col3,#T_f6c04_row32_col3,#T_f6c04_row36_col3,#T_f6c04_row40_col3,#T_f6c04_row48_col3,#T_f6c04_row52_col3{
             background-color:  #3787c0;
             color:  #000000;
-        }#T_0e0d3_row13_col3,#T_0e0d3_row25_col3,#T_0e0d3_row29_col3,#T_0e0d3_row33_col3,#T_0e0d3_row37_col3,#T_0e0d3_row41_col3,#T_0e0d3_row49_col3,#T_0e0d3_row53_col3{
+        }#T_f6c04_row13_col3,#T_f6c04_row25_col3,#T_f6c04_row29_col3,#T_f6c04_row33_col3,#T_f6c04_row37_col3,#T_f6c04_row41_col3,#T_f6c04_row49_col3,#T_f6c04_row53_col3{
             background-color:  #abd0e6;
             color:  #000000;
-        }#T_0e0d3_row44_col3,#T_0e0d3_row56_col3,#T_0e0d3_row60_col3{
+        }#T_f6c04_row44_col3,#T_f6c04_row56_col3,#T_f6c04_row60_col3{
             background-color:  #08306b;
             color:  #f1f1f1;
-        }</style><table id="T_0e0d3_" ><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >buying</th>        <th class="col_heading level0 col1" >maint</th>        <th class="col_heading level0 col2" >class</th>        <th class="col_heading level0 col3" >count</th>    </tr></thead><tbody>
+        }</style><table id="T_f6c04_" ><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >buying</th>        <th class="col_heading level0 col1" >maint</th>        <th class="col_heading level0 col2" >class</th>        <th class="col_heading level0 col3" >count</th>    </tr></thead><tbody>
                 <tr>
-                        <th id="T_0e0d3_level0_row0" class="row_heading level0 row0" >0</th>
-                        <td id="T_0e0d3_row0_col0" class="data row0 col0" >low</td>
-                        <td id="T_0e0d3_row0_col1" class="data row0 col1" >low</td>
-                        <td id="T_0e0d3_row0_col2" class="data row0 col2" >unacc</td>
-                        <td id="T_0e0d3_row0_col3" class="data row0 col3" >62</td>
+                        <th id="T_f6c04_level0_row0" class="row_heading level0 row0" >0</th>
+                        <td id="T_f6c04_row0_col0" class="data row0 col0" >low</td>
+                        <td id="T_f6c04_row0_col1" class="data row0 col1" >low</td>
+                        <td id="T_f6c04_row0_col2" class="data row0 col2" >unacc</td>
+                        <td id="T_f6c04_row0_col3" class="data row0 col3" >62</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row1" class="row_heading level0 row1" >1</th>
-                        <td id="T_0e0d3_row1_col0" class="data row1 col0" >low</td>
-                        <td id="T_0e0d3_row1_col1" class="data row1 col1" >low</td>
-                        <td id="T_0e0d3_row1_col2" class="data row1 col2" >acc</td>
-                        <td id="T_0e0d3_row1_col3" class="data row1 col3" >10</td>
+                        <th id="T_f6c04_level0_row1" class="row_heading level0 row1" >1</th>
+                        <td id="T_f6c04_row1_col0" class="data row1 col0" >low</td>
+                        <td id="T_f6c04_row1_col1" class="data row1 col1" >low</td>
+                        <td id="T_f6c04_row1_col2" class="data row1 col2" >acc</td>
+                        <td id="T_f6c04_row1_col3" class="data row1 col3" >10</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row2" class="row_heading level0 row2" >2</th>
-                        <td id="T_0e0d3_row2_col0" class="data row2 col0" >low</td>
-                        <td id="T_0e0d3_row2_col1" class="data row2 col1" >low</td>
-                        <td id="T_0e0d3_row2_col2" class="data row2 col2" >good</td>
-                        <td id="T_0e0d3_row2_col3" class="data row2 col3" >23</td>
+                        <th id="T_f6c04_level0_row2" class="row_heading level0 row2" >2</th>
+                        <td id="T_f6c04_row2_col0" class="data row2 col0" >low</td>
+                        <td id="T_f6c04_row2_col1" class="data row2 col1" >low</td>
+                        <td id="T_f6c04_row2_col2" class="data row2 col2" >good</td>
+                        <td id="T_f6c04_row2_col3" class="data row2 col3" >23</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row3" class="row_heading level0 row3" >3</th>
-                        <td id="T_0e0d3_row3_col0" class="data row3 col0" >low</td>
-                        <td id="T_0e0d3_row3_col1" class="data row3 col1" >low</td>
-                        <td id="T_0e0d3_row3_col2" class="data row3 col2" >v-good</td>
-                        <td id="T_0e0d3_row3_col3" class="data row3 col3" >0</td>
+                        <th id="T_f6c04_level0_row3" class="row_heading level0 row3" >3</th>
+                        <td id="T_f6c04_row3_col0" class="data row3 col0" >low</td>
+                        <td id="T_f6c04_row3_col1" class="data row3 col1" >low</td>
+                        <td id="T_f6c04_row3_col2" class="data row3 col2" >v-good</td>
+                        <td id="T_f6c04_row3_col3" class="data row3 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row4" class="row_heading level0 row4" >4</th>
-                        <td id="T_0e0d3_row4_col0" class="data row4 col0" >low</td>
-                        <td id="T_0e0d3_row4_col1" class="data row4 col1" >med</td>
-                        <td id="T_0e0d3_row4_col2" class="data row4 col2" >unacc</td>
-                        <td id="T_0e0d3_row4_col3" class="data row4 col3" >62</td>
+                        <th id="T_f6c04_level0_row4" class="row_heading level0 row4" >4</th>
+                        <td id="T_f6c04_row4_col0" class="data row4 col0" >low</td>
+                        <td id="T_f6c04_row4_col1" class="data row4 col1" >med</td>
+                        <td id="T_f6c04_row4_col2" class="data row4 col2" >unacc</td>
+                        <td id="T_f6c04_row4_col3" class="data row4 col3" >62</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row5" class="row_heading level0 row5" >5</th>
-                        <td id="T_0e0d3_row5_col0" class="data row5 col0" >low</td>
-                        <td id="T_0e0d3_row5_col1" class="data row5 col1" >med</td>
-                        <td id="T_0e0d3_row5_col2" class="data row5 col2" >acc</td>
-                        <td id="T_0e0d3_row5_col3" class="data row5 col3" >10</td>
+                        <th id="T_f6c04_level0_row5" class="row_heading level0 row5" >5</th>
+                        <td id="T_f6c04_row5_col0" class="data row5 col0" >low</td>
+                        <td id="T_f6c04_row5_col1" class="data row5 col1" >med</td>
+                        <td id="T_f6c04_row5_col2" class="data row5 col2" >acc</td>
+                        <td id="T_f6c04_row5_col3" class="data row5 col3" >10</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row6" class="row_heading level0 row6" >6</th>
-                        <td id="T_0e0d3_row6_col0" class="data row6 col0" >low</td>
-                        <td id="T_0e0d3_row6_col1" class="data row6 col1" >med</td>
-                        <td id="T_0e0d3_row6_col2" class="data row6 col2" >good</td>
-                        <td id="T_0e0d3_row6_col3" class="data row6 col3" >23</td>
+                        <th id="T_f6c04_level0_row6" class="row_heading level0 row6" >6</th>
+                        <td id="T_f6c04_row6_col0" class="data row6 col0" >low</td>
+                        <td id="T_f6c04_row6_col1" class="data row6 col1" >med</td>
+                        <td id="T_f6c04_row6_col2" class="data row6 col2" >good</td>
+                        <td id="T_f6c04_row6_col3" class="data row6 col3" >23</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row7" class="row_heading level0 row7" >7</th>
-                        <td id="T_0e0d3_row7_col0" class="data row7 col0" >low</td>
-                        <td id="T_0e0d3_row7_col1" class="data row7 col1" >med</td>
-                        <td id="T_0e0d3_row7_col2" class="data row7 col2" >v-good</td>
-                        <td id="T_0e0d3_row7_col3" class="data row7 col3" >0</td>
+                        <th id="T_f6c04_level0_row7" class="row_heading level0 row7" >7</th>
+                        <td id="T_f6c04_row7_col0" class="data row7 col0" >low</td>
+                        <td id="T_f6c04_row7_col1" class="data row7 col1" >med</td>
+                        <td id="T_f6c04_row7_col2" class="data row7 col2" >v-good</td>
+                        <td id="T_f6c04_row7_col3" class="data row7 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row8" class="row_heading level0 row8" >8</th>
-                        <td id="T_0e0d3_row8_col0" class="data row8 col0" >low</td>
-                        <td id="T_0e0d3_row8_col1" class="data row8 col1" >high</td>
-                        <td id="T_0e0d3_row8_col2" class="data row8 col2" >unacc</td>
-                        <td id="T_0e0d3_row8_col3" class="data row8 col3" >62</td>
+                        <th id="T_f6c04_level0_row8" class="row_heading level0 row8" >8</th>
+                        <td id="T_f6c04_row8_col0" class="data row8 col0" >low</td>
+                        <td id="T_f6c04_row8_col1" class="data row8 col1" >high</td>
+                        <td id="T_f6c04_row8_col2" class="data row8 col2" >unacc</td>
+                        <td id="T_f6c04_row8_col3" class="data row8 col3" >62</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row9" class="row_heading level0 row9" >9</th>
-                        <td id="T_0e0d3_row9_col0" class="data row9 col0" >low</td>
-                        <td id="T_0e0d3_row9_col1" class="data row9 col1" >high</td>
-                        <td id="T_0e0d3_row9_col2" class="data row9 col2" >acc</td>
-                        <td id="T_0e0d3_row9_col3" class="data row9 col3" >33</td>
+                        <th id="T_f6c04_level0_row9" class="row_heading level0 row9" >9</th>
+                        <td id="T_f6c04_row9_col0" class="data row9 col0" >low</td>
+                        <td id="T_f6c04_row9_col1" class="data row9 col1" >high</td>
+                        <td id="T_f6c04_row9_col2" class="data row9 col2" >acc</td>
+                        <td id="T_f6c04_row9_col3" class="data row9 col3" >33</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row10" class="row_heading level0 row10" >10</th>
-                        <td id="T_0e0d3_row10_col0" class="data row10 col0" >low</td>
-                        <td id="T_0e0d3_row10_col1" class="data row10 col1" >high</td>
-                        <td id="T_0e0d3_row10_col2" class="data row10 col2" >good</td>
-                        <td id="T_0e0d3_row10_col3" class="data row10 col3" >0</td>
+                        <th id="T_f6c04_level0_row10" class="row_heading level0 row10" >10</th>
+                        <td id="T_f6c04_row10_col0" class="data row10 col0" >low</td>
+                        <td id="T_f6c04_row10_col1" class="data row10 col1" >high</td>
+                        <td id="T_f6c04_row10_col2" class="data row10 col2" >good</td>
+                        <td id="T_f6c04_row10_col3" class="data row10 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row11" class="row_heading level0 row11" >11</th>
-                        <td id="T_0e0d3_row11_col0" class="data row11 col0" >low</td>
-                        <td id="T_0e0d3_row11_col1" class="data row11 col1" >high</td>
-                        <td id="T_0e0d3_row11_col2" class="data row11 col2" >v-good</td>
-                        <td id="T_0e0d3_row11_col3" class="data row11 col3" >0</td>
+                        <th id="T_f6c04_level0_row11" class="row_heading level0 row11" >11</th>
+                        <td id="T_f6c04_row11_col0" class="data row11 col0" >low</td>
+                        <td id="T_f6c04_row11_col1" class="data row11 col1" >high</td>
+                        <td id="T_f6c04_row11_col2" class="data row11 col2" >v-good</td>
+                        <td id="T_f6c04_row11_col3" class="data row11 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row12" class="row_heading level0 row12" >12</th>
-                        <td id="T_0e0d3_row12_col0" class="data row12 col0" >low</td>
-                        <td id="T_0e0d3_row12_col1" class="data row12 col1" >vhigh</td>
-                        <td id="T_0e0d3_row12_col2" class="data row12 col2" >unacc</td>
-                        <td id="T_0e0d3_row12_col3" class="data row12 col3" >72</td>
+                        <th id="T_f6c04_level0_row12" class="row_heading level0 row12" >12</th>
+                        <td id="T_f6c04_row12_col0" class="data row12 col0" >low</td>
+                        <td id="T_f6c04_row12_col1" class="data row12 col1" >vhigh</td>
+                        <td id="T_f6c04_row12_col2" class="data row12 col2" >unacc</td>
+                        <td id="T_f6c04_row12_col3" class="data row12 col3" >72</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row13" class="row_heading level0 row13" >13</th>
-                        <td id="T_0e0d3_row13_col0" class="data row13 col0" >low</td>
-                        <td id="T_0e0d3_row13_col1" class="data row13 col1" >vhigh</td>
-                        <td id="T_0e0d3_row13_col2" class="data row13 col2" >acc</td>
-                        <td id="T_0e0d3_row13_col3" class="data row13 col3" >36</td>
+                        <th id="T_f6c04_level0_row13" class="row_heading level0 row13" >13</th>
+                        <td id="T_f6c04_row13_col0" class="data row13 col0" >low</td>
+                        <td id="T_f6c04_row13_col1" class="data row13 col1" >vhigh</td>
+                        <td id="T_f6c04_row13_col2" class="data row13 col2" >acc</td>
+                        <td id="T_f6c04_row13_col3" class="data row13 col3" >36</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row14" class="row_heading level0 row14" >14</th>
-                        <td id="T_0e0d3_row14_col0" class="data row14 col0" >low</td>
-                        <td id="T_0e0d3_row14_col1" class="data row14 col1" >vhigh</td>
-                        <td id="T_0e0d3_row14_col2" class="data row14 col2" >good</td>
-                        <td id="T_0e0d3_row14_col3" class="data row14 col3" >0</td>
+                        <th id="T_f6c04_level0_row14" class="row_heading level0 row14" >14</th>
+                        <td id="T_f6c04_row14_col0" class="data row14 col0" >low</td>
+                        <td id="T_f6c04_row14_col1" class="data row14 col1" >vhigh</td>
+                        <td id="T_f6c04_row14_col2" class="data row14 col2" >good</td>
+                        <td id="T_f6c04_row14_col3" class="data row14 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row15" class="row_heading level0 row15" >15</th>
-                        <td id="T_0e0d3_row15_col0" class="data row15 col0" >low</td>
-                        <td id="T_0e0d3_row15_col1" class="data row15 col1" >vhigh</td>
-                        <td id="T_0e0d3_row15_col2" class="data row15 col2" >v-good</td>
-                        <td id="T_0e0d3_row15_col3" class="data row15 col3" >0</td>
+                        <th id="T_f6c04_level0_row15" class="row_heading level0 row15" >15</th>
+                        <td id="T_f6c04_row15_col0" class="data row15 col0" >low</td>
+                        <td id="T_f6c04_row15_col1" class="data row15 col1" >vhigh</td>
+                        <td id="T_f6c04_row15_col2" class="data row15 col2" >v-good</td>
+                        <td id="T_f6c04_row15_col3" class="data row15 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row16" class="row_heading level0 row16" >16</th>
-                        <td id="T_0e0d3_row16_col0" class="data row16 col0" >med</td>
-                        <td id="T_0e0d3_row16_col1" class="data row16 col1" >low</td>
-                        <td id="T_0e0d3_row16_col2" class="data row16 col2" >unacc</td>
-                        <td id="T_0e0d3_row16_col3" class="data row16 col3" >62</td>
+                        <th id="T_f6c04_level0_row16" class="row_heading level0 row16" >16</th>
+                        <td id="T_f6c04_row16_col0" class="data row16 col0" >med</td>
+                        <td id="T_f6c04_row16_col1" class="data row16 col1" >low</td>
+                        <td id="T_f6c04_row16_col2" class="data row16 col2" >unacc</td>
+                        <td id="T_f6c04_row16_col3" class="data row16 col3" >62</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row17" class="row_heading level0 row17" >17</th>
-                        <td id="T_0e0d3_row17_col0" class="data row17 col0" >med</td>
-                        <td id="T_0e0d3_row17_col1" class="data row17 col1" >low</td>
-                        <td id="T_0e0d3_row17_col2" class="data row17 col2" >acc</td>
-                        <td id="T_0e0d3_row17_col3" class="data row17 col3" >10</td>
+                        <th id="T_f6c04_level0_row17" class="row_heading level0 row17" >17</th>
+                        <td id="T_f6c04_row17_col0" class="data row17 col0" >med</td>
+                        <td id="T_f6c04_row17_col1" class="data row17 col1" >low</td>
+                        <td id="T_f6c04_row17_col2" class="data row17 col2" >acc</td>
+                        <td id="T_f6c04_row17_col3" class="data row17 col3" >10</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row18" class="row_heading level0 row18" >18</th>
-                        <td id="T_0e0d3_row18_col0" class="data row18 col0" >med</td>
-                        <td id="T_0e0d3_row18_col1" class="data row18 col1" >low</td>
-                        <td id="T_0e0d3_row18_col2" class="data row18 col2" >good</td>
-                        <td id="T_0e0d3_row18_col3" class="data row18 col3" >23</td>
+                        <th id="T_f6c04_level0_row18" class="row_heading level0 row18" >18</th>
+                        <td id="T_f6c04_row18_col0" class="data row18 col0" >med</td>
+                        <td id="T_f6c04_row18_col1" class="data row18 col1" >low</td>
+                        <td id="T_f6c04_row18_col2" class="data row18 col2" >good</td>
+                        <td id="T_f6c04_row18_col3" class="data row18 col3" >23</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row19" class="row_heading level0 row19" >19</th>
-                        <td id="T_0e0d3_row19_col0" class="data row19 col0" >med</td>
-                        <td id="T_0e0d3_row19_col1" class="data row19 col1" >low</td>
-                        <td id="T_0e0d3_row19_col2" class="data row19 col2" >v-good</td>
-                        <td id="T_0e0d3_row19_col3" class="data row19 col3" >0</td>
+                        <th id="T_f6c04_level0_row19" class="row_heading level0 row19" >19</th>
+                        <td id="T_f6c04_row19_col0" class="data row19 col0" >med</td>
+                        <td id="T_f6c04_row19_col1" class="data row19 col1" >low</td>
+                        <td id="T_f6c04_row19_col2" class="data row19 col2" >v-good</td>
+                        <td id="T_f6c04_row19_col3" class="data row19 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row20" class="row_heading level0 row20" >20</th>
-                        <td id="T_0e0d3_row20_col0" class="data row20 col0" >med</td>
-                        <td id="T_0e0d3_row20_col1" class="data row20 col1" >med</td>
-                        <td id="T_0e0d3_row20_col2" class="data row20 col2" >unacc</td>
-                        <td id="T_0e0d3_row20_col3" class="data row20 col3" >62</td>
+                        <th id="T_f6c04_level0_row20" class="row_heading level0 row20" >20</th>
+                        <td id="T_f6c04_row20_col0" class="data row20 col0" >med</td>
+                        <td id="T_f6c04_row20_col1" class="data row20 col1" >med</td>
+                        <td id="T_f6c04_row20_col2" class="data row20 col2" >unacc</td>
+                        <td id="T_f6c04_row20_col3" class="data row20 col3" >62</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row21" class="row_heading level0 row21" >21</th>
-                        <td id="T_0e0d3_row21_col0" class="data row21 col0" >med</td>
-                        <td id="T_0e0d3_row21_col1" class="data row21 col1" >med</td>
-                        <td id="T_0e0d3_row21_col2" class="data row21 col2" >acc</td>
-                        <td id="T_0e0d3_row21_col3" class="data row21 col3" >33</td>
+                        <th id="T_f6c04_level0_row21" class="row_heading level0 row21" >21</th>
+                        <td id="T_f6c04_row21_col0" class="data row21 col0" >med</td>
+                        <td id="T_f6c04_row21_col1" class="data row21 col1" >med</td>
+                        <td id="T_f6c04_row21_col2" class="data row21 col2" >acc</td>
+                        <td id="T_f6c04_row21_col3" class="data row21 col3" >33</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row22" class="row_heading level0 row22" >22</th>
-                        <td id="T_0e0d3_row22_col0" class="data row22 col0" >med</td>
-                        <td id="T_0e0d3_row22_col1" class="data row22 col1" >med</td>
-                        <td id="T_0e0d3_row22_col2" class="data row22 col2" >good</td>
-                        <td id="T_0e0d3_row22_col3" class="data row22 col3" >0</td>
+                        <th id="T_f6c04_level0_row22" class="row_heading level0 row22" >22</th>
+                        <td id="T_f6c04_row22_col0" class="data row22 col0" >med</td>
+                        <td id="T_f6c04_row22_col1" class="data row22 col1" >med</td>
+                        <td id="T_f6c04_row22_col2" class="data row22 col2" >good</td>
+                        <td id="T_f6c04_row22_col3" class="data row22 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row23" class="row_heading level0 row23" >23</th>
-                        <td id="T_0e0d3_row23_col0" class="data row23 col0" >med</td>
-                        <td id="T_0e0d3_row23_col1" class="data row23 col1" >med</td>
-                        <td id="T_0e0d3_row23_col2" class="data row23 col2" >v-good</td>
-                        <td id="T_0e0d3_row23_col3" class="data row23 col3" >0</td>
+                        <th id="T_f6c04_level0_row23" class="row_heading level0 row23" >23</th>
+                        <td id="T_f6c04_row23_col0" class="data row23 col0" >med</td>
+                        <td id="T_f6c04_row23_col1" class="data row23 col1" >med</td>
+                        <td id="T_f6c04_row23_col2" class="data row23 col2" >v-good</td>
+                        <td id="T_f6c04_row23_col3" class="data row23 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row24" class="row_heading level0 row24" >24</th>
-                        <td id="T_0e0d3_row24_col0" class="data row24 col0" >med</td>
-                        <td id="T_0e0d3_row24_col1" class="data row24 col1" >high</td>
-                        <td id="T_0e0d3_row24_col2" class="data row24 col2" >unacc</td>
-                        <td id="T_0e0d3_row24_col3" class="data row24 col3" >72</td>
+                        <th id="T_f6c04_level0_row24" class="row_heading level0 row24" >24</th>
+                        <td id="T_f6c04_row24_col0" class="data row24 col0" >med</td>
+                        <td id="T_f6c04_row24_col1" class="data row24 col1" >high</td>
+                        <td id="T_f6c04_row24_col2" class="data row24 col2" >unacc</td>
+                        <td id="T_f6c04_row24_col3" class="data row24 col3" >72</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row25" class="row_heading level0 row25" >25</th>
-                        <td id="T_0e0d3_row25_col0" class="data row25 col0" >med</td>
-                        <td id="T_0e0d3_row25_col1" class="data row25 col1" >high</td>
-                        <td id="T_0e0d3_row25_col2" class="data row25 col2" >acc</td>
-                        <td id="T_0e0d3_row25_col3" class="data row25 col3" >36</td>
+                        <th id="T_f6c04_level0_row25" class="row_heading level0 row25" >25</th>
+                        <td id="T_f6c04_row25_col0" class="data row25 col0" >med</td>
+                        <td id="T_f6c04_row25_col1" class="data row25 col1" >high</td>
+                        <td id="T_f6c04_row25_col2" class="data row25 col2" >acc</td>
+                        <td id="T_f6c04_row25_col3" class="data row25 col3" >36</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row26" class="row_heading level0 row26" >26</th>
-                        <td id="T_0e0d3_row26_col0" class="data row26 col0" >med</td>
-                        <td id="T_0e0d3_row26_col1" class="data row26 col1" >high</td>
-                        <td id="T_0e0d3_row26_col2" class="data row26 col2" >good</td>
-                        <td id="T_0e0d3_row26_col3" class="data row26 col3" >0</td>
+                        <th id="T_f6c04_level0_row26" class="row_heading level0 row26" >26</th>
+                        <td id="T_f6c04_row26_col0" class="data row26 col0" >med</td>
+                        <td id="T_f6c04_row26_col1" class="data row26 col1" >high</td>
+                        <td id="T_f6c04_row26_col2" class="data row26 col2" >good</td>
+                        <td id="T_f6c04_row26_col3" class="data row26 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row27" class="row_heading level0 row27" >27</th>
-                        <td id="T_0e0d3_row27_col0" class="data row27 col0" >med</td>
-                        <td id="T_0e0d3_row27_col1" class="data row27 col1" >high</td>
-                        <td id="T_0e0d3_row27_col2" class="data row27 col2" >v-good</td>
-                        <td id="T_0e0d3_row27_col3" class="data row27 col3" >0</td>
+                        <th id="T_f6c04_level0_row27" class="row_heading level0 row27" >27</th>
+                        <td id="T_f6c04_row27_col0" class="data row27 col0" >med</td>
+                        <td id="T_f6c04_row27_col1" class="data row27 col1" >high</td>
+                        <td id="T_f6c04_row27_col2" class="data row27 col2" >v-good</td>
+                        <td id="T_f6c04_row27_col3" class="data row27 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row28" class="row_heading level0 row28" >28</th>
-                        <td id="T_0e0d3_row28_col0" class="data row28 col0" >med</td>
-                        <td id="T_0e0d3_row28_col1" class="data row28 col1" >vhigh</td>
-                        <td id="T_0e0d3_row28_col2" class="data row28 col2" >unacc</td>
-                        <td id="T_0e0d3_row28_col3" class="data row28 col3" >72</td>
+                        <th id="T_f6c04_level0_row28" class="row_heading level0 row28" >28</th>
+                        <td id="T_f6c04_row28_col0" class="data row28 col0" >med</td>
+                        <td id="T_f6c04_row28_col1" class="data row28 col1" >vhigh</td>
+                        <td id="T_f6c04_row28_col2" class="data row28 col2" >unacc</td>
+                        <td id="T_f6c04_row28_col3" class="data row28 col3" >72</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row29" class="row_heading level0 row29" >29</th>
-                        <td id="T_0e0d3_row29_col0" class="data row29 col0" >med</td>
-                        <td id="T_0e0d3_row29_col1" class="data row29 col1" >vhigh</td>
-                        <td id="T_0e0d3_row29_col2" class="data row29 col2" >acc</td>
-                        <td id="T_0e0d3_row29_col3" class="data row29 col3" >36</td>
+                        <th id="T_f6c04_level0_row29" class="row_heading level0 row29" >29</th>
+                        <td id="T_f6c04_row29_col0" class="data row29 col0" >med</td>
+                        <td id="T_f6c04_row29_col1" class="data row29 col1" >vhigh</td>
+                        <td id="T_f6c04_row29_col2" class="data row29 col2" >acc</td>
+                        <td id="T_f6c04_row29_col3" class="data row29 col3" >36</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row30" class="row_heading level0 row30" >30</th>
-                        <td id="T_0e0d3_row30_col0" class="data row30 col0" >med</td>
-                        <td id="T_0e0d3_row30_col1" class="data row30 col1" >vhigh</td>
-                        <td id="T_0e0d3_row30_col2" class="data row30 col2" >good</td>
-                        <td id="T_0e0d3_row30_col3" class="data row30 col3" >0</td>
+                        <th id="T_f6c04_level0_row30" class="row_heading level0 row30" >30</th>
+                        <td id="T_f6c04_row30_col0" class="data row30 col0" >med</td>
+                        <td id="T_f6c04_row30_col1" class="data row30 col1" >vhigh</td>
+                        <td id="T_f6c04_row30_col2" class="data row30 col2" >good</td>
+                        <td id="T_f6c04_row30_col3" class="data row30 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row31" class="row_heading level0 row31" >31</th>
-                        <td id="T_0e0d3_row31_col0" class="data row31 col0" >med</td>
-                        <td id="T_0e0d3_row31_col1" class="data row31 col1" >vhigh</td>
-                        <td id="T_0e0d3_row31_col2" class="data row31 col2" >v-good</td>
-                        <td id="T_0e0d3_row31_col3" class="data row31 col3" >0</td>
+                        <th id="T_f6c04_level0_row31" class="row_heading level0 row31" >31</th>
+                        <td id="T_f6c04_row31_col0" class="data row31 col0" >med</td>
+                        <td id="T_f6c04_row31_col1" class="data row31 col1" >vhigh</td>
+                        <td id="T_f6c04_row31_col2" class="data row31 col2" >v-good</td>
+                        <td id="T_f6c04_row31_col3" class="data row31 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row32" class="row_heading level0 row32" >32</th>
-                        <td id="T_0e0d3_row32_col0" class="data row32 col0" >high</td>
-                        <td id="T_0e0d3_row32_col1" class="data row32 col1" >low</td>
-                        <td id="T_0e0d3_row32_col2" class="data row32 col2" >unacc</td>
-                        <td id="T_0e0d3_row32_col3" class="data row32 col3" >72</td>
+                        <th id="T_f6c04_level0_row32" class="row_heading level0 row32" >32</th>
+                        <td id="T_f6c04_row32_col0" class="data row32 col0" >high</td>
+                        <td id="T_f6c04_row32_col1" class="data row32 col1" >low</td>
+                        <td id="T_f6c04_row32_col2" class="data row32 col2" >unacc</td>
+                        <td id="T_f6c04_row32_col3" class="data row32 col3" >72</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row33" class="row_heading level0 row33" >33</th>
-                        <td id="T_0e0d3_row33_col0" class="data row33 col0" >high</td>
-                        <td id="T_0e0d3_row33_col1" class="data row33 col1" >low</td>
-                        <td id="T_0e0d3_row33_col2" class="data row33 col2" >acc</td>
-                        <td id="T_0e0d3_row33_col3" class="data row33 col3" >36</td>
+                        <th id="T_f6c04_level0_row33" class="row_heading level0 row33" >33</th>
+                        <td id="T_f6c04_row33_col0" class="data row33 col0" >high</td>
+                        <td id="T_f6c04_row33_col1" class="data row33 col1" >low</td>
+                        <td id="T_f6c04_row33_col2" class="data row33 col2" >acc</td>
+                        <td id="T_f6c04_row33_col3" class="data row33 col3" >36</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row34" class="row_heading level0 row34" >34</th>
-                        <td id="T_0e0d3_row34_col0" class="data row34 col0" >high</td>
-                        <td id="T_0e0d3_row34_col1" class="data row34 col1" >low</td>
-                        <td id="T_0e0d3_row34_col2" class="data row34 col2" >good</td>
-                        <td id="T_0e0d3_row34_col3" class="data row34 col3" >0</td>
+                        <th id="T_f6c04_level0_row34" class="row_heading level0 row34" >34</th>
+                        <td id="T_f6c04_row34_col0" class="data row34 col0" >high</td>
+                        <td id="T_f6c04_row34_col1" class="data row34 col1" >low</td>
+                        <td id="T_f6c04_row34_col2" class="data row34 col2" >good</td>
+                        <td id="T_f6c04_row34_col3" class="data row34 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row35" class="row_heading level0 row35" >35</th>
-                        <td id="T_0e0d3_row35_col0" class="data row35 col0" >high</td>
-                        <td id="T_0e0d3_row35_col1" class="data row35 col1" >low</td>
-                        <td id="T_0e0d3_row35_col2" class="data row35 col2" >v-good</td>
-                        <td id="T_0e0d3_row35_col3" class="data row35 col3" >0</td>
+                        <th id="T_f6c04_level0_row35" class="row_heading level0 row35" >35</th>
+                        <td id="T_f6c04_row35_col0" class="data row35 col0" >high</td>
+                        <td id="T_f6c04_row35_col1" class="data row35 col1" >low</td>
+                        <td id="T_f6c04_row35_col2" class="data row35 col2" >v-good</td>
+                        <td id="T_f6c04_row35_col3" class="data row35 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row36" class="row_heading level0 row36" >36</th>
-                        <td id="T_0e0d3_row36_col0" class="data row36 col0" >high</td>
-                        <td id="T_0e0d3_row36_col1" class="data row36 col1" >med</td>
-                        <td id="T_0e0d3_row36_col2" class="data row36 col2" >unacc</td>
-                        <td id="T_0e0d3_row36_col3" class="data row36 col3" >72</td>
+                        <th id="T_f6c04_level0_row36" class="row_heading level0 row36" >36</th>
+                        <td id="T_f6c04_row36_col0" class="data row36 col0" >high</td>
+                        <td id="T_f6c04_row36_col1" class="data row36 col1" >med</td>
+                        <td id="T_f6c04_row36_col2" class="data row36 col2" >unacc</td>
+                        <td id="T_f6c04_row36_col3" class="data row36 col3" >72</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row37" class="row_heading level0 row37" >37</th>
-                        <td id="T_0e0d3_row37_col0" class="data row37 col0" >high</td>
-                        <td id="T_0e0d3_row37_col1" class="data row37 col1" >med</td>
-                        <td id="T_0e0d3_row37_col2" class="data row37 col2" >acc</td>
-                        <td id="T_0e0d3_row37_col3" class="data row37 col3" >36</td>
+                        <th id="T_f6c04_level0_row37" class="row_heading level0 row37" >37</th>
+                        <td id="T_f6c04_row37_col0" class="data row37 col0" >high</td>
+                        <td id="T_f6c04_row37_col1" class="data row37 col1" >med</td>
+                        <td id="T_f6c04_row37_col2" class="data row37 col2" >acc</td>
+                        <td id="T_f6c04_row37_col3" class="data row37 col3" >36</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row38" class="row_heading level0 row38" >38</th>
-                        <td id="T_0e0d3_row38_col0" class="data row38 col0" >high</td>
-                        <td id="T_0e0d3_row38_col1" class="data row38 col1" >med</td>
-                        <td id="T_0e0d3_row38_col2" class="data row38 col2" >good</td>
-                        <td id="T_0e0d3_row38_col3" class="data row38 col3" >0</td>
+                        <th id="T_f6c04_level0_row38" class="row_heading level0 row38" >38</th>
+                        <td id="T_f6c04_row38_col0" class="data row38 col0" >high</td>
+                        <td id="T_f6c04_row38_col1" class="data row38 col1" >med</td>
+                        <td id="T_f6c04_row38_col2" class="data row38 col2" >good</td>
+                        <td id="T_f6c04_row38_col3" class="data row38 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row39" class="row_heading level0 row39" >39</th>
-                        <td id="T_0e0d3_row39_col0" class="data row39 col0" >high</td>
-                        <td id="T_0e0d3_row39_col1" class="data row39 col1" >med</td>
-                        <td id="T_0e0d3_row39_col2" class="data row39 col2" >v-good</td>
-                        <td id="T_0e0d3_row39_col3" class="data row39 col3" >0</td>
+                        <th id="T_f6c04_level0_row39" class="row_heading level0 row39" >39</th>
+                        <td id="T_f6c04_row39_col0" class="data row39 col0" >high</td>
+                        <td id="T_f6c04_row39_col1" class="data row39 col1" >med</td>
+                        <td id="T_f6c04_row39_col2" class="data row39 col2" >v-good</td>
+                        <td id="T_f6c04_row39_col3" class="data row39 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row40" class="row_heading level0 row40" >40</th>
-                        <td id="T_0e0d3_row40_col0" class="data row40 col0" >high</td>
-                        <td id="T_0e0d3_row40_col1" class="data row40 col1" >high</td>
-                        <td id="T_0e0d3_row40_col2" class="data row40 col2" >unacc</td>
-                        <td id="T_0e0d3_row40_col3" class="data row40 col3" >72</td>
+                        <th id="T_f6c04_level0_row40" class="row_heading level0 row40" >40</th>
+                        <td id="T_f6c04_row40_col0" class="data row40 col0" >high</td>
+                        <td id="T_f6c04_row40_col1" class="data row40 col1" >high</td>
+                        <td id="T_f6c04_row40_col2" class="data row40 col2" >unacc</td>
+                        <td id="T_f6c04_row40_col3" class="data row40 col3" >72</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row41" class="row_heading level0 row41" >41</th>
-                        <td id="T_0e0d3_row41_col0" class="data row41 col0" >high</td>
-                        <td id="T_0e0d3_row41_col1" class="data row41 col1" >high</td>
-                        <td id="T_0e0d3_row41_col2" class="data row41 col2" >acc</td>
-                        <td id="T_0e0d3_row41_col3" class="data row41 col3" >36</td>
+                        <th id="T_f6c04_level0_row41" class="row_heading level0 row41" >41</th>
+                        <td id="T_f6c04_row41_col0" class="data row41 col0" >high</td>
+                        <td id="T_f6c04_row41_col1" class="data row41 col1" >high</td>
+                        <td id="T_f6c04_row41_col2" class="data row41 col2" >acc</td>
+                        <td id="T_f6c04_row41_col3" class="data row41 col3" >36</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row42" class="row_heading level0 row42" >42</th>
-                        <td id="T_0e0d3_row42_col0" class="data row42 col0" >high</td>
-                        <td id="T_0e0d3_row42_col1" class="data row42 col1" >high</td>
-                        <td id="T_0e0d3_row42_col2" class="data row42 col2" >good</td>
-                        <td id="T_0e0d3_row42_col3" class="data row42 col3" >0</td>
+                        <th id="T_f6c04_level0_row42" class="row_heading level0 row42" >42</th>
+                        <td id="T_f6c04_row42_col0" class="data row42 col0" >high</td>
+                        <td id="T_f6c04_row42_col1" class="data row42 col1" >high</td>
+                        <td id="T_f6c04_row42_col2" class="data row42 col2" >good</td>
+                        <td id="T_f6c04_row42_col3" class="data row42 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row43" class="row_heading level0 row43" >43</th>
-                        <td id="T_0e0d3_row43_col0" class="data row43 col0" >high</td>
-                        <td id="T_0e0d3_row43_col1" class="data row43 col1" >high</td>
-                        <td id="T_0e0d3_row43_col2" class="data row43 col2" >v-good</td>
-                        <td id="T_0e0d3_row43_col3" class="data row43 col3" >0</td>
+                        <th id="T_f6c04_level0_row43" class="row_heading level0 row43" >43</th>
+                        <td id="T_f6c04_row43_col0" class="data row43 col0" >high</td>
+                        <td id="T_f6c04_row43_col1" class="data row43 col1" >high</td>
+                        <td id="T_f6c04_row43_col2" class="data row43 col2" >v-good</td>
+                        <td id="T_f6c04_row43_col3" class="data row43 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row44" class="row_heading level0 row44" >44</th>
-                        <td id="T_0e0d3_row44_col0" class="data row44 col0" >high</td>
-                        <td id="T_0e0d3_row44_col1" class="data row44 col1" >vhigh</td>
-                        <td id="T_0e0d3_row44_col2" class="data row44 col2" >unacc</td>
-                        <td id="T_0e0d3_row44_col3" class="data row44 col3" >108</td>
+                        <th id="T_f6c04_level0_row44" class="row_heading level0 row44" >44</th>
+                        <td id="T_f6c04_row44_col0" class="data row44 col0" >high</td>
+                        <td id="T_f6c04_row44_col1" class="data row44 col1" >vhigh</td>
+                        <td id="T_f6c04_row44_col2" class="data row44 col2" >unacc</td>
+                        <td id="T_f6c04_row44_col3" class="data row44 col3" >108</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row45" class="row_heading level0 row45" >45</th>
-                        <td id="T_0e0d3_row45_col0" class="data row45 col0" >high</td>
-                        <td id="T_0e0d3_row45_col1" class="data row45 col1" >vhigh</td>
-                        <td id="T_0e0d3_row45_col2" class="data row45 col2" >acc</td>
-                        <td id="T_0e0d3_row45_col3" class="data row45 col3" >0</td>
+                        <th id="T_f6c04_level0_row45" class="row_heading level0 row45" >45</th>
+                        <td id="T_f6c04_row45_col0" class="data row45 col0" >high</td>
+                        <td id="T_f6c04_row45_col1" class="data row45 col1" >vhigh</td>
+                        <td id="T_f6c04_row45_col2" class="data row45 col2" >acc</td>
+                        <td id="T_f6c04_row45_col3" class="data row45 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row46" class="row_heading level0 row46" >46</th>
-                        <td id="T_0e0d3_row46_col0" class="data row46 col0" >high</td>
-                        <td id="T_0e0d3_row46_col1" class="data row46 col1" >vhigh</td>
-                        <td id="T_0e0d3_row46_col2" class="data row46 col2" >good</td>
-                        <td id="T_0e0d3_row46_col3" class="data row46 col3" >0</td>
+                        <th id="T_f6c04_level0_row46" class="row_heading level0 row46" >46</th>
+                        <td id="T_f6c04_row46_col0" class="data row46 col0" >high</td>
+                        <td id="T_f6c04_row46_col1" class="data row46 col1" >vhigh</td>
+                        <td id="T_f6c04_row46_col2" class="data row46 col2" >good</td>
+                        <td id="T_f6c04_row46_col3" class="data row46 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row47" class="row_heading level0 row47" >47</th>
-                        <td id="T_0e0d3_row47_col0" class="data row47 col0" >high</td>
-                        <td id="T_0e0d3_row47_col1" class="data row47 col1" >vhigh</td>
-                        <td id="T_0e0d3_row47_col2" class="data row47 col2" >v-good</td>
-                        <td id="T_0e0d3_row47_col3" class="data row47 col3" >0</td>
+                        <th id="T_f6c04_level0_row47" class="row_heading level0 row47" >47</th>
+                        <td id="T_f6c04_row47_col0" class="data row47 col0" >high</td>
+                        <td id="T_f6c04_row47_col1" class="data row47 col1" >vhigh</td>
+                        <td id="T_f6c04_row47_col2" class="data row47 col2" >v-good</td>
+                        <td id="T_f6c04_row47_col3" class="data row47 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row48" class="row_heading level0 row48" >48</th>
-                        <td id="T_0e0d3_row48_col0" class="data row48 col0" >vhigh</td>
-                        <td id="T_0e0d3_row48_col1" class="data row48 col1" >low</td>
-                        <td id="T_0e0d3_row48_col2" class="data row48 col2" >unacc</td>
-                        <td id="T_0e0d3_row48_col3" class="data row48 col3" >72</td>
+                        <th id="T_f6c04_level0_row48" class="row_heading level0 row48" >48</th>
+                        <td id="T_f6c04_row48_col0" class="data row48 col0" >vhigh</td>
+                        <td id="T_f6c04_row48_col1" class="data row48 col1" >low</td>
+                        <td id="T_f6c04_row48_col2" class="data row48 col2" >unacc</td>
+                        <td id="T_f6c04_row48_col3" class="data row48 col3" >72</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row49" class="row_heading level0 row49" >49</th>
-                        <td id="T_0e0d3_row49_col0" class="data row49 col0" >vhigh</td>
-                        <td id="T_0e0d3_row49_col1" class="data row49 col1" >low</td>
-                        <td id="T_0e0d3_row49_col2" class="data row49 col2" >acc</td>
-                        <td id="T_0e0d3_row49_col3" class="data row49 col3" >36</td>
+                        <th id="T_f6c04_level0_row49" class="row_heading level0 row49" >49</th>
+                        <td id="T_f6c04_row49_col0" class="data row49 col0" >vhigh</td>
+                        <td id="T_f6c04_row49_col1" class="data row49 col1" >low</td>
+                        <td id="T_f6c04_row49_col2" class="data row49 col2" >acc</td>
+                        <td id="T_f6c04_row49_col3" class="data row49 col3" >36</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row50" class="row_heading level0 row50" >50</th>
-                        <td id="T_0e0d3_row50_col0" class="data row50 col0" >vhigh</td>
-                        <td id="T_0e0d3_row50_col1" class="data row50 col1" >low</td>
-                        <td id="T_0e0d3_row50_col2" class="data row50 col2" >good</td>
-                        <td id="T_0e0d3_row50_col3" class="data row50 col3" >0</td>
+                        <th id="T_f6c04_level0_row50" class="row_heading level0 row50" >50</th>
+                        <td id="T_f6c04_row50_col0" class="data row50 col0" >vhigh</td>
+                        <td id="T_f6c04_row50_col1" class="data row50 col1" >low</td>
+                        <td id="T_f6c04_row50_col2" class="data row50 col2" >good</td>
+                        <td id="T_f6c04_row50_col3" class="data row50 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row51" class="row_heading level0 row51" >51</th>
-                        <td id="T_0e0d3_row51_col0" class="data row51 col0" >vhigh</td>
-                        <td id="T_0e0d3_row51_col1" class="data row51 col1" >low</td>
-                        <td id="T_0e0d3_row51_col2" class="data row51 col2" >v-good</td>
-                        <td id="T_0e0d3_row51_col3" class="data row51 col3" >0</td>
+                        <th id="T_f6c04_level0_row51" class="row_heading level0 row51" >51</th>
+                        <td id="T_f6c04_row51_col0" class="data row51 col0" >vhigh</td>
+                        <td id="T_f6c04_row51_col1" class="data row51 col1" >low</td>
+                        <td id="T_f6c04_row51_col2" class="data row51 col2" >v-good</td>
+                        <td id="T_f6c04_row51_col3" class="data row51 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row52" class="row_heading level0 row52" >52</th>
-                        <td id="T_0e0d3_row52_col0" class="data row52 col0" >vhigh</td>
-                        <td id="T_0e0d3_row52_col1" class="data row52 col1" >med</td>
-                        <td id="T_0e0d3_row52_col2" class="data row52 col2" >unacc</td>
-                        <td id="T_0e0d3_row52_col3" class="data row52 col3" >72</td>
+                        <th id="T_f6c04_level0_row52" class="row_heading level0 row52" >52</th>
+                        <td id="T_f6c04_row52_col0" class="data row52 col0" >vhigh</td>
+                        <td id="T_f6c04_row52_col1" class="data row52 col1" >med</td>
+                        <td id="T_f6c04_row52_col2" class="data row52 col2" >unacc</td>
+                        <td id="T_f6c04_row52_col3" class="data row52 col3" >72</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row53" class="row_heading level0 row53" >53</th>
-                        <td id="T_0e0d3_row53_col0" class="data row53 col0" >vhigh</td>
-                        <td id="T_0e0d3_row53_col1" class="data row53 col1" >med</td>
-                        <td id="T_0e0d3_row53_col2" class="data row53 col2" >acc</td>
-                        <td id="T_0e0d3_row53_col3" class="data row53 col3" >36</td>
+                        <th id="T_f6c04_level0_row53" class="row_heading level0 row53" >53</th>
+                        <td id="T_f6c04_row53_col0" class="data row53 col0" >vhigh</td>
+                        <td id="T_f6c04_row53_col1" class="data row53 col1" >med</td>
+                        <td id="T_f6c04_row53_col2" class="data row53 col2" >acc</td>
+                        <td id="T_f6c04_row53_col3" class="data row53 col3" >36</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row54" class="row_heading level0 row54" >54</th>
-                        <td id="T_0e0d3_row54_col0" class="data row54 col0" >vhigh</td>
-                        <td id="T_0e0d3_row54_col1" class="data row54 col1" >med</td>
-                        <td id="T_0e0d3_row54_col2" class="data row54 col2" >good</td>
-                        <td id="T_0e0d3_row54_col3" class="data row54 col3" >0</td>
+                        <th id="T_f6c04_level0_row54" class="row_heading level0 row54" >54</th>
+                        <td id="T_f6c04_row54_col0" class="data row54 col0" >vhigh</td>
+                        <td id="T_f6c04_row54_col1" class="data row54 col1" >med</td>
+                        <td id="T_f6c04_row54_col2" class="data row54 col2" >good</td>
+                        <td id="T_f6c04_row54_col3" class="data row54 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row55" class="row_heading level0 row55" >55</th>
-                        <td id="T_0e0d3_row55_col0" class="data row55 col0" >vhigh</td>
-                        <td id="T_0e0d3_row55_col1" class="data row55 col1" >med</td>
-                        <td id="T_0e0d3_row55_col2" class="data row55 col2" >v-good</td>
-                        <td id="T_0e0d3_row55_col3" class="data row55 col3" >0</td>
+                        <th id="T_f6c04_level0_row55" class="row_heading level0 row55" >55</th>
+                        <td id="T_f6c04_row55_col0" class="data row55 col0" >vhigh</td>
+                        <td id="T_f6c04_row55_col1" class="data row55 col1" >med</td>
+                        <td id="T_f6c04_row55_col2" class="data row55 col2" >v-good</td>
+                        <td id="T_f6c04_row55_col3" class="data row55 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row56" class="row_heading level0 row56" >56</th>
-                        <td id="T_0e0d3_row56_col0" class="data row56 col0" >vhigh</td>
-                        <td id="T_0e0d3_row56_col1" class="data row56 col1" >high</td>
-                        <td id="T_0e0d3_row56_col2" class="data row56 col2" >unacc</td>
-                        <td id="T_0e0d3_row56_col3" class="data row56 col3" >108</td>
+                        <th id="T_f6c04_level0_row56" class="row_heading level0 row56" >56</th>
+                        <td id="T_f6c04_row56_col0" class="data row56 col0" >vhigh</td>
+                        <td id="T_f6c04_row56_col1" class="data row56 col1" >high</td>
+                        <td id="T_f6c04_row56_col2" class="data row56 col2" >unacc</td>
+                        <td id="T_f6c04_row56_col3" class="data row56 col3" >108</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row57" class="row_heading level0 row57" >57</th>
-                        <td id="T_0e0d3_row57_col0" class="data row57 col0" >vhigh</td>
-                        <td id="T_0e0d3_row57_col1" class="data row57 col1" >high</td>
-                        <td id="T_0e0d3_row57_col2" class="data row57 col2" >acc</td>
-                        <td id="T_0e0d3_row57_col3" class="data row57 col3" >0</td>
+                        <th id="T_f6c04_level0_row57" class="row_heading level0 row57" >57</th>
+                        <td id="T_f6c04_row57_col0" class="data row57 col0" >vhigh</td>
+                        <td id="T_f6c04_row57_col1" class="data row57 col1" >high</td>
+                        <td id="T_f6c04_row57_col2" class="data row57 col2" >acc</td>
+                        <td id="T_f6c04_row57_col3" class="data row57 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row58" class="row_heading level0 row58" >58</th>
-                        <td id="T_0e0d3_row58_col0" class="data row58 col0" >vhigh</td>
-                        <td id="T_0e0d3_row58_col1" class="data row58 col1" >high</td>
-                        <td id="T_0e0d3_row58_col2" class="data row58 col2" >good</td>
-                        <td id="T_0e0d3_row58_col3" class="data row58 col3" >0</td>
+                        <th id="T_f6c04_level0_row58" class="row_heading level0 row58" >58</th>
+                        <td id="T_f6c04_row58_col0" class="data row58 col0" >vhigh</td>
+                        <td id="T_f6c04_row58_col1" class="data row58 col1" >high</td>
+                        <td id="T_f6c04_row58_col2" class="data row58 col2" >good</td>
+                        <td id="T_f6c04_row58_col3" class="data row58 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row59" class="row_heading level0 row59" >59</th>
-                        <td id="T_0e0d3_row59_col0" class="data row59 col0" >vhigh</td>
-                        <td id="T_0e0d3_row59_col1" class="data row59 col1" >high</td>
-                        <td id="T_0e0d3_row59_col2" class="data row59 col2" >v-good</td>
-                        <td id="T_0e0d3_row59_col3" class="data row59 col3" >0</td>
+                        <th id="T_f6c04_level0_row59" class="row_heading level0 row59" >59</th>
+                        <td id="T_f6c04_row59_col0" class="data row59 col0" >vhigh</td>
+                        <td id="T_f6c04_row59_col1" class="data row59 col1" >high</td>
+                        <td id="T_f6c04_row59_col2" class="data row59 col2" >v-good</td>
+                        <td id="T_f6c04_row59_col3" class="data row59 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row60" class="row_heading level0 row60" >60</th>
-                        <td id="T_0e0d3_row60_col0" class="data row60 col0" >vhigh</td>
-                        <td id="T_0e0d3_row60_col1" class="data row60 col1" >vhigh</td>
-                        <td id="T_0e0d3_row60_col2" class="data row60 col2" >unacc</td>
-                        <td id="T_0e0d3_row60_col3" class="data row60 col3" >108</td>
+                        <th id="T_f6c04_level0_row60" class="row_heading level0 row60" >60</th>
+                        <td id="T_f6c04_row60_col0" class="data row60 col0" >vhigh</td>
+                        <td id="T_f6c04_row60_col1" class="data row60 col1" >vhigh</td>
+                        <td id="T_f6c04_row60_col2" class="data row60 col2" >unacc</td>
+                        <td id="T_f6c04_row60_col3" class="data row60 col3" >108</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row61" class="row_heading level0 row61" >61</th>
-                        <td id="T_0e0d3_row61_col0" class="data row61 col0" >vhigh</td>
-                        <td id="T_0e0d3_row61_col1" class="data row61 col1" >vhigh</td>
-                        <td id="T_0e0d3_row61_col2" class="data row61 col2" >acc</td>
-                        <td id="T_0e0d3_row61_col3" class="data row61 col3" >0</td>
+                        <th id="T_f6c04_level0_row61" class="row_heading level0 row61" >61</th>
+                        <td id="T_f6c04_row61_col0" class="data row61 col0" >vhigh</td>
+                        <td id="T_f6c04_row61_col1" class="data row61 col1" >vhigh</td>
+                        <td id="T_f6c04_row61_col2" class="data row61 col2" >acc</td>
+                        <td id="T_f6c04_row61_col3" class="data row61 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row62" class="row_heading level0 row62" >62</th>
-                        <td id="T_0e0d3_row62_col0" class="data row62 col0" >vhigh</td>
-                        <td id="T_0e0d3_row62_col1" class="data row62 col1" >vhigh</td>
-                        <td id="T_0e0d3_row62_col2" class="data row62 col2" >good</td>
-                        <td id="T_0e0d3_row62_col3" class="data row62 col3" >0</td>
+                        <th id="T_f6c04_level0_row62" class="row_heading level0 row62" >62</th>
+                        <td id="T_f6c04_row62_col0" class="data row62 col0" >vhigh</td>
+                        <td id="T_f6c04_row62_col1" class="data row62 col1" >vhigh</td>
+                        <td id="T_f6c04_row62_col2" class="data row62 col2" >good</td>
+                        <td id="T_f6c04_row62_col3" class="data row62 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_0e0d3_level0_row63" class="row_heading level0 row63" >63</th>
-                        <td id="T_0e0d3_row63_col0" class="data row63 col0" >vhigh</td>
-                        <td id="T_0e0d3_row63_col1" class="data row63 col1" >vhigh</td>
-                        <td id="T_0e0d3_row63_col2" class="data row63 col2" >v-good</td>
-                        <td id="T_0e0d3_row63_col3" class="data row63 col3" >0</td>
+                        <th id="T_f6c04_level0_row63" class="row_heading level0 row63" >63</th>
+                        <td id="T_f6c04_row63_col0" class="data row63 col0" >vhigh</td>
+                        <td id="T_f6c04_row63_col1" class="data row63 col1" >vhigh</td>
+                        <td id="T_f6c04_row63_col2" class="data row63 col2" >v-good</td>
+                        <td id="T_f6c04_row63_col3" class="data row63 col3" >0</td>
             </tr>
     </tbody></table>
 
@@ -1723,478 +1725,478 @@ df4.style.background_gradient(cmap='Blues')
 
 
 <style  type="text/css" >
-#T_da4e6_row0_col3,#T_da4e6_row4_col3,#T_da4e6_row8_col3,#T_da4e6_row16_col3,#T_da4e6_row20_col3{
+#T_d1a82_row0_col3,#T_d1a82_row4_col3,#T_d1a82_row8_col3,#T_d1a82_row16_col3,#T_d1a82_row20_col3{
             background-color:  #539ecd;
             color:  #000000;
-        }#T_da4e6_row1_col3,#T_da4e6_row5_col3,#T_da4e6_row17_col3{
+        }#T_d1a82_row1_col3,#T_d1a82_row5_col3,#T_d1a82_row17_col3{
             background-color:  #e5eff9;
             color:  #000000;
-        }#T_da4e6_row2_col3,#T_da4e6_row6_col3,#T_da4e6_row18_col3{
+        }#T_d1a82_row2_col3,#T_d1a82_row6_col3,#T_d1a82_row18_col3{
             background-color:  #cde0f1;
             color:  #000000;
-        }#T_da4e6_row3_col3,#T_da4e6_row7_col3,#T_da4e6_row10_col3,#T_da4e6_row11_col3,#T_da4e6_row14_col3,#T_da4e6_row15_col3,#T_da4e6_row19_col3,#T_da4e6_row22_col3,#T_da4e6_row23_col3,#T_da4e6_row26_col3,#T_da4e6_row27_col3,#T_da4e6_row30_col3,#T_da4e6_row31_col3,#T_da4e6_row34_col3,#T_da4e6_row35_col3,#T_da4e6_row38_col3,#T_da4e6_row39_col3,#T_da4e6_row42_col3,#T_da4e6_row43_col3,#T_da4e6_row45_col3,#T_da4e6_row46_col3,#T_da4e6_row47_col3,#T_da4e6_row50_col3,#T_da4e6_row51_col3,#T_da4e6_row54_col3,#T_da4e6_row55_col3,#T_da4e6_row57_col3,#T_da4e6_row58_col3,#T_da4e6_row59_col3,#T_da4e6_row61_col3,#T_da4e6_row62_col3,#T_da4e6_row63_col3{
+        }#T_d1a82_row3_col3,#T_d1a82_row7_col3,#T_d1a82_row10_col3,#T_d1a82_row11_col3,#T_d1a82_row14_col3,#T_d1a82_row15_col3,#T_d1a82_row19_col3,#T_d1a82_row22_col3,#T_d1a82_row23_col3,#T_d1a82_row26_col3,#T_d1a82_row27_col3,#T_d1a82_row30_col3,#T_d1a82_row31_col3,#T_d1a82_row34_col3,#T_d1a82_row35_col3,#T_d1a82_row38_col3,#T_d1a82_row39_col3,#T_d1a82_row42_col3,#T_d1a82_row43_col3,#T_d1a82_row45_col3,#T_d1a82_row46_col3,#T_d1a82_row47_col3,#T_d1a82_row50_col3,#T_d1a82_row51_col3,#T_d1a82_row54_col3,#T_d1a82_row55_col3,#T_d1a82_row57_col3,#T_d1a82_row58_col3,#T_d1a82_row59_col3,#T_d1a82_row61_col3,#T_d1a82_row62_col3,#T_d1a82_row63_col3{
             background-color:  #f7fbff;
             color:  #000000;
-        }#T_da4e6_row9_col3,#T_da4e6_row21_col3{
+        }#T_d1a82_row9_col3,#T_d1a82_row21_col3{
             background-color:  #b4d3e9;
             color:  #000000;
-        }#T_da4e6_row12_col3,#T_da4e6_row24_col3,#T_da4e6_row28_col3,#T_da4e6_row32_col3,#T_da4e6_row36_col3,#T_da4e6_row40_col3,#T_da4e6_row48_col3,#T_da4e6_row52_col3{
+        }#T_d1a82_row12_col3,#T_d1a82_row24_col3,#T_d1a82_row28_col3,#T_d1a82_row32_col3,#T_d1a82_row36_col3,#T_d1a82_row40_col3,#T_d1a82_row48_col3,#T_d1a82_row52_col3{
             background-color:  #3787c0;
             color:  #000000;
-        }#T_da4e6_row13_col3,#T_da4e6_row25_col3,#T_da4e6_row29_col3,#T_da4e6_row33_col3,#T_da4e6_row37_col3,#T_da4e6_row41_col3,#T_da4e6_row49_col3,#T_da4e6_row53_col3{
+        }#T_d1a82_row13_col3,#T_d1a82_row25_col3,#T_d1a82_row29_col3,#T_d1a82_row33_col3,#T_d1a82_row37_col3,#T_d1a82_row41_col3,#T_d1a82_row49_col3,#T_d1a82_row53_col3{
             background-color:  #abd0e6;
             color:  #000000;
-        }#T_da4e6_row44_col3,#T_da4e6_row56_col3,#T_da4e6_row60_col3{
+        }#T_d1a82_row44_col3,#T_d1a82_row56_col3,#T_d1a82_row60_col3{
             background-color:  #08306b;
             color:  #f1f1f1;
-        }</style><table id="T_da4e6_" ><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >buying</th>        <th class="col_heading level0 col1" >maint</th>        <th class="col_heading level0 col2" >class</th>        <th class="col_heading level0 col3" >count</th>    </tr></thead><tbody>
+        }</style><table id="T_d1a82_" ><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >buying</th>        <th class="col_heading level0 col1" >maint</th>        <th class="col_heading level0 col2" >class</th>        <th class="col_heading level0 col3" >count</th>    </tr></thead><tbody>
                 <tr>
-                        <th id="T_da4e6_level0_row0" class="row_heading level0 row0" >0</th>
-                        <td id="T_da4e6_row0_col0" class="data row0 col0" >low</td>
-                        <td id="T_da4e6_row0_col1" class="data row0 col1" >low</td>
-                        <td id="T_da4e6_row0_col2" class="data row0 col2" >unacc</td>
-                        <td id="T_da4e6_row0_col3" class="data row0 col3" >62</td>
+                        <th id="T_d1a82_level0_row0" class="row_heading level0 row0" >0</th>
+                        <td id="T_d1a82_row0_col0" class="data row0 col0" >low</td>
+                        <td id="T_d1a82_row0_col1" class="data row0 col1" >low</td>
+                        <td id="T_d1a82_row0_col2" class="data row0 col2" >unacc</td>
+                        <td id="T_d1a82_row0_col3" class="data row0 col3" >62</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row1" class="row_heading level0 row1" >1</th>
-                        <td id="T_da4e6_row1_col0" class="data row1 col0" >low</td>
-                        <td id="T_da4e6_row1_col1" class="data row1 col1" >low</td>
-                        <td id="T_da4e6_row1_col2" class="data row1 col2" >acc</td>
-                        <td id="T_da4e6_row1_col3" class="data row1 col3" >10</td>
+                        <th id="T_d1a82_level0_row1" class="row_heading level0 row1" >1</th>
+                        <td id="T_d1a82_row1_col0" class="data row1 col0" >low</td>
+                        <td id="T_d1a82_row1_col1" class="data row1 col1" >low</td>
+                        <td id="T_d1a82_row1_col2" class="data row1 col2" >acc</td>
+                        <td id="T_d1a82_row1_col3" class="data row1 col3" >10</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row2" class="row_heading level0 row2" >2</th>
-                        <td id="T_da4e6_row2_col0" class="data row2 col0" >low</td>
-                        <td id="T_da4e6_row2_col1" class="data row2 col1" >low</td>
-                        <td id="T_da4e6_row2_col2" class="data row2 col2" >good</td>
-                        <td id="T_da4e6_row2_col3" class="data row2 col3" >23</td>
+                        <th id="T_d1a82_level0_row2" class="row_heading level0 row2" >2</th>
+                        <td id="T_d1a82_row2_col0" class="data row2 col0" >low</td>
+                        <td id="T_d1a82_row2_col1" class="data row2 col1" >low</td>
+                        <td id="T_d1a82_row2_col2" class="data row2 col2" >good</td>
+                        <td id="T_d1a82_row2_col3" class="data row2 col3" >23</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row3" class="row_heading level0 row3" >3</th>
-                        <td id="T_da4e6_row3_col0" class="data row3 col0" >low</td>
-                        <td id="T_da4e6_row3_col1" class="data row3 col1" >low</td>
-                        <td id="T_da4e6_row3_col2" class="data row3 col2" >v-good</td>
-                        <td id="T_da4e6_row3_col3" class="data row3 col3" >0</td>
+                        <th id="T_d1a82_level0_row3" class="row_heading level0 row3" >3</th>
+                        <td id="T_d1a82_row3_col0" class="data row3 col0" >low</td>
+                        <td id="T_d1a82_row3_col1" class="data row3 col1" >low</td>
+                        <td id="T_d1a82_row3_col2" class="data row3 col2" >v-good</td>
+                        <td id="T_d1a82_row3_col3" class="data row3 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row4" class="row_heading level0 row4" >4</th>
-                        <td id="T_da4e6_row4_col0" class="data row4 col0" >low</td>
-                        <td id="T_da4e6_row4_col1" class="data row4 col1" >med</td>
-                        <td id="T_da4e6_row4_col2" class="data row4 col2" >unacc</td>
-                        <td id="T_da4e6_row4_col3" class="data row4 col3" >62</td>
+                        <th id="T_d1a82_level0_row4" class="row_heading level0 row4" >4</th>
+                        <td id="T_d1a82_row4_col0" class="data row4 col0" >low</td>
+                        <td id="T_d1a82_row4_col1" class="data row4 col1" >med</td>
+                        <td id="T_d1a82_row4_col2" class="data row4 col2" >unacc</td>
+                        <td id="T_d1a82_row4_col3" class="data row4 col3" >62</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row5" class="row_heading level0 row5" >5</th>
-                        <td id="T_da4e6_row5_col0" class="data row5 col0" >low</td>
-                        <td id="T_da4e6_row5_col1" class="data row5 col1" >med</td>
-                        <td id="T_da4e6_row5_col2" class="data row5 col2" >acc</td>
-                        <td id="T_da4e6_row5_col3" class="data row5 col3" >10</td>
+                        <th id="T_d1a82_level0_row5" class="row_heading level0 row5" >5</th>
+                        <td id="T_d1a82_row5_col0" class="data row5 col0" >low</td>
+                        <td id="T_d1a82_row5_col1" class="data row5 col1" >med</td>
+                        <td id="T_d1a82_row5_col2" class="data row5 col2" >acc</td>
+                        <td id="T_d1a82_row5_col3" class="data row5 col3" >10</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row6" class="row_heading level0 row6" >6</th>
-                        <td id="T_da4e6_row6_col0" class="data row6 col0" >low</td>
-                        <td id="T_da4e6_row6_col1" class="data row6 col1" >med</td>
-                        <td id="T_da4e6_row6_col2" class="data row6 col2" >good</td>
-                        <td id="T_da4e6_row6_col3" class="data row6 col3" >23</td>
+                        <th id="T_d1a82_level0_row6" class="row_heading level0 row6" >6</th>
+                        <td id="T_d1a82_row6_col0" class="data row6 col0" >low</td>
+                        <td id="T_d1a82_row6_col1" class="data row6 col1" >med</td>
+                        <td id="T_d1a82_row6_col2" class="data row6 col2" >good</td>
+                        <td id="T_d1a82_row6_col3" class="data row6 col3" >23</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row7" class="row_heading level0 row7" >7</th>
-                        <td id="T_da4e6_row7_col0" class="data row7 col0" >low</td>
-                        <td id="T_da4e6_row7_col1" class="data row7 col1" >med</td>
-                        <td id="T_da4e6_row7_col2" class="data row7 col2" >v-good</td>
-                        <td id="T_da4e6_row7_col3" class="data row7 col3" >0</td>
+                        <th id="T_d1a82_level0_row7" class="row_heading level0 row7" >7</th>
+                        <td id="T_d1a82_row7_col0" class="data row7 col0" >low</td>
+                        <td id="T_d1a82_row7_col1" class="data row7 col1" >med</td>
+                        <td id="T_d1a82_row7_col2" class="data row7 col2" >v-good</td>
+                        <td id="T_d1a82_row7_col3" class="data row7 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row8" class="row_heading level0 row8" >8</th>
-                        <td id="T_da4e6_row8_col0" class="data row8 col0" >low</td>
-                        <td id="T_da4e6_row8_col1" class="data row8 col1" >high</td>
-                        <td id="T_da4e6_row8_col2" class="data row8 col2" >unacc</td>
-                        <td id="T_da4e6_row8_col3" class="data row8 col3" >62</td>
+                        <th id="T_d1a82_level0_row8" class="row_heading level0 row8" >8</th>
+                        <td id="T_d1a82_row8_col0" class="data row8 col0" >low</td>
+                        <td id="T_d1a82_row8_col1" class="data row8 col1" >high</td>
+                        <td id="T_d1a82_row8_col2" class="data row8 col2" >unacc</td>
+                        <td id="T_d1a82_row8_col3" class="data row8 col3" >62</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row9" class="row_heading level0 row9" >9</th>
-                        <td id="T_da4e6_row9_col0" class="data row9 col0" >low</td>
-                        <td id="T_da4e6_row9_col1" class="data row9 col1" >high</td>
-                        <td id="T_da4e6_row9_col2" class="data row9 col2" >acc</td>
-                        <td id="T_da4e6_row9_col3" class="data row9 col3" >33</td>
+                        <th id="T_d1a82_level0_row9" class="row_heading level0 row9" >9</th>
+                        <td id="T_d1a82_row9_col0" class="data row9 col0" >low</td>
+                        <td id="T_d1a82_row9_col1" class="data row9 col1" >high</td>
+                        <td id="T_d1a82_row9_col2" class="data row9 col2" >acc</td>
+                        <td id="T_d1a82_row9_col3" class="data row9 col3" >33</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row10" class="row_heading level0 row10" >10</th>
-                        <td id="T_da4e6_row10_col0" class="data row10 col0" >low</td>
-                        <td id="T_da4e6_row10_col1" class="data row10 col1" >high</td>
-                        <td id="T_da4e6_row10_col2" class="data row10 col2" >good</td>
-                        <td id="T_da4e6_row10_col3" class="data row10 col3" >0</td>
+                        <th id="T_d1a82_level0_row10" class="row_heading level0 row10" >10</th>
+                        <td id="T_d1a82_row10_col0" class="data row10 col0" >low</td>
+                        <td id="T_d1a82_row10_col1" class="data row10 col1" >high</td>
+                        <td id="T_d1a82_row10_col2" class="data row10 col2" >good</td>
+                        <td id="T_d1a82_row10_col3" class="data row10 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row11" class="row_heading level0 row11" >11</th>
-                        <td id="T_da4e6_row11_col0" class="data row11 col0" >low</td>
-                        <td id="T_da4e6_row11_col1" class="data row11 col1" >high</td>
-                        <td id="T_da4e6_row11_col2" class="data row11 col2" >v-good</td>
-                        <td id="T_da4e6_row11_col3" class="data row11 col3" >0</td>
+                        <th id="T_d1a82_level0_row11" class="row_heading level0 row11" >11</th>
+                        <td id="T_d1a82_row11_col0" class="data row11 col0" >low</td>
+                        <td id="T_d1a82_row11_col1" class="data row11 col1" >high</td>
+                        <td id="T_d1a82_row11_col2" class="data row11 col2" >v-good</td>
+                        <td id="T_d1a82_row11_col3" class="data row11 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row12" class="row_heading level0 row12" >12</th>
-                        <td id="T_da4e6_row12_col0" class="data row12 col0" >low</td>
-                        <td id="T_da4e6_row12_col1" class="data row12 col1" >vhigh</td>
-                        <td id="T_da4e6_row12_col2" class="data row12 col2" >unacc</td>
-                        <td id="T_da4e6_row12_col3" class="data row12 col3" >72</td>
+                        <th id="T_d1a82_level0_row12" class="row_heading level0 row12" >12</th>
+                        <td id="T_d1a82_row12_col0" class="data row12 col0" >low</td>
+                        <td id="T_d1a82_row12_col1" class="data row12 col1" >vhigh</td>
+                        <td id="T_d1a82_row12_col2" class="data row12 col2" >unacc</td>
+                        <td id="T_d1a82_row12_col3" class="data row12 col3" >72</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row13" class="row_heading level0 row13" >13</th>
-                        <td id="T_da4e6_row13_col0" class="data row13 col0" >low</td>
-                        <td id="T_da4e6_row13_col1" class="data row13 col1" >vhigh</td>
-                        <td id="T_da4e6_row13_col2" class="data row13 col2" >acc</td>
-                        <td id="T_da4e6_row13_col3" class="data row13 col3" >36</td>
+                        <th id="T_d1a82_level0_row13" class="row_heading level0 row13" >13</th>
+                        <td id="T_d1a82_row13_col0" class="data row13 col0" >low</td>
+                        <td id="T_d1a82_row13_col1" class="data row13 col1" >vhigh</td>
+                        <td id="T_d1a82_row13_col2" class="data row13 col2" >acc</td>
+                        <td id="T_d1a82_row13_col3" class="data row13 col3" >36</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row14" class="row_heading level0 row14" >14</th>
-                        <td id="T_da4e6_row14_col0" class="data row14 col0" >low</td>
-                        <td id="T_da4e6_row14_col1" class="data row14 col1" >vhigh</td>
-                        <td id="T_da4e6_row14_col2" class="data row14 col2" >good</td>
-                        <td id="T_da4e6_row14_col3" class="data row14 col3" >0</td>
+                        <th id="T_d1a82_level0_row14" class="row_heading level0 row14" >14</th>
+                        <td id="T_d1a82_row14_col0" class="data row14 col0" >low</td>
+                        <td id="T_d1a82_row14_col1" class="data row14 col1" >vhigh</td>
+                        <td id="T_d1a82_row14_col2" class="data row14 col2" >good</td>
+                        <td id="T_d1a82_row14_col3" class="data row14 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row15" class="row_heading level0 row15" >15</th>
-                        <td id="T_da4e6_row15_col0" class="data row15 col0" >low</td>
-                        <td id="T_da4e6_row15_col1" class="data row15 col1" >vhigh</td>
-                        <td id="T_da4e6_row15_col2" class="data row15 col2" >v-good</td>
-                        <td id="T_da4e6_row15_col3" class="data row15 col3" >0</td>
+                        <th id="T_d1a82_level0_row15" class="row_heading level0 row15" >15</th>
+                        <td id="T_d1a82_row15_col0" class="data row15 col0" >low</td>
+                        <td id="T_d1a82_row15_col1" class="data row15 col1" >vhigh</td>
+                        <td id="T_d1a82_row15_col2" class="data row15 col2" >v-good</td>
+                        <td id="T_d1a82_row15_col3" class="data row15 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row16" class="row_heading level0 row16" >16</th>
-                        <td id="T_da4e6_row16_col0" class="data row16 col0" >med</td>
-                        <td id="T_da4e6_row16_col1" class="data row16 col1" >low</td>
-                        <td id="T_da4e6_row16_col2" class="data row16 col2" >unacc</td>
-                        <td id="T_da4e6_row16_col3" class="data row16 col3" >62</td>
+                        <th id="T_d1a82_level0_row16" class="row_heading level0 row16" >16</th>
+                        <td id="T_d1a82_row16_col0" class="data row16 col0" >med</td>
+                        <td id="T_d1a82_row16_col1" class="data row16 col1" >low</td>
+                        <td id="T_d1a82_row16_col2" class="data row16 col2" >unacc</td>
+                        <td id="T_d1a82_row16_col3" class="data row16 col3" >62</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row17" class="row_heading level0 row17" >17</th>
-                        <td id="T_da4e6_row17_col0" class="data row17 col0" >med</td>
-                        <td id="T_da4e6_row17_col1" class="data row17 col1" >low</td>
-                        <td id="T_da4e6_row17_col2" class="data row17 col2" >acc</td>
-                        <td id="T_da4e6_row17_col3" class="data row17 col3" >10</td>
+                        <th id="T_d1a82_level0_row17" class="row_heading level0 row17" >17</th>
+                        <td id="T_d1a82_row17_col0" class="data row17 col0" >med</td>
+                        <td id="T_d1a82_row17_col1" class="data row17 col1" >low</td>
+                        <td id="T_d1a82_row17_col2" class="data row17 col2" >acc</td>
+                        <td id="T_d1a82_row17_col3" class="data row17 col3" >10</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row18" class="row_heading level0 row18" >18</th>
-                        <td id="T_da4e6_row18_col0" class="data row18 col0" >med</td>
-                        <td id="T_da4e6_row18_col1" class="data row18 col1" >low</td>
-                        <td id="T_da4e6_row18_col2" class="data row18 col2" >good</td>
-                        <td id="T_da4e6_row18_col3" class="data row18 col3" >23</td>
+                        <th id="T_d1a82_level0_row18" class="row_heading level0 row18" >18</th>
+                        <td id="T_d1a82_row18_col0" class="data row18 col0" >med</td>
+                        <td id="T_d1a82_row18_col1" class="data row18 col1" >low</td>
+                        <td id="T_d1a82_row18_col2" class="data row18 col2" >good</td>
+                        <td id="T_d1a82_row18_col3" class="data row18 col3" >23</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row19" class="row_heading level0 row19" >19</th>
-                        <td id="T_da4e6_row19_col0" class="data row19 col0" >med</td>
-                        <td id="T_da4e6_row19_col1" class="data row19 col1" >low</td>
-                        <td id="T_da4e6_row19_col2" class="data row19 col2" >v-good</td>
-                        <td id="T_da4e6_row19_col3" class="data row19 col3" >0</td>
+                        <th id="T_d1a82_level0_row19" class="row_heading level0 row19" >19</th>
+                        <td id="T_d1a82_row19_col0" class="data row19 col0" >med</td>
+                        <td id="T_d1a82_row19_col1" class="data row19 col1" >low</td>
+                        <td id="T_d1a82_row19_col2" class="data row19 col2" >v-good</td>
+                        <td id="T_d1a82_row19_col3" class="data row19 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row20" class="row_heading level0 row20" >20</th>
-                        <td id="T_da4e6_row20_col0" class="data row20 col0" >med</td>
-                        <td id="T_da4e6_row20_col1" class="data row20 col1" >med</td>
-                        <td id="T_da4e6_row20_col2" class="data row20 col2" >unacc</td>
-                        <td id="T_da4e6_row20_col3" class="data row20 col3" >62</td>
+                        <th id="T_d1a82_level0_row20" class="row_heading level0 row20" >20</th>
+                        <td id="T_d1a82_row20_col0" class="data row20 col0" >med</td>
+                        <td id="T_d1a82_row20_col1" class="data row20 col1" >med</td>
+                        <td id="T_d1a82_row20_col2" class="data row20 col2" >unacc</td>
+                        <td id="T_d1a82_row20_col3" class="data row20 col3" >62</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row21" class="row_heading level0 row21" >21</th>
-                        <td id="T_da4e6_row21_col0" class="data row21 col0" >med</td>
-                        <td id="T_da4e6_row21_col1" class="data row21 col1" >med</td>
-                        <td id="T_da4e6_row21_col2" class="data row21 col2" >acc</td>
-                        <td id="T_da4e6_row21_col3" class="data row21 col3" >33</td>
+                        <th id="T_d1a82_level0_row21" class="row_heading level0 row21" >21</th>
+                        <td id="T_d1a82_row21_col0" class="data row21 col0" >med</td>
+                        <td id="T_d1a82_row21_col1" class="data row21 col1" >med</td>
+                        <td id="T_d1a82_row21_col2" class="data row21 col2" >acc</td>
+                        <td id="T_d1a82_row21_col3" class="data row21 col3" >33</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row22" class="row_heading level0 row22" >22</th>
-                        <td id="T_da4e6_row22_col0" class="data row22 col0" >med</td>
-                        <td id="T_da4e6_row22_col1" class="data row22 col1" >med</td>
-                        <td id="T_da4e6_row22_col2" class="data row22 col2" >good</td>
-                        <td id="T_da4e6_row22_col3" class="data row22 col3" >0</td>
+                        <th id="T_d1a82_level0_row22" class="row_heading level0 row22" >22</th>
+                        <td id="T_d1a82_row22_col0" class="data row22 col0" >med</td>
+                        <td id="T_d1a82_row22_col1" class="data row22 col1" >med</td>
+                        <td id="T_d1a82_row22_col2" class="data row22 col2" >good</td>
+                        <td id="T_d1a82_row22_col3" class="data row22 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row23" class="row_heading level0 row23" >23</th>
-                        <td id="T_da4e6_row23_col0" class="data row23 col0" >med</td>
-                        <td id="T_da4e6_row23_col1" class="data row23 col1" >med</td>
-                        <td id="T_da4e6_row23_col2" class="data row23 col2" >v-good</td>
-                        <td id="T_da4e6_row23_col3" class="data row23 col3" >0</td>
+                        <th id="T_d1a82_level0_row23" class="row_heading level0 row23" >23</th>
+                        <td id="T_d1a82_row23_col0" class="data row23 col0" >med</td>
+                        <td id="T_d1a82_row23_col1" class="data row23 col1" >med</td>
+                        <td id="T_d1a82_row23_col2" class="data row23 col2" >v-good</td>
+                        <td id="T_d1a82_row23_col3" class="data row23 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row24" class="row_heading level0 row24" >24</th>
-                        <td id="T_da4e6_row24_col0" class="data row24 col0" >med</td>
-                        <td id="T_da4e6_row24_col1" class="data row24 col1" >high</td>
-                        <td id="T_da4e6_row24_col2" class="data row24 col2" >unacc</td>
-                        <td id="T_da4e6_row24_col3" class="data row24 col3" >72</td>
+                        <th id="T_d1a82_level0_row24" class="row_heading level0 row24" >24</th>
+                        <td id="T_d1a82_row24_col0" class="data row24 col0" >med</td>
+                        <td id="T_d1a82_row24_col1" class="data row24 col1" >high</td>
+                        <td id="T_d1a82_row24_col2" class="data row24 col2" >unacc</td>
+                        <td id="T_d1a82_row24_col3" class="data row24 col3" >72</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row25" class="row_heading level0 row25" >25</th>
-                        <td id="T_da4e6_row25_col0" class="data row25 col0" >med</td>
-                        <td id="T_da4e6_row25_col1" class="data row25 col1" >high</td>
-                        <td id="T_da4e6_row25_col2" class="data row25 col2" >acc</td>
-                        <td id="T_da4e6_row25_col3" class="data row25 col3" >36</td>
+                        <th id="T_d1a82_level0_row25" class="row_heading level0 row25" >25</th>
+                        <td id="T_d1a82_row25_col0" class="data row25 col0" >med</td>
+                        <td id="T_d1a82_row25_col1" class="data row25 col1" >high</td>
+                        <td id="T_d1a82_row25_col2" class="data row25 col2" >acc</td>
+                        <td id="T_d1a82_row25_col3" class="data row25 col3" >36</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row26" class="row_heading level0 row26" >26</th>
-                        <td id="T_da4e6_row26_col0" class="data row26 col0" >med</td>
-                        <td id="T_da4e6_row26_col1" class="data row26 col1" >high</td>
-                        <td id="T_da4e6_row26_col2" class="data row26 col2" >good</td>
-                        <td id="T_da4e6_row26_col3" class="data row26 col3" >0</td>
+                        <th id="T_d1a82_level0_row26" class="row_heading level0 row26" >26</th>
+                        <td id="T_d1a82_row26_col0" class="data row26 col0" >med</td>
+                        <td id="T_d1a82_row26_col1" class="data row26 col1" >high</td>
+                        <td id="T_d1a82_row26_col2" class="data row26 col2" >good</td>
+                        <td id="T_d1a82_row26_col3" class="data row26 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row27" class="row_heading level0 row27" >27</th>
-                        <td id="T_da4e6_row27_col0" class="data row27 col0" >med</td>
-                        <td id="T_da4e6_row27_col1" class="data row27 col1" >high</td>
-                        <td id="T_da4e6_row27_col2" class="data row27 col2" >v-good</td>
-                        <td id="T_da4e6_row27_col3" class="data row27 col3" >0</td>
+                        <th id="T_d1a82_level0_row27" class="row_heading level0 row27" >27</th>
+                        <td id="T_d1a82_row27_col0" class="data row27 col0" >med</td>
+                        <td id="T_d1a82_row27_col1" class="data row27 col1" >high</td>
+                        <td id="T_d1a82_row27_col2" class="data row27 col2" >v-good</td>
+                        <td id="T_d1a82_row27_col3" class="data row27 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row28" class="row_heading level0 row28" >28</th>
-                        <td id="T_da4e6_row28_col0" class="data row28 col0" >med</td>
-                        <td id="T_da4e6_row28_col1" class="data row28 col1" >vhigh</td>
-                        <td id="T_da4e6_row28_col2" class="data row28 col2" >unacc</td>
-                        <td id="T_da4e6_row28_col3" class="data row28 col3" >72</td>
+                        <th id="T_d1a82_level0_row28" class="row_heading level0 row28" >28</th>
+                        <td id="T_d1a82_row28_col0" class="data row28 col0" >med</td>
+                        <td id="T_d1a82_row28_col1" class="data row28 col1" >vhigh</td>
+                        <td id="T_d1a82_row28_col2" class="data row28 col2" >unacc</td>
+                        <td id="T_d1a82_row28_col3" class="data row28 col3" >72</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row29" class="row_heading level0 row29" >29</th>
-                        <td id="T_da4e6_row29_col0" class="data row29 col0" >med</td>
-                        <td id="T_da4e6_row29_col1" class="data row29 col1" >vhigh</td>
-                        <td id="T_da4e6_row29_col2" class="data row29 col2" >acc</td>
-                        <td id="T_da4e6_row29_col3" class="data row29 col3" >36</td>
+                        <th id="T_d1a82_level0_row29" class="row_heading level0 row29" >29</th>
+                        <td id="T_d1a82_row29_col0" class="data row29 col0" >med</td>
+                        <td id="T_d1a82_row29_col1" class="data row29 col1" >vhigh</td>
+                        <td id="T_d1a82_row29_col2" class="data row29 col2" >acc</td>
+                        <td id="T_d1a82_row29_col3" class="data row29 col3" >36</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row30" class="row_heading level0 row30" >30</th>
-                        <td id="T_da4e6_row30_col0" class="data row30 col0" >med</td>
-                        <td id="T_da4e6_row30_col1" class="data row30 col1" >vhigh</td>
-                        <td id="T_da4e6_row30_col2" class="data row30 col2" >good</td>
-                        <td id="T_da4e6_row30_col3" class="data row30 col3" >0</td>
+                        <th id="T_d1a82_level0_row30" class="row_heading level0 row30" >30</th>
+                        <td id="T_d1a82_row30_col0" class="data row30 col0" >med</td>
+                        <td id="T_d1a82_row30_col1" class="data row30 col1" >vhigh</td>
+                        <td id="T_d1a82_row30_col2" class="data row30 col2" >good</td>
+                        <td id="T_d1a82_row30_col3" class="data row30 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row31" class="row_heading level0 row31" >31</th>
-                        <td id="T_da4e6_row31_col0" class="data row31 col0" >med</td>
-                        <td id="T_da4e6_row31_col1" class="data row31 col1" >vhigh</td>
-                        <td id="T_da4e6_row31_col2" class="data row31 col2" >v-good</td>
-                        <td id="T_da4e6_row31_col3" class="data row31 col3" >0</td>
+                        <th id="T_d1a82_level0_row31" class="row_heading level0 row31" >31</th>
+                        <td id="T_d1a82_row31_col0" class="data row31 col0" >med</td>
+                        <td id="T_d1a82_row31_col1" class="data row31 col1" >vhigh</td>
+                        <td id="T_d1a82_row31_col2" class="data row31 col2" >v-good</td>
+                        <td id="T_d1a82_row31_col3" class="data row31 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row32" class="row_heading level0 row32" >32</th>
-                        <td id="T_da4e6_row32_col0" class="data row32 col0" >high</td>
-                        <td id="T_da4e6_row32_col1" class="data row32 col1" >low</td>
-                        <td id="T_da4e6_row32_col2" class="data row32 col2" >unacc</td>
-                        <td id="T_da4e6_row32_col3" class="data row32 col3" >72</td>
+                        <th id="T_d1a82_level0_row32" class="row_heading level0 row32" >32</th>
+                        <td id="T_d1a82_row32_col0" class="data row32 col0" >high</td>
+                        <td id="T_d1a82_row32_col1" class="data row32 col1" >low</td>
+                        <td id="T_d1a82_row32_col2" class="data row32 col2" >unacc</td>
+                        <td id="T_d1a82_row32_col3" class="data row32 col3" >72</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row33" class="row_heading level0 row33" >33</th>
-                        <td id="T_da4e6_row33_col0" class="data row33 col0" >high</td>
-                        <td id="T_da4e6_row33_col1" class="data row33 col1" >low</td>
-                        <td id="T_da4e6_row33_col2" class="data row33 col2" >acc</td>
-                        <td id="T_da4e6_row33_col3" class="data row33 col3" >36</td>
+                        <th id="T_d1a82_level0_row33" class="row_heading level0 row33" >33</th>
+                        <td id="T_d1a82_row33_col0" class="data row33 col0" >high</td>
+                        <td id="T_d1a82_row33_col1" class="data row33 col1" >low</td>
+                        <td id="T_d1a82_row33_col2" class="data row33 col2" >acc</td>
+                        <td id="T_d1a82_row33_col3" class="data row33 col3" >36</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row34" class="row_heading level0 row34" >34</th>
-                        <td id="T_da4e6_row34_col0" class="data row34 col0" >high</td>
-                        <td id="T_da4e6_row34_col1" class="data row34 col1" >low</td>
-                        <td id="T_da4e6_row34_col2" class="data row34 col2" >good</td>
-                        <td id="T_da4e6_row34_col3" class="data row34 col3" >0</td>
+                        <th id="T_d1a82_level0_row34" class="row_heading level0 row34" >34</th>
+                        <td id="T_d1a82_row34_col0" class="data row34 col0" >high</td>
+                        <td id="T_d1a82_row34_col1" class="data row34 col1" >low</td>
+                        <td id="T_d1a82_row34_col2" class="data row34 col2" >good</td>
+                        <td id="T_d1a82_row34_col3" class="data row34 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row35" class="row_heading level0 row35" >35</th>
-                        <td id="T_da4e6_row35_col0" class="data row35 col0" >high</td>
-                        <td id="T_da4e6_row35_col1" class="data row35 col1" >low</td>
-                        <td id="T_da4e6_row35_col2" class="data row35 col2" >v-good</td>
-                        <td id="T_da4e6_row35_col3" class="data row35 col3" >0</td>
+                        <th id="T_d1a82_level0_row35" class="row_heading level0 row35" >35</th>
+                        <td id="T_d1a82_row35_col0" class="data row35 col0" >high</td>
+                        <td id="T_d1a82_row35_col1" class="data row35 col1" >low</td>
+                        <td id="T_d1a82_row35_col2" class="data row35 col2" >v-good</td>
+                        <td id="T_d1a82_row35_col3" class="data row35 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row36" class="row_heading level0 row36" >36</th>
-                        <td id="T_da4e6_row36_col0" class="data row36 col0" >high</td>
-                        <td id="T_da4e6_row36_col1" class="data row36 col1" >med</td>
-                        <td id="T_da4e6_row36_col2" class="data row36 col2" >unacc</td>
-                        <td id="T_da4e6_row36_col3" class="data row36 col3" >72</td>
+                        <th id="T_d1a82_level0_row36" class="row_heading level0 row36" >36</th>
+                        <td id="T_d1a82_row36_col0" class="data row36 col0" >high</td>
+                        <td id="T_d1a82_row36_col1" class="data row36 col1" >med</td>
+                        <td id="T_d1a82_row36_col2" class="data row36 col2" >unacc</td>
+                        <td id="T_d1a82_row36_col3" class="data row36 col3" >72</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row37" class="row_heading level0 row37" >37</th>
-                        <td id="T_da4e6_row37_col0" class="data row37 col0" >high</td>
-                        <td id="T_da4e6_row37_col1" class="data row37 col1" >med</td>
-                        <td id="T_da4e6_row37_col2" class="data row37 col2" >acc</td>
-                        <td id="T_da4e6_row37_col3" class="data row37 col3" >36</td>
+                        <th id="T_d1a82_level0_row37" class="row_heading level0 row37" >37</th>
+                        <td id="T_d1a82_row37_col0" class="data row37 col0" >high</td>
+                        <td id="T_d1a82_row37_col1" class="data row37 col1" >med</td>
+                        <td id="T_d1a82_row37_col2" class="data row37 col2" >acc</td>
+                        <td id="T_d1a82_row37_col3" class="data row37 col3" >36</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row38" class="row_heading level0 row38" >38</th>
-                        <td id="T_da4e6_row38_col0" class="data row38 col0" >high</td>
-                        <td id="T_da4e6_row38_col1" class="data row38 col1" >med</td>
-                        <td id="T_da4e6_row38_col2" class="data row38 col2" >good</td>
-                        <td id="T_da4e6_row38_col3" class="data row38 col3" >0</td>
+                        <th id="T_d1a82_level0_row38" class="row_heading level0 row38" >38</th>
+                        <td id="T_d1a82_row38_col0" class="data row38 col0" >high</td>
+                        <td id="T_d1a82_row38_col1" class="data row38 col1" >med</td>
+                        <td id="T_d1a82_row38_col2" class="data row38 col2" >good</td>
+                        <td id="T_d1a82_row38_col3" class="data row38 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row39" class="row_heading level0 row39" >39</th>
-                        <td id="T_da4e6_row39_col0" class="data row39 col0" >high</td>
-                        <td id="T_da4e6_row39_col1" class="data row39 col1" >med</td>
-                        <td id="T_da4e6_row39_col2" class="data row39 col2" >v-good</td>
-                        <td id="T_da4e6_row39_col3" class="data row39 col3" >0</td>
+                        <th id="T_d1a82_level0_row39" class="row_heading level0 row39" >39</th>
+                        <td id="T_d1a82_row39_col0" class="data row39 col0" >high</td>
+                        <td id="T_d1a82_row39_col1" class="data row39 col1" >med</td>
+                        <td id="T_d1a82_row39_col2" class="data row39 col2" >v-good</td>
+                        <td id="T_d1a82_row39_col3" class="data row39 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row40" class="row_heading level0 row40" >40</th>
-                        <td id="T_da4e6_row40_col0" class="data row40 col0" >high</td>
-                        <td id="T_da4e6_row40_col1" class="data row40 col1" >high</td>
-                        <td id="T_da4e6_row40_col2" class="data row40 col2" >unacc</td>
-                        <td id="T_da4e6_row40_col3" class="data row40 col3" >72</td>
+                        <th id="T_d1a82_level0_row40" class="row_heading level0 row40" >40</th>
+                        <td id="T_d1a82_row40_col0" class="data row40 col0" >high</td>
+                        <td id="T_d1a82_row40_col1" class="data row40 col1" >high</td>
+                        <td id="T_d1a82_row40_col2" class="data row40 col2" >unacc</td>
+                        <td id="T_d1a82_row40_col3" class="data row40 col3" >72</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row41" class="row_heading level0 row41" >41</th>
-                        <td id="T_da4e6_row41_col0" class="data row41 col0" >high</td>
-                        <td id="T_da4e6_row41_col1" class="data row41 col1" >high</td>
-                        <td id="T_da4e6_row41_col2" class="data row41 col2" >acc</td>
-                        <td id="T_da4e6_row41_col3" class="data row41 col3" >36</td>
+                        <th id="T_d1a82_level0_row41" class="row_heading level0 row41" >41</th>
+                        <td id="T_d1a82_row41_col0" class="data row41 col0" >high</td>
+                        <td id="T_d1a82_row41_col1" class="data row41 col1" >high</td>
+                        <td id="T_d1a82_row41_col2" class="data row41 col2" >acc</td>
+                        <td id="T_d1a82_row41_col3" class="data row41 col3" >36</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row42" class="row_heading level0 row42" >42</th>
-                        <td id="T_da4e6_row42_col0" class="data row42 col0" >high</td>
-                        <td id="T_da4e6_row42_col1" class="data row42 col1" >high</td>
-                        <td id="T_da4e6_row42_col2" class="data row42 col2" >good</td>
-                        <td id="T_da4e6_row42_col3" class="data row42 col3" >0</td>
+                        <th id="T_d1a82_level0_row42" class="row_heading level0 row42" >42</th>
+                        <td id="T_d1a82_row42_col0" class="data row42 col0" >high</td>
+                        <td id="T_d1a82_row42_col1" class="data row42 col1" >high</td>
+                        <td id="T_d1a82_row42_col2" class="data row42 col2" >good</td>
+                        <td id="T_d1a82_row42_col3" class="data row42 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row43" class="row_heading level0 row43" >43</th>
-                        <td id="T_da4e6_row43_col0" class="data row43 col0" >high</td>
-                        <td id="T_da4e6_row43_col1" class="data row43 col1" >high</td>
-                        <td id="T_da4e6_row43_col2" class="data row43 col2" >v-good</td>
-                        <td id="T_da4e6_row43_col3" class="data row43 col3" >0</td>
+                        <th id="T_d1a82_level0_row43" class="row_heading level0 row43" >43</th>
+                        <td id="T_d1a82_row43_col0" class="data row43 col0" >high</td>
+                        <td id="T_d1a82_row43_col1" class="data row43 col1" >high</td>
+                        <td id="T_d1a82_row43_col2" class="data row43 col2" >v-good</td>
+                        <td id="T_d1a82_row43_col3" class="data row43 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row44" class="row_heading level0 row44" >44</th>
-                        <td id="T_da4e6_row44_col0" class="data row44 col0" >high</td>
-                        <td id="T_da4e6_row44_col1" class="data row44 col1" >vhigh</td>
-                        <td id="T_da4e6_row44_col2" class="data row44 col2" >unacc</td>
-                        <td id="T_da4e6_row44_col3" class="data row44 col3" >108</td>
+                        <th id="T_d1a82_level0_row44" class="row_heading level0 row44" >44</th>
+                        <td id="T_d1a82_row44_col0" class="data row44 col0" >high</td>
+                        <td id="T_d1a82_row44_col1" class="data row44 col1" >vhigh</td>
+                        <td id="T_d1a82_row44_col2" class="data row44 col2" >unacc</td>
+                        <td id="T_d1a82_row44_col3" class="data row44 col3" >108</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row45" class="row_heading level0 row45" >45</th>
-                        <td id="T_da4e6_row45_col0" class="data row45 col0" >high</td>
-                        <td id="T_da4e6_row45_col1" class="data row45 col1" >vhigh</td>
-                        <td id="T_da4e6_row45_col2" class="data row45 col2" >acc</td>
-                        <td id="T_da4e6_row45_col3" class="data row45 col3" >0</td>
+                        <th id="T_d1a82_level0_row45" class="row_heading level0 row45" >45</th>
+                        <td id="T_d1a82_row45_col0" class="data row45 col0" >high</td>
+                        <td id="T_d1a82_row45_col1" class="data row45 col1" >vhigh</td>
+                        <td id="T_d1a82_row45_col2" class="data row45 col2" >acc</td>
+                        <td id="T_d1a82_row45_col3" class="data row45 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row46" class="row_heading level0 row46" >46</th>
-                        <td id="T_da4e6_row46_col0" class="data row46 col0" >high</td>
-                        <td id="T_da4e6_row46_col1" class="data row46 col1" >vhigh</td>
-                        <td id="T_da4e6_row46_col2" class="data row46 col2" >good</td>
-                        <td id="T_da4e6_row46_col3" class="data row46 col3" >0</td>
+                        <th id="T_d1a82_level0_row46" class="row_heading level0 row46" >46</th>
+                        <td id="T_d1a82_row46_col0" class="data row46 col0" >high</td>
+                        <td id="T_d1a82_row46_col1" class="data row46 col1" >vhigh</td>
+                        <td id="T_d1a82_row46_col2" class="data row46 col2" >good</td>
+                        <td id="T_d1a82_row46_col3" class="data row46 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row47" class="row_heading level0 row47" >47</th>
-                        <td id="T_da4e6_row47_col0" class="data row47 col0" >high</td>
-                        <td id="T_da4e6_row47_col1" class="data row47 col1" >vhigh</td>
-                        <td id="T_da4e6_row47_col2" class="data row47 col2" >v-good</td>
-                        <td id="T_da4e6_row47_col3" class="data row47 col3" >0</td>
+                        <th id="T_d1a82_level0_row47" class="row_heading level0 row47" >47</th>
+                        <td id="T_d1a82_row47_col0" class="data row47 col0" >high</td>
+                        <td id="T_d1a82_row47_col1" class="data row47 col1" >vhigh</td>
+                        <td id="T_d1a82_row47_col2" class="data row47 col2" >v-good</td>
+                        <td id="T_d1a82_row47_col3" class="data row47 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row48" class="row_heading level0 row48" >48</th>
-                        <td id="T_da4e6_row48_col0" class="data row48 col0" >vhigh</td>
-                        <td id="T_da4e6_row48_col1" class="data row48 col1" >low</td>
-                        <td id="T_da4e6_row48_col2" class="data row48 col2" >unacc</td>
-                        <td id="T_da4e6_row48_col3" class="data row48 col3" >72</td>
+                        <th id="T_d1a82_level0_row48" class="row_heading level0 row48" >48</th>
+                        <td id="T_d1a82_row48_col0" class="data row48 col0" >vhigh</td>
+                        <td id="T_d1a82_row48_col1" class="data row48 col1" >low</td>
+                        <td id="T_d1a82_row48_col2" class="data row48 col2" >unacc</td>
+                        <td id="T_d1a82_row48_col3" class="data row48 col3" >72</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row49" class="row_heading level0 row49" >49</th>
-                        <td id="T_da4e6_row49_col0" class="data row49 col0" >vhigh</td>
-                        <td id="T_da4e6_row49_col1" class="data row49 col1" >low</td>
-                        <td id="T_da4e6_row49_col2" class="data row49 col2" >acc</td>
-                        <td id="T_da4e6_row49_col3" class="data row49 col3" >36</td>
+                        <th id="T_d1a82_level0_row49" class="row_heading level0 row49" >49</th>
+                        <td id="T_d1a82_row49_col0" class="data row49 col0" >vhigh</td>
+                        <td id="T_d1a82_row49_col1" class="data row49 col1" >low</td>
+                        <td id="T_d1a82_row49_col2" class="data row49 col2" >acc</td>
+                        <td id="T_d1a82_row49_col3" class="data row49 col3" >36</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row50" class="row_heading level0 row50" >50</th>
-                        <td id="T_da4e6_row50_col0" class="data row50 col0" >vhigh</td>
-                        <td id="T_da4e6_row50_col1" class="data row50 col1" >low</td>
-                        <td id="T_da4e6_row50_col2" class="data row50 col2" >good</td>
-                        <td id="T_da4e6_row50_col3" class="data row50 col3" >0</td>
+                        <th id="T_d1a82_level0_row50" class="row_heading level0 row50" >50</th>
+                        <td id="T_d1a82_row50_col0" class="data row50 col0" >vhigh</td>
+                        <td id="T_d1a82_row50_col1" class="data row50 col1" >low</td>
+                        <td id="T_d1a82_row50_col2" class="data row50 col2" >good</td>
+                        <td id="T_d1a82_row50_col3" class="data row50 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row51" class="row_heading level0 row51" >51</th>
-                        <td id="T_da4e6_row51_col0" class="data row51 col0" >vhigh</td>
-                        <td id="T_da4e6_row51_col1" class="data row51 col1" >low</td>
-                        <td id="T_da4e6_row51_col2" class="data row51 col2" >v-good</td>
-                        <td id="T_da4e6_row51_col3" class="data row51 col3" >0</td>
+                        <th id="T_d1a82_level0_row51" class="row_heading level0 row51" >51</th>
+                        <td id="T_d1a82_row51_col0" class="data row51 col0" >vhigh</td>
+                        <td id="T_d1a82_row51_col1" class="data row51 col1" >low</td>
+                        <td id="T_d1a82_row51_col2" class="data row51 col2" >v-good</td>
+                        <td id="T_d1a82_row51_col3" class="data row51 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row52" class="row_heading level0 row52" >52</th>
-                        <td id="T_da4e6_row52_col0" class="data row52 col0" >vhigh</td>
-                        <td id="T_da4e6_row52_col1" class="data row52 col1" >med</td>
-                        <td id="T_da4e6_row52_col2" class="data row52 col2" >unacc</td>
-                        <td id="T_da4e6_row52_col3" class="data row52 col3" >72</td>
+                        <th id="T_d1a82_level0_row52" class="row_heading level0 row52" >52</th>
+                        <td id="T_d1a82_row52_col0" class="data row52 col0" >vhigh</td>
+                        <td id="T_d1a82_row52_col1" class="data row52 col1" >med</td>
+                        <td id="T_d1a82_row52_col2" class="data row52 col2" >unacc</td>
+                        <td id="T_d1a82_row52_col3" class="data row52 col3" >72</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row53" class="row_heading level0 row53" >53</th>
-                        <td id="T_da4e6_row53_col0" class="data row53 col0" >vhigh</td>
-                        <td id="T_da4e6_row53_col1" class="data row53 col1" >med</td>
-                        <td id="T_da4e6_row53_col2" class="data row53 col2" >acc</td>
-                        <td id="T_da4e6_row53_col3" class="data row53 col3" >36</td>
+                        <th id="T_d1a82_level0_row53" class="row_heading level0 row53" >53</th>
+                        <td id="T_d1a82_row53_col0" class="data row53 col0" >vhigh</td>
+                        <td id="T_d1a82_row53_col1" class="data row53 col1" >med</td>
+                        <td id="T_d1a82_row53_col2" class="data row53 col2" >acc</td>
+                        <td id="T_d1a82_row53_col3" class="data row53 col3" >36</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row54" class="row_heading level0 row54" >54</th>
-                        <td id="T_da4e6_row54_col0" class="data row54 col0" >vhigh</td>
-                        <td id="T_da4e6_row54_col1" class="data row54 col1" >med</td>
-                        <td id="T_da4e6_row54_col2" class="data row54 col2" >good</td>
-                        <td id="T_da4e6_row54_col3" class="data row54 col3" >0</td>
+                        <th id="T_d1a82_level0_row54" class="row_heading level0 row54" >54</th>
+                        <td id="T_d1a82_row54_col0" class="data row54 col0" >vhigh</td>
+                        <td id="T_d1a82_row54_col1" class="data row54 col1" >med</td>
+                        <td id="T_d1a82_row54_col2" class="data row54 col2" >good</td>
+                        <td id="T_d1a82_row54_col3" class="data row54 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row55" class="row_heading level0 row55" >55</th>
-                        <td id="T_da4e6_row55_col0" class="data row55 col0" >vhigh</td>
-                        <td id="T_da4e6_row55_col1" class="data row55 col1" >med</td>
-                        <td id="T_da4e6_row55_col2" class="data row55 col2" >v-good</td>
-                        <td id="T_da4e6_row55_col3" class="data row55 col3" >0</td>
+                        <th id="T_d1a82_level0_row55" class="row_heading level0 row55" >55</th>
+                        <td id="T_d1a82_row55_col0" class="data row55 col0" >vhigh</td>
+                        <td id="T_d1a82_row55_col1" class="data row55 col1" >med</td>
+                        <td id="T_d1a82_row55_col2" class="data row55 col2" >v-good</td>
+                        <td id="T_d1a82_row55_col3" class="data row55 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row56" class="row_heading level0 row56" >56</th>
-                        <td id="T_da4e6_row56_col0" class="data row56 col0" >vhigh</td>
-                        <td id="T_da4e6_row56_col1" class="data row56 col1" >high</td>
-                        <td id="T_da4e6_row56_col2" class="data row56 col2" >unacc</td>
-                        <td id="T_da4e6_row56_col3" class="data row56 col3" >108</td>
+                        <th id="T_d1a82_level0_row56" class="row_heading level0 row56" >56</th>
+                        <td id="T_d1a82_row56_col0" class="data row56 col0" >vhigh</td>
+                        <td id="T_d1a82_row56_col1" class="data row56 col1" >high</td>
+                        <td id="T_d1a82_row56_col2" class="data row56 col2" >unacc</td>
+                        <td id="T_d1a82_row56_col3" class="data row56 col3" >108</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row57" class="row_heading level0 row57" >57</th>
-                        <td id="T_da4e6_row57_col0" class="data row57 col0" >vhigh</td>
-                        <td id="T_da4e6_row57_col1" class="data row57 col1" >high</td>
-                        <td id="T_da4e6_row57_col2" class="data row57 col2" >acc</td>
-                        <td id="T_da4e6_row57_col3" class="data row57 col3" >0</td>
+                        <th id="T_d1a82_level0_row57" class="row_heading level0 row57" >57</th>
+                        <td id="T_d1a82_row57_col0" class="data row57 col0" >vhigh</td>
+                        <td id="T_d1a82_row57_col1" class="data row57 col1" >high</td>
+                        <td id="T_d1a82_row57_col2" class="data row57 col2" >acc</td>
+                        <td id="T_d1a82_row57_col3" class="data row57 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row58" class="row_heading level0 row58" >58</th>
-                        <td id="T_da4e6_row58_col0" class="data row58 col0" >vhigh</td>
-                        <td id="T_da4e6_row58_col1" class="data row58 col1" >high</td>
-                        <td id="T_da4e6_row58_col2" class="data row58 col2" >good</td>
-                        <td id="T_da4e6_row58_col3" class="data row58 col3" >0</td>
+                        <th id="T_d1a82_level0_row58" class="row_heading level0 row58" >58</th>
+                        <td id="T_d1a82_row58_col0" class="data row58 col0" >vhigh</td>
+                        <td id="T_d1a82_row58_col1" class="data row58 col1" >high</td>
+                        <td id="T_d1a82_row58_col2" class="data row58 col2" >good</td>
+                        <td id="T_d1a82_row58_col3" class="data row58 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row59" class="row_heading level0 row59" >59</th>
-                        <td id="T_da4e6_row59_col0" class="data row59 col0" >vhigh</td>
-                        <td id="T_da4e6_row59_col1" class="data row59 col1" >high</td>
-                        <td id="T_da4e6_row59_col2" class="data row59 col2" >v-good</td>
-                        <td id="T_da4e6_row59_col3" class="data row59 col3" >0</td>
+                        <th id="T_d1a82_level0_row59" class="row_heading level0 row59" >59</th>
+                        <td id="T_d1a82_row59_col0" class="data row59 col0" >vhigh</td>
+                        <td id="T_d1a82_row59_col1" class="data row59 col1" >high</td>
+                        <td id="T_d1a82_row59_col2" class="data row59 col2" >v-good</td>
+                        <td id="T_d1a82_row59_col3" class="data row59 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row60" class="row_heading level0 row60" >60</th>
-                        <td id="T_da4e6_row60_col0" class="data row60 col0" >vhigh</td>
-                        <td id="T_da4e6_row60_col1" class="data row60 col1" >vhigh</td>
-                        <td id="T_da4e6_row60_col2" class="data row60 col2" >unacc</td>
-                        <td id="T_da4e6_row60_col3" class="data row60 col3" >108</td>
+                        <th id="T_d1a82_level0_row60" class="row_heading level0 row60" >60</th>
+                        <td id="T_d1a82_row60_col0" class="data row60 col0" >vhigh</td>
+                        <td id="T_d1a82_row60_col1" class="data row60 col1" >vhigh</td>
+                        <td id="T_d1a82_row60_col2" class="data row60 col2" >unacc</td>
+                        <td id="T_d1a82_row60_col3" class="data row60 col3" >108</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row61" class="row_heading level0 row61" >61</th>
-                        <td id="T_da4e6_row61_col0" class="data row61 col0" >vhigh</td>
-                        <td id="T_da4e6_row61_col1" class="data row61 col1" >vhigh</td>
-                        <td id="T_da4e6_row61_col2" class="data row61 col2" >acc</td>
-                        <td id="T_da4e6_row61_col3" class="data row61 col3" >0</td>
+                        <th id="T_d1a82_level0_row61" class="row_heading level0 row61" >61</th>
+                        <td id="T_d1a82_row61_col0" class="data row61 col0" >vhigh</td>
+                        <td id="T_d1a82_row61_col1" class="data row61 col1" >vhigh</td>
+                        <td id="T_d1a82_row61_col2" class="data row61 col2" >acc</td>
+                        <td id="T_d1a82_row61_col3" class="data row61 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row62" class="row_heading level0 row62" >62</th>
-                        <td id="T_da4e6_row62_col0" class="data row62 col0" >vhigh</td>
-                        <td id="T_da4e6_row62_col1" class="data row62 col1" >vhigh</td>
-                        <td id="T_da4e6_row62_col2" class="data row62 col2" >good</td>
-                        <td id="T_da4e6_row62_col3" class="data row62 col3" >0</td>
+                        <th id="T_d1a82_level0_row62" class="row_heading level0 row62" >62</th>
+                        <td id="T_d1a82_row62_col0" class="data row62 col0" >vhigh</td>
+                        <td id="T_d1a82_row62_col1" class="data row62 col1" >vhigh</td>
+                        <td id="T_d1a82_row62_col2" class="data row62 col2" >good</td>
+                        <td id="T_d1a82_row62_col3" class="data row62 col3" >0</td>
             </tr>
             <tr>
-                        <th id="T_da4e6_level0_row63" class="row_heading level0 row63" >63</th>
-                        <td id="T_da4e6_row63_col0" class="data row63 col0" >vhigh</td>
-                        <td id="T_da4e6_row63_col1" class="data row63 col1" >vhigh</td>
-                        <td id="T_da4e6_row63_col2" class="data row63 col2" >v-good</td>
-                        <td id="T_da4e6_row63_col3" class="data row63 col3" >0</td>
+                        <th id="T_d1a82_level0_row63" class="row_heading level0 row63" >63</th>
+                        <td id="T_d1a82_row63_col0" class="data row63 col0" >vhigh</td>
+                        <td id="T_d1a82_row63_col1" class="data row63 col1" >vhigh</td>
+                        <td id="T_d1a82_row63_col2" class="data row63 col2" >v-good</td>
+                        <td id="T_d1a82_row63_col3" class="data row63 col3" >0</td>
             </tr>
     </tbody></table>
 
@@ -3129,6 +3131,9 @@ accuracy = accuracy_score(y_test_enc, yhat)
 print('Accuracy: %.2f' % (accuracy*100))
 ```
 
+    Accuracy: 81.02
+
+
 ### example of mutual information feature selection for categorical data
 
 
@@ -3161,12 +3166,12 @@ for i in range(len(fs.scores_)):
     print('Feature %d: %f' % (i, fs.scores_[i]))
 ```
 
-    Feature 0: 0.081015
-    Feature 1: 0.035723
+    Feature 0: 0.083481
+    Feature 1: 0.032348
     Feature 2: 0.000000
-    Feature 3: 0.150067
-    Feature 4: 0.046576
-    Feature 5: 0.185349
+    Feature 3: 0.126482
+    Feature 4: 0.003901
+    Feature 5: 0.185697
 
 
 
@@ -3193,7 +3198,7 @@ accuracy = accuracy_score(y_test_enc, yhat)
 print('Accuracy: %.2f' % (accuracy*100))
 ```
 
-    Accuracy: 81.02
+    Accuracy: 81.25
 
 
 ### example of chi squared feature selection for categorical data
@@ -3248,7 +3253,7 @@ accuracy = accuracy_score(y_test_enc, yhat)
 print('Accuracy: %.2f' % (accuracy*100))
 ```
 
-    Accuracy: 81.02
+    Accuracy: 81.25
 
 
 ## Popular algorithms for multi-class classification include:
@@ -3505,7 +3510,7 @@ plot_learning_curve(lr, X = X_train_enc, y = y_train_enc,
 
 ```
 
-    Total time: 0.06s
+    Total time: 0.05s
     --------------------------------------------------------------------------
     Classification Report for Train Data
                   precision    recall  f1-score   support
@@ -3676,7 +3681,7 @@ plot_learning_curve(knn, X = X_train_enc, y = y_train_enc,
                     train_sizes=np.linspace(0.1, 1.0, 5))
 ```
 
-    Total time: 0.07s
+    Total time: 0.05s
     --------------------------------------------------------------------------
     Classification Report for Train Data
                   precision    recall  f1-score   support
@@ -3852,7 +3857,7 @@ plot_learning_curve(rf, X = X_train_enc, y = y_train_enc,
                     train_sizes=np.linspace(0.1, 1.0, 5))
 ```
 
-    Total time: 0.16s
+    Total time: 0.17s
     --------------------------------------------------------------------------
     Classification Report for Train Data
                   precision    recall  f1-score   support
@@ -4025,7 +4030,7 @@ plot_learning_curve(gb_model, X = X_train_enc, y = y_train_enc,
                     train_sizes=np.linspace(0.1, 1.0, 5))
 ```
 
-    Total time: 1.42s
+    Total time: 1.03s
     --------------------------------------------------------------------------
     Classification Report for Train Data
                   precision    recall  f1-score   support
@@ -4042,21 +4047,21 @@ plot_learning_curve(gb_model, X = X_train_enc, y = y_train_enc,
     Classification Report for Test Data
                   precision    recall  f1-score   support
     
-               0       0.91      0.98      0.95        88
+               0       0.92      0.98      0.95        88
                1       0.93      0.78      0.85        18
                2       0.99      0.99      0.99       310
                3       1.00      0.94      0.97        16
     
         accuracy                           0.97       432
        macro avg       0.96      0.92      0.94       432
-    weighted avg       0.98      0.97      0.97       432
+    weighted avg       0.97      0.97      0.97       432
     
     --------------------------------------------------------------------------
     Accuracy on Train Data is: 1.0
     Accuracy on Test Data is: 0.97
     --------------------------------------------------------------------------
     Precision on Train Data is: 1.0
-    Precision on Test Data is: 0.98
+    Precision on Test Data is: 0.97
     --------------------------------------------------------------------------
     Recall on Train Data is: 1.0
     Recall on Test Data is: 0.97
@@ -4205,7 +4210,7 @@ pd.DataFrame.from_dict({(i,j): dict[i][j]
     <tr>
       <th>Precision</th>
       <td>1.00</td>
-      <td>0.98</td>
+      <td>0.97</td>
     </tr>
   </tbody>
 </table>
@@ -4216,6 +4221,8 @@ pd.DataFrame.from_dict({(i,j): dict[i][j]
 
 
 ```python
+# Tabulating the scores for the different classifiers
+
 user_ids = []
 frames = []
 
@@ -4231,144 +4238,141 @@ df.unstack(level = -1).style.background_gradient(cmap='Blues')
 
 
 <style  type="text/css" >
-#T_715f0_row0_col0{
+#T_c93b4_row0_col0{
             background-color:  #8fc2de;
             color:  #000000;
-        }#T_715f0_row0_col1{
+        }#T_c93b4_row0_col1{
             background-color:  #a8cee4;
             color:  #000000;
-        }#T_715f0_row0_col2{
+        }#T_c93b4_row0_col2{
             background-color:  #87bddc;
             color:  #000000;
-        }#T_715f0_row0_col3{
+        }#T_c93b4_row0_col3{
             background-color:  #9ac8e0;
             color:  #000000;
-        }#T_715f0_row0_col4{
+        }#T_c93b4_row0_col4{
             background-color:  #cadef0;
             color:  #000000;
-        }#T_715f0_row0_col5{
-            background-color:  #dbe9f6;
+        }#T_c93b4_row0_col5{
+            background-color:  #d9e8f5;
             color:  #000000;
-        }#T_715f0_row1_col0{
+        }#T_c93b4_row1_col0{
             background-color:  #1865ac;
             color:  #f1f1f1;
-        }#T_715f0_row1_col1,#T_715f0_row1_col3{
+        }#T_c93b4_row1_col1,#T_c93b4_row1_col3{
             background-color:  #0e58a2;
             color:  #f1f1f1;
-        }#T_715f0_row1_col2{
+        }#T_c93b4_row1_col2{
             background-color:  #1764ab;
             color:  #f1f1f1;
-        }#T_715f0_row1_col4{
+        }#T_c93b4_row1_col4{
             background-color:  #2676b8;
             color:  #000000;
-        }#T_715f0_row1_col5,#T_715f0_row4_col5{
-            background-color:  #1561a9;
+        }#T_c93b4_row1_col5,#T_c93b4_row4_col5{
+            background-color:  #0d57a1;
             color:  #f1f1f1;
-        }#T_715f0_row2_col0,#T_715f0_row2_col2{
+        }#T_c93b4_row2_col0,#T_c93b4_row2_col2{
             background-color:  #084285;
             color:  #f1f1f1;
-        }#T_715f0_row2_col1,#T_715f0_row2_col3{
+        }#T_c93b4_row2_col1,#T_c93b4_row2_col3{
             background-color:  #084488;
             color:  #f1f1f1;
-        }#T_715f0_row2_col4,#T_715f0_row4_col4{
+        }#T_c93b4_row2_col4,#T_c93b4_row4_col4{
             background-color:  #08488e;
             color:  #f1f1f1;
-        }#T_715f0_row2_col5{
-            background-color:  #0b559f;
-            color:  #f1f1f1;
-        }#T_715f0_row3_col0,#T_715f0_row3_col1,#T_715f0_row3_col2,#T_715f0_row3_col3,#T_715f0_row3_col4,#T_715f0_row3_col5{
-            background-color:  #f7fbff;
-            color:  #000000;
-        }#T_715f0_row4_col0{
-            background-color:  #084b93;
-            color:  #f1f1f1;
-        }#T_715f0_row4_col1,#T_715f0_row4_col3{
-            background-color:  #084e98;
-            color:  #f1f1f1;
-        }#T_715f0_row4_col2{
+        }#T_c93b4_row2_col5,#T_c93b4_row4_col2{
             background-color:  #084a91;
             color:  #f1f1f1;
-        }#T_715f0_row5_col0{
+        }#T_c93b4_row3_col0,#T_c93b4_row3_col1,#T_c93b4_row3_col2,#T_c93b4_row3_col3,#T_c93b4_row3_col4,#T_c93b4_row3_col5{
+            background-color:  #f7fbff;
+            color:  #000000;
+        }#T_c93b4_row4_col0{
+            background-color:  #084b93;
+            color:  #f1f1f1;
+        }#T_c93b4_row4_col1,#T_c93b4_row4_col3{
+            background-color:  #084e98;
+            color:  #f1f1f1;
+        }#T_c93b4_row5_col0{
             background-color:  #81badb;
             color:  #000000;
-        }#T_715f0_row5_col1,#T_715f0_row5_col3{
+        }#T_c93b4_row5_col1,#T_c93b4_row5_col3{
             background-color:  #7ab6d9;
             color:  #000000;
-        }#T_715f0_row5_col2{
+        }#T_c93b4_row5_col2{
             background-color:  #79b5d9;
             color:  #000000;
-        }#T_715f0_row5_col4{
+        }#T_c93b4_row5_col4{
             background-color:  #b0d2e7;
             color:  #000000;
-        }#T_715f0_row5_col5{
-            background-color:  #abd0e6;
+        }#T_c93b4_row5_col5{
+            background-color:  #a6cee4;
             color:  #000000;
-        }#T_715f0_row6_col0,#T_715f0_row6_col1,#T_715f0_row6_col2,#T_715f0_row6_col3,#T_715f0_row6_col4,#T_715f0_row6_col5{
+        }#T_c93b4_row6_col0,#T_c93b4_row6_col1,#T_c93b4_row6_col2,#T_c93b4_row6_col3,#T_c93b4_row6_col4,#T_c93b4_row6_col5{
             background-color:  #08306b;
             color:  #f1f1f1;
-        }</style><table id="T_715f0_" ><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" colspan="2">F1</th>        <th class="col_heading level0 col2" colspan="2">Recall</th>        <th class="col_heading level0 col4" colspan="2">Precision</th>    </tr>    <tr>        <th class="blank level1" ></th>        <th class="col_heading level1 col0" >Train</th>        <th class="col_heading level1 col1" >Test</th>        <th class="col_heading level1 col2" >Train</th>        <th class="col_heading level1 col3" >Test</th>        <th class="col_heading level1 col4" >Train</th>        <th class="col_heading level1 col5" >Test</th>    </tr></thead><tbody>
+        }</style><table id="T_c93b4_" ><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" colspan="2">F1</th>        <th class="col_heading level0 col2" colspan="2">Recall</th>        <th class="col_heading level0 col4" colspan="2">Precision</th>    </tr>    <tr>        <th class="blank level1" ></th>        <th class="col_heading level1 col0" >Train</th>        <th class="col_heading level1 col1" >Test</th>        <th class="col_heading level1 col2" >Train</th>        <th class="col_heading level1 col3" >Test</th>        <th class="col_heading level1 col4" >Train</th>        <th class="col_heading level1 col5" >Test</th>    </tr></thead><tbody>
                 <tr>
-                        <th id="T_715f0_level0_row0" class="row_heading level0 row0" >Logistic Regression Classifier</th>
-                        <td id="T_715f0_row0_col0" class="data row0 col0" >0.830000</td>
-                        <td id="T_715f0_row0_col1" class="data row0 col1" >0.800000</td>
-                        <td id="T_715f0_row0_col2" class="data row0 col2" >0.830000</td>
-                        <td id="T_715f0_row0_col3" class="data row0 col3" >0.810000</td>
-                        <td id="T_715f0_row0_col4" class="data row0 col4" >0.830000</td>
-                        <td id="T_715f0_row0_col5" class="data row0 col5" >0.800000</td>
+                        <th id="T_c93b4_level0_row0" class="row_heading level0 row0" >Logistic Regression Classifier</th>
+                        <td id="T_c93b4_row0_col0" class="data row0 col0" >0.830000</td>
+                        <td id="T_c93b4_row0_col1" class="data row0 col1" >0.800000</td>
+                        <td id="T_c93b4_row0_col2" class="data row0 col2" >0.830000</td>
+                        <td id="T_c93b4_row0_col3" class="data row0 col3" >0.810000</td>
+                        <td id="T_c93b4_row0_col4" class="data row0 col4" >0.830000</td>
+                        <td id="T_c93b4_row0_col5" class="data row0 col5" >0.800000</td>
             </tr>
             <tr>
-                        <th id="T_715f0_level0_row1" class="row_heading level0 row1" >Decision Tree Classifier</th>
-                        <td id="T_715f0_row1_col0" class="data row1 col0" >0.940000</td>
-                        <td id="T_715f0_row1_col1" class="data row1 col1" >0.930000</td>
-                        <td id="T_715f0_row1_col2" class="data row1 col2" >0.940000</td>
-                        <td id="T_715f0_row1_col3" class="data row1 col3" >0.930000</td>
-                        <td id="T_715f0_row1_col4" class="data row1 col4" >0.940000</td>
-                        <td id="T_715f0_row1_col5" class="data row1 col5" >0.940000</td>
+                        <th id="T_c93b4_level0_row1" class="row_heading level0 row1" >Decision Tree Classifier</th>
+                        <td id="T_c93b4_row1_col0" class="data row1 col0" >0.940000</td>
+                        <td id="T_c93b4_row1_col1" class="data row1 col1" >0.930000</td>
+                        <td id="T_c93b4_row1_col2" class="data row1 col2" >0.940000</td>
+                        <td id="T_c93b4_row1_col3" class="data row1 col3" >0.930000</td>
+                        <td id="T_c93b4_row1_col4" class="data row1 col4" >0.940000</td>
+                        <td id="T_c93b4_row1_col5" class="data row1 col5" >0.940000</td>
             </tr>
             <tr>
-                        <th id="T_715f0_level0_row2" class="row_heading level0 row2" >K Nearest Neighbor Classifier</th>
-                        <td id="T_715f0_row2_col0" class="data row2 col0" >0.980000</td>
-                        <td id="T_715f0_row2_col1" class="data row2 col1" >0.950000</td>
-                        <td id="T_715f0_row2_col2" class="data row2 col2" >0.980000</td>
-                        <td id="T_715f0_row2_col3" class="data row2 col3" >0.950000</td>
-                        <td id="T_715f0_row2_col4" class="data row2 col4" >0.980000</td>
-                        <td id="T_715f0_row2_col5" class="data row2 col5" >0.950000</td>
+                        <th id="T_c93b4_level0_row2" class="row_heading level0 row2" >K Nearest Neighbor Classifier</th>
+                        <td id="T_c93b4_row2_col0" class="data row2 col0" >0.980000</td>
+                        <td id="T_c93b4_row2_col1" class="data row2 col1" >0.950000</td>
+                        <td id="T_c93b4_row2_col2" class="data row2 col2" >0.980000</td>
+                        <td id="T_c93b4_row2_col3" class="data row2 col3" >0.950000</td>
+                        <td id="T_c93b4_row2_col4" class="data row2 col4" >0.980000</td>
+                        <td id="T_c93b4_row2_col5" class="data row2 col5" >0.950000</td>
             </tr>
             <tr>
-                        <th id="T_715f0_level0_row3" class="row_heading level0 row3" >Naive Bayes Classifier</th>
-                        <td id="T_715f0_row3_col0" class="data row3 col0" >0.710000</td>
-                        <td id="T_715f0_row3_col1" class="data row3 col1" >0.710000</td>
-                        <td id="T_715f0_row3_col2" class="data row3 col2" >0.700000</td>
-                        <td id="T_715f0_row3_col3" class="data row3 col3" >0.710000</td>
-                        <td id="T_715f0_row3_col4" class="data row3 col4" >0.780000</td>
-                        <td id="T_715f0_row3_col5" class="data row3 col5" >0.770000</td>
+                        <th id="T_c93b4_level0_row3" class="row_heading level0 row3" >Naive Bayes Classifier</th>
+                        <td id="T_c93b4_row3_col0" class="data row3 col0" >0.710000</td>
+                        <td id="T_c93b4_row3_col1" class="data row3 col1" >0.710000</td>
+                        <td id="T_c93b4_row3_col2" class="data row3 col2" >0.700000</td>
+                        <td id="T_c93b4_row3_col3" class="data row3 col3" >0.710000</td>
+                        <td id="T_c93b4_row3_col4" class="data row3 col4" >0.780000</td>
+                        <td id="T_c93b4_row3_col5" class="data row3 col5" >0.770000</td>
             </tr>
             <tr>
-                        <th id="T_715f0_level0_row4" class="row_heading level0 row4" >Random Forest Classifier</th>
-                        <td id="T_715f0_row4_col0" class="data row4 col0" >0.970000</td>
-                        <td id="T_715f0_row4_col1" class="data row4 col1" >0.940000</td>
-                        <td id="T_715f0_row4_col2" class="data row4 col2" >0.970000</td>
-                        <td id="T_715f0_row4_col3" class="data row4 col3" >0.940000</td>
-                        <td id="T_715f0_row4_col4" class="data row4 col4" >0.980000</td>
-                        <td id="T_715f0_row4_col5" class="data row4 col5" >0.940000</td>
+                        <th id="T_c93b4_level0_row4" class="row_heading level0 row4" >Random Forest Classifier</th>
+                        <td id="T_c93b4_row4_col0" class="data row4 col0" >0.970000</td>
+                        <td id="T_c93b4_row4_col1" class="data row4 col1" >0.940000</td>
+                        <td id="T_c93b4_row4_col2" class="data row4 col2" >0.970000</td>
+                        <td id="T_c93b4_row4_col3" class="data row4 col3" >0.940000</td>
+                        <td id="T_c93b4_row4_col4" class="data row4 col4" >0.980000</td>
+                        <td id="T_c93b4_row4_col5" class="data row4 col5" >0.940000</td>
             </tr>
             <tr>
-                        <th id="T_715f0_level0_row5" class="row_heading level0 row5" >Linear SVC</th>
-                        <td id="T_715f0_row5_col0" class="data row5 col0" >0.840000</td>
-                        <td id="T_715f0_row5_col1" class="data row5 col1" >0.830000</td>
-                        <td id="T_715f0_row5_col2" class="data row5 col2" >0.840000</td>
-                        <td id="T_715f0_row5_col3" class="data row5 col3" >0.830000</td>
-                        <td id="T_715f0_row5_col4" class="data row5 col4" >0.850000</td>
-                        <td id="T_715f0_row5_col5" class="data row5 col5" >0.840000</td>
+                        <th id="T_c93b4_level0_row5" class="row_heading level0 row5" >Linear SVC</th>
+                        <td id="T_c93b4_row5_col0" class="data row5 col0" >0.840000</td>
+                        <td id="T_c93b4_row5_col1" class="data row5 col1" >0.830000</td>
+                        <td id="T_c93b4_row5_col2" class="data row5 col2" >0.840000</td>
+                        <td id="T_c93b4_row5_col3" class="data row5 col3" >0.830000</td>
+                        <td id="T_c93b4_row5_col4" class="data row5 col4" >0.850000</td>
+                        <td id="T_c93b4_row5_col5" class="data row5 col5" >0.840000</td>
             </tr>
             <tr>
-                        <th id="T_715f0_level0_row6" class="row_heading level0 row6" >Gradient Boosting</th>
-                        <td id="T_715f0_row6_col0" class="data row6 col0" >1.000000</td>
-                        <td id="T_715f0_row6_col1" class="data row6 col1" >0.970000</td>
-                        <td id="T_715f0_row6_col2" class="data row6 col2" >1.000000</td>
-                        <td id="T_715f0_row6_col3" class="data row6 col3" >0.970000</td>
-                        <td id="T_715f0_row6_col4" class="data row6 col4" >1.000000</td>
-                        <td id="T_715f0_row6_col5" class="data row6 col5" >0.980000</td>
+                        <th id="T_c93b4_level0_row6" class="row_heading level0 row6" >Gradient Boosting</th>
+                        <td id="T_c93b4_row6_col0" class="data row6 col0" >1.000000</td>
+                        <td id="T_c93b4_row6_col1" class="data row6 col1" >0.970000</td>
+                        <td id="T_c93b4_row6_col2" class="data row6 col2" >1.000000</td>
+                        <td id="T_c93b4_row6_col3" class="data row6 col3" >0.970000</td>
+                        <td id="T_c93b4_row6_col4" class="data row6 col4" >1.000000</td>
+                        <td id="T_c93b4_row6_col5" class="data row6 col5" >0.970000</td>
             </tr>
     </tbody></table>
 

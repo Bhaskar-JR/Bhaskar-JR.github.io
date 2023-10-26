@@ -45,8 +45,10 @@ Check the [regression notebook](/assets/scripts/Sales_Transactions_Dataset_Weekl
 ## Car Evaluation
 
 This dataset has been downloaded from  UC Irvine Machine Learning Repository.  
-<https://archive.ics.uci.edu/ml/datasets/Car+Evaluation>  
-<https://www.kaggle.com/mykeysid10/car-evaluation>
+- <https://archive.ics.uci.edu/ml/datasets/Car+Evaluation>  
+- <https://www.kaggle.com/mykeysid10/car-evaluation>
+
+The jupyter notebook is available in [html](Pages/ML Projects/Car Evaluation/Car Evaluation.html) and [ipynb](Pages/ML Projects/Car Evaluation/Car Evaluation.ipynb) versions.
 
 This dataset is regarding evaluation of cars.  
 The target variable/label is car acceptability and has four categories : unacceptable, acceptable, good and very good.
