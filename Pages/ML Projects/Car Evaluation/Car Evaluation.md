@@ -3897,21 +3897,21 @@ df.unstack(level = -1).style.background_gradient(cmap='Blues')
 - Logistic Regression, Linear SVC followed by Naive Bayes have low scores on the evaluation metrics.
 
 ###  Resources to follow for imbalanced learning
-- http://www.svds.com/learning-imbalanced-classes/ (The Applied Data Science Workshop - Second Edition Get started with the applications of data science and techniques to explore and assess data effectively by Alex Galea)
+- [http://www.svds.com/learning-imbalanced-classes/](http://www.svds.com/learning-imbalanced-classes) (The Applied Data Science Workshop - Second Edition Get started with the applications of data science and techniques to explore and assess data effectively by Alex Galea)
 - Introduction to Machine Learning with Python by Andreas C. Müller and Sarah Guido 
 - Machine Learning Engineering by Andriy Burkov
-- https://scikit-learn.org/stable/modules/model_evaluation.html#classification-metrics
-- https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html
+- [https://scikit-learn.org/stable/modules/model_evaluation.html#classification-metrics](https://scikit-learn.org/stable/modules/model_evaluation.html#classification-metrics)
+- [https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html](https://scikit-learn.org/stable/auto_examples/model_selection/plot_roc.html)
 - Comparing Oversampling Techniques to Handle the Class Imbalance Problem: A Customer Churn Prediction Case Study - ADNAN AMIN1, SAJID ANWAR1, AWAIS ADNAN1, MUHAMMAD NAWAZ1, NEWTON HOWARD2, JUNAID QADIR3, (Senior Member, IEEE), AHMAD HAWALAH4, AND AMIR HUSSAIN5, (Senior Member, IEEE)
 - Lemaître, G., Nogueira, F., & Aridas, C. K. (2017). Imbalanced-learn: A python toolbox to tackle the curse of imbalanced datasets in machine learning. Journal of Machine Learning Research, 18 (17), 1-5.
 - Learning from imbalanced data: open challenges and future directions by Bartosz Krawczyk1
 - Evaluating machine learning models - a beginner's guide to key concepts and pitfalls by Zheng, Alice
 - Fawcett, Tom. 2006. An introduction to ROC analysis. Pattern Recognition Letters 27 (8): 861–874.
-- https://www.codespeedy.com/multiclass-classification-using-scikit-learn/
+- [https://www.codespeedy.com/multiclass-classification-using-scikit-learn/](https://www.codespeedy.com/multiclass-classification-using-scikit-learn/)
 - The Essentials of Machine Learning in Finance and Accounting, Chapter 11, Handling class imbalance data in business domain - Authored by Md. Shajalal, Mohammad Zoynul Abedin and Mohammed Mohi Uddin
 - Learning from imbalanced datasets* by Alberto Fernandez et al
-- https://win-vector.com/2015/02/27/does-balancing-classes-improve-classifier-performance/
-- https://datascientistdiary.com/index.php/2021/09/02/how-to-handle-imbalanced-data-example-in-r/
+- [https://win-vector.com/2015/02/27/does-balancing-classes-improve-classifier-performance/](https://win-vector.com/2015/02/27/does-balancing-classes-improve-classifier-performance/)
+- [https://datascientistdiary.com/index.php/2021/09/02/how-to-handle-imbalanced-data-example-in-r/](https://datascientistdiary.com/index.php/2021/09/02/how-to-handle-imbalanced-data-example-in-r/)
 
 
 #### Datasets 
