@@ -833,7 +833,7 @@ eda_overview.UVA_category(data, data.columns,
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_31_1.png)
+![png](Car Evaluation_files/Car Evaluation_31_1.png)
 
 
 
@@ -858,7 +858,7 @@ composite_plots.bar_counts(data, data.columns)
 ```
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_33_0.png)
+![png](Car Evaluation_files/Car Evaluation_33_0.png)
 
 
 For the car to be acceptable, it has to be low atleast in one of the pricing parameters - maintenance or buying price
@@ -881,7 +881,7 @@ plt.ylabel('Class Frequency')
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_35_1.png)
+![png](Car Evaluation_files/Car Evaluation_35_1.png)
 
 
 
@@ -903,7 +903,7 @@ features_plots(data, ['buying', 'maint'], 'class')
 ```
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_37_0.png)
+![png](Car Evaluation_files/Car Evaluation_37_0.png)
 
 
 
@@ -1088,7 +1088,7 @@ plt.legend(bbox_to_anchor=(1.05, 1), loc=2, borderaxespad=0.)
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_40_1.png)
+![png](Car Evaluation_files/Car Evaluation_40_1.png)
 
 
 CAR : car acceptability
@@ -1799,7 +1799,7 @@ heatmap_plot(data, index = ['buying'], column = ['class'])
 ```
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_48_0.png)
+![png](Car Evaluation_files/Car Evaluation_48_0.png)
 
 
 ### Maintenance vs Class
@@ -1893,7 +1893,7 @@ plt.ylabel(ax.get_ylabel(), fontsize = 15, fontweight = 'heavy')
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_51_1.png)
+![png](Car Evaluation_files/Car Evaluation_51_1.png)
 
 
 ### Buying vs Maintenance
@@ -1993,7 +1993,7 @@ plt.ylabel(ax.get_ylabel(), fontsize = 15, fontweight = 'heavy')
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_54_1.png)
+![png](Car Evaluation_files/Car Evaluation_54_1.png)
 
 
 ### Price (Buying Price and Maintenance) vs Class
@@ -2164,7 +2164,7 @@ plt.ylabel(ax.get_ylabel(), fontsize = 8, fontweight = 'heavy')
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_57_1.png)
+![png](Car Evaluation_files/Car Evaluation_57_1.png)
 
 
 ## Comfort vs Class Heatmaps
@@ -2181,7 +2181,7 @@ heatmap_plot(data, ['lug_boot'], ['class'])
 ```
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_59_0.png)
+![png](Car Evaluation_files/Car Evaluation_59_0.png)
 
 
 
@@ -2313,7 +2313,7 @@ heatmap_plot(data, ['doors','lug_boot'], ['class'])
 ```
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_61_0.png)
+![png](Car Evaluation_files/Car Evaluation_61_0.png)
 
 
 
@@ -2365,7 +2365,7 @@ Add_valuecountsinfo(ax, 'class', data)
 ```
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_65_0.png)
+![png](Car Evaluation_files/Car Evaluation_65_0.png)
 
 
 
@@ -2697,7 +2697,7 @@ plt.show()
 ```
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_86_0.png)
+![png](Car Evaluation_files/Car Evaluation_86_0.png)
 
 
 
@@ -2752,7 +2752,7 @@ plt.show()
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_90_1.png)
+![png](Car Evaluation_files/Car Evaluation_90_1.png)
 
 
 
@@ -3087,11 +3087,11 @@ plot_learning_curve(lr, X = X_train_enc, y = y_train_enc,
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_99_3.png)
+![png](Car Evaluation_files/Car Evaluation_99_3.png)
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_99_4.png)
+![png](Car Evaluation_files/Car Evaluation_99_4.png)
 
 
 ## Decision Tree Classifier
@@ -3168,11 +3168,11 @@ plot_learning_curve(dt, X = X_train_enc, y = y_train_enc,
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_101_3.png)
+![png](Car Evaluation_files/Car Evaluation_101_3.png)
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_101_4.png)
+![png](Car Evaluation_files/Car Evaluation_101_4.png)
 
 
 ## K Nearest Neighbors Classifier
@@ -3258,11 +3258,11 @@ plot_learning_curve(knn, X = X_train_enc, y = y_train_enc,
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_103_3.png)
+![png](Car Evaluation_files/Car Evaluation_103_3.png)
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_103_4.png)
+![png](Car Evaluation_files/Car Evaluation_103_4.png)
 
 
 ## Naive Bayes Classifier
@@ -3347,11 +3347,11 @@ plot_learning_curve(gnb, X = X_train_enc, y = y_train_enc,
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_105_3.png)
+![png](Car Evaluation_files/Car Evaluation_105_3.png)
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_105_4.png)
+![png](Car Evaluation_files/Car Evaluation_105_4.png)
 
 
 ## Random Forest Classifier
@@ -3434,11 +3434,11 @@ plot_learning_curve(rf, X = X_train_enc, y = y_train_enc,
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_107_3.png)
+![png](Car Evaluation_files/Car Evaluation_107_3.png)
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_107_4.png)
+![png](Car Evaluation_files/Car Evaluation_107_4.png)
 
 
 ## Linear SVC Classifier
@@ -3521,11 +3521,11 @@ plot_learning_curve(svm, X = X_train_enc, y = y_train_enc,
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_109_3.png)
+![png](Car Evaluation_files/Car Evaluation_109_3.png)
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_109_4.png)
+![png](Car Evaluation_files/Car Evaluation_109_4.png)
 
 
 ## Gradient Boosting
@@ -3607,11 +3607,11 @@ plot_learning_curve(gb_model, X = X_train_enc, y = y_train_enc,
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_111_3.png)
+![png](Car Evaluation_files/Car Evaluation_111_3.png)
 
 
 
-![png](Car%20Evaluation_files/Car%20Evaluation_111_4.png)
+![png](Car Evaluation_files/Car Evaluation_111_4.png)
 
 
 
