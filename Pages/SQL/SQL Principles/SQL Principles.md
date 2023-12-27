@@ -4,7 +4,6 @@ title : SQL Principles
 author_profile: true
 ---
 
-# Mastering SQL: A Comprehensive Guide
 
 ## 1. Master the Order of SQL Clauses and Their Execution Sequence
 - **Writing Order:** Follow this standard sequence of clauses when writing an SQL statement:
