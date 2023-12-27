@@ -1,6 +1,5 @@
 ---
 layout : single
-classes: wide
 title : Filtering data
 author_profile: true
 ---
