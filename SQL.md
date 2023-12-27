@@ -9,7 +9,7 @@ SQL Consolidated Overview at Meta level : [Page Link](/Pages/SQL/SQL Meta Guide/
   
 [Filtering Data](/Pages/SQL/Filtering Data/Filtering Data.md)  
   
-Solved Problems  
+Solved Problems   
 - [HackerRank Problem - Challenge](/Pages/SQL/Solved Problems/HackerRank Problem/Challenges/Challenges.md)  
 - [HackerRank Problem - Contest Leaderboard](/Pages/SQL/Solved Problems/HackerRank Problem/Contest Leaderboard/Contest Leaderboard.md)  
   

@@ -7,11 +7,11 @@ author_profile: true
 
 We cover the following topics. A quick read will suffice to revise and ramp up.  
   
-#### SQL Principles
+#### [SQL Principles](../SQL%20Principles/SQL%20Principles.md)
 
 #### Proper use of Aliases
 
-#### [Filtering Data]((../Filtering Data/Filtering Data.md))
+#### [Filtering Data](../Filtering Data/Filtering Data.md)
 
 #### Filtering data - Detailed Sections
 1. **Using the WHERE Clause**
@@ -30,8 +30,8 @@ We cover the following topics. A quick read will suffice to revise and ramp up.
 - Key Points to Remember
 
 #### Solved Problems
-- HackerRank Problem: [Challenges](https://www.hackerrank.com/challenges/challenges/problem)
-- HackerRank Problem: [Contest Leaderboard](https://www.hackerrank.com/challenges/contest-leaderboard/problem)
+- HackerRank Problem: [Challenges](../Solved%20Problems/HackerRank%20Problem/Challenges/Challenges.md) [Source](https://www.hackerrank.com/challenges/challenges/problem)
+- HackerRank Problem: [Contest Leaderboard](../Solved%20Problems/HackerRank%20Problem/Contest%20Leaderboard/Contest%20Leaderboard.md)[Source](https://www.hackerrank.com/challenges/contest-leaderboard/problem)
 
 #### MySQL from the Command Line interface
 - Accessing MySQL from terminal in MacOS
