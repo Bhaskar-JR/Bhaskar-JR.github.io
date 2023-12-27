@@ -1,13 +1,12 @@
 ---
 layout : single
-classes: wide
 title : SQL Go to guide - meta level insights
 author_profile: true
 ---
 
 We cover the following topics. A quick read will suffice to revise and ramp up.  
   
-#### [SQL Principles](../SQL%20Principles/SQL%20Principles.md)
+#### [SQL Principles](../SQL Principles/SQL Principles.md)
 
 #### Proper use of Aliases
 
@@ -30,8 +29,8 @@ We cover the following topics. A quick read will suffice to revise and ramp up.
 - Key Points to Remember
 
 #### Solved Problems
-- HackerRank Problem: [Challenges](../Solved%20Problems/HackerRank%20Problem/Challenges/Challenges.md) [Source](https://www.hackerrank.com/challenges/challenges/problem)
-- HackerRank Problem: [Contest Leaderboard](../Solved%20Problems/HackerRank%20Problem/Contest%20Leaderboard/Contest%20Leaderboard.md)[Source](https://www.hackerrank.com/challenges/contest-leaderboard/problem)
+- HackerRank Problem: [Challenges](../Solved Problems/HackerRank Problem/Challenges/Challenges.md) [Source](https://www.hackerrank.com/challenges/challenges/problem)
+- HackerRank Problem: [Contest Leaderboard](../Solved Problems/HackerRank Problem/Contest Leaderboard/Contest Leaderboard.md) [Source](https://www.hackerrank.com/challenges/contest-leaderboard/problem)
 
 #### MySQL from the Command Line interface
 - Accessing MySQL from terminal in MacOS
