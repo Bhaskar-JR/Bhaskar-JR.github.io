@@ -1,5 +1,6 @@
 ---
 layout : single
+classes: wide
 title : SQL Principles
 author_profile: true
 ---
