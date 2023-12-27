@@ -37,4 +37,4 @@ The input consists of data from two tables:
    | challenge_id   | Integer |
    | score          | Integer |
   
-For solutions, [continue](/Contest Leaderboard Solutions.md).
+For solutions, [continue](/Contest Leaderboard Solution.md).
