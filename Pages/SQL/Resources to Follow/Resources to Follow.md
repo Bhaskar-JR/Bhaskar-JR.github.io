@@ -11,7 +11,7 @@ author_profile: true
    <Simply get a hardcopy and make it your go-to-book>
 
 2. **SQL for Data Analysis: Advanced Techniques for Transforming Data into Insights** by Cathy Tanimura  
-   <Load all the databases chapter wise from github repository and read/practice queries along with the text. Chapters 1,2,8 very useful to get SQL overview. Definitely go through Page no. 297 on Understanding Order of SQL Clause Evaluation>
+   <Load all the databases chapter wise from [github repository](https://github.com/cathytanimura/sql_book) and read/practice queries along with the text. Chapters 1,2,8 very useful to get SQL overview. Definitely go through Page no. 297 on Understanding Order of SQL Clause Evaluation>
 
 3. **SQL for Data Scientists - A Beginner's Guide for Building Datasets for Analysis** by Renee M. P. Teate  
    <Relevant from Data science POV, well written, a breeze to read, treatment is lucid>

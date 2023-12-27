@@ -11,7 +11,7 @@ We cover the following topics. A quick read will suffice to revise and ramp up.
 
 #### Proper use of Aliases
 
-#### Filtering data
+#### [Filtering Data]((../Filtering Data/Filtering Data.md))
 
 #### Filtering data - Detailed Sections
 1. **Using the WHERE Clause**
@@ -30,13 +30,13 @@ We cover the following topics. A quick read will suffice to revise and ramp up.
 - Key Points to Remember
 
 #### Solved Problems
-- HackerRank Problem: Challenges | Medium Level
-- HackerRank Problem: Contest Leaderboard | Medium Level
+- HackerRank Problem: [Challenges](https://www.hackerrank.com/challenges/challenges/problem)
+- HackerRank Problem: [Contest Leaderboard](https://www.hackerrank.com/challenges/contest-leaderboard/problem)
 
 #### MySQL from the Command Line interface
 - Accessing MySQL from terminal in MacOS
 - Commonly used MySQL commands in terminal
 
-#### Resources to follow
+#### [Resources to follow](../Resources to Follow/Resources to Follow.md)
 
 For Markdown preview, visit the [link](https://markdownlivepreview.com).
