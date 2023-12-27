@@ -1,6 +1,5 @@
 ---
 layout : single
-classes: wide
 title : HackerRank Challenges Solution
 author_profile: true
 toc: true
