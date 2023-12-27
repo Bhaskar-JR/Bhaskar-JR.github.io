@@ -4,11 +4,11 @@ title : SQL Go to guide - meta level insights
 author_profile: true
 ---
 
-We cover the following topics. A quick read will suffice to revise and ramp up.  
+We cover the following topics. A quick read will suffice to revise and ramp up.  [pdf Link](/SQL Meta Guide_Bhaskar@2023.pdf)  
   
 #### [SQL Principles](../SQL Principles/SQL Principles.md)
 
-#### Proper use of Aliases
+#### [Proper use of Aliases](../Proper use of Aliases/Proper use of Aliases.md)
 
 #### [Filtering Data](../Filtering Data/Filtering Data.md)
 
