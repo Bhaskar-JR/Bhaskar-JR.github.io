@@ -16,7 +16,17 @@ author_profile: true
     - `HAVING`
     - `WINDOW` (for window functions, if applicable)
     - `ORDER BY`
-    - `LIMIT` (or equivalent like `TOP` or `FETCH FIRST`)
+    - `LIMIT` (or equivalent like `TOP` or `FETCH FIRST`)  
+    - 
+| Clause Name | Purpose                                                  |
+|-------------|----------------------------------------------------------|
+| SELECT      | Determines which columns to include in the result set.    |
+| FROM        | Identifies tables for data retrieval and specifies joins. |
+| WHERE       | Filters data based on specified conditions.              |
+| GROUP BY    | Groups rows together based on common column values.       |
+| HAVING      | Filters out unwanted groups after grouping.              |
+| ORDER BY    | Sorts the final result set by one or more columns.        |  
+  
 - **Execution Hierarchy:** Understand the logical order of processing these clauses:
     - `FROM` and `JOIN` clauses determine the total working set of data.
     - `WHERE` clause filters rows.
