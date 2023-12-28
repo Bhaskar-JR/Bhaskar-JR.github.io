@@ -1,7 +1,9 @@
 ---
 layout : single
 title : Filtering data
+toc: true
 author_profile: true
+toc_sticky: true
 ---
   
 ## SQL Clause Usage and Best Practices
