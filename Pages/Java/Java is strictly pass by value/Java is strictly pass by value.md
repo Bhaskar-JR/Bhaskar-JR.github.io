@@ -53,7 +53,137 @@ In summary, Java's design focuses on safety and simplicity, abstracting away com
 ```java
 // Class-level variable to keep track of solutions  
 private static int count = 0;
+```  
+  
+```java
+package nQueens;
+
+import java.util.ArrayList;
+import java.util.List;
+
+//Java convention is Pascal case for naming classes
+public class NQueensSolver {
+
+	// Class-level variable to keep track of solutions
+	private static int count = 0;
+
+	public static void main(String[] args) {
+
+		int n = 5; // board length
+		char[][] board = createBoard(n);
+		List<char[][]> savedBoards = new ArrayList<>();
+
+		solve(board, 0, savedBoards);
+		// print2DArray(board);
+
+	}
+
+	public static void solve(char[][] board, int row, List<char[][]> savedBoards) {
+
+		int n = board.length;
+		if (row == n) {
+			count += 1;
+			System.out.println("State no.:" + count);
+			print2DArray(board);
+			System.out.println();
+                
+                // Creating a deep copy of the current board state and adding to savedBoards
+                // The addition of deep copy for saving board states
+                char[][] clonedBoard = new char[n][n];
+                for (int i = 0; i < n; i++) {
+                System.arraycopy(board[i], 0, clonedBoard[i], 0, n);
+                }
+                savedBoards.add(clonedBoard);
+
+			return;
+		}
+
+		for (int i = 0; i < n; i++) {
+			if (isSafe(row, i, board)) {
+
+				board[row][i] = 'Q';
+				// Recursive call
+				solve(board, row + 1, savedBoards);
+
+				// backtracking
+				board[row][i] = 'X';
+			}
+
+		}
+	}
+
+	public static boolean isSafe(int row, int col, char[][] board) {
+
+		int n = board.length;
+
+		// same row
+		for (int i = 0; i < n; i++) {
+			if (board[row][i] == 'Q')
+				return false;
+		}
+
+		// same column
+		for (int j = 0; j < n; j++) {
+			if (board[j][col] == 'Q')
+				return false;
+		}
+
+		// Upper left diagonal
+		int p = row;
+		for (int q = col; p >= 0 && q >= 0; p--, q--) {
+			if (board[p][q] == 'Q')
+				return false;
+		}
+
+		// Upper right diagonal
+		p = row;
+		for (int q = col; p >= 0 && q < n; p--, q++) {
+			if (board[p][q] == 'Q')
+				return false;
+		}
+
+		// Lower right diagonal
+		p = row;
+		for (int q = col; p < n && q < n; p++, q++) {
+			if (board[p][q] == 'Q')
+				return false;
+		}
+
+		// Lower left diagonal
+		p = row;
+		for (int q = col; p < n && q >= 0; p++, q--) {
+			if (board[p][q] == 'Q')
+				return false;
+		}
+
+		return true;
+
+	}
+
+	// Method to create board
+	public static char[][] createBoard(int size) {
+		char[][] board = new char[size][size];
+		for (int i = 0; i < size; i++) {
+			for (int j = 0; j < size; j++) {
+				board[i][j] = 'X'; // Initialize with a default character, e.g., a dash
+			}
+		}
+		return board;
+	}
+
+	// Method to print a 2D array
+	public static void print2DArray(char[][] array) {
+		for (char[] row : array) {
+			for (char element : row) {
+				System.out.print(element + " ");
+			}
+			System.out.println(); // Print a new line at the end of each row
+		}
+	}
+}
 ```
+
+
 
 Creating a class-level variable, such as the `count` variable in your example, serves the purpose of maintaining state or shared information across multiple method calls within the same class. Here are some reasons why you might want to use a class-level variable:
 
