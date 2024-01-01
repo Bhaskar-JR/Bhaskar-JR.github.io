@@ -4,6 +4,7 @@ author_profile : true
 toc: true
 author_profile: true
 toc_sticky: true
+toc_label: "Recursion and Backtracking"
 ---
 
 

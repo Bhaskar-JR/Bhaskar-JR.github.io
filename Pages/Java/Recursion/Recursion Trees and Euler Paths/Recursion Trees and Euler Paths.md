@@ -3,6 +3,7 @@ layout : single
 author_profile : true
 toc: true
 author_profile: true
+toc_label:  "Recursion Trees and Euler Paths"
 toc_sticky: true
 ---
 
@@ -18,10 +19,11 @@ Here's how a recursive tree diagram and an Euler tour typically work:
 4. **Completing the Tour:** The tour completes when it returns to the starting node, having traversed every edge twice.
 
 ### Example
-Consider a simple binary tree:
-
-[Diagram: A simple binary tree](SimpleBinaryTree.png)
-
+Consider a simple binary tree:  
+  
+<img src="SimpleBinaryTree.png" alt="drawing" width="250"/>  
+  
+  
 An Euler tour of this tree, starting from node A, would be:
 A - B - D - B - A - C - E - C - F - C - A.
 Here, each edge is visited twice: once going down the tree and once coming back up.
