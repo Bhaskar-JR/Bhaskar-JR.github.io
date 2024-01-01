@@ -48,9 +48,11 @@ The contents of a WHERE and HAVING clause cannot be swapped:
 #### References:
 - SQL Pocket Guide by Alice Zhou.
 - “SQL for Data Scientists - A Beginner's Guide for Building Datasets for Analysis” by Renee M. P. Teate (Chapter 3 - The WHERE Clause for the sample codes in this section.)
-
-```sql
+  
+#### Sample Code
+  
 -- Filtering Using predicate on column values within Where clause
+```sql
 SELECT
     market_date,
     customer_id,
@@ -83,16 +85,42 @@ WHERE
     customer_first_name IN ('Renee', 'Rene', 'Renée', 'René', 'Renne');
 ```
   
--- Filtering Using Subquery within Where clause
+-- Filtering Using Subquery within Where clause  
 ```sql
+-- Query: Customer Purchases on Rainy Market Dates
 SELECT
     market_date,
     customer_id,
     vendor_id,
     quantity * cost_to_customer_per_qty AS price
-FROM farmers_market.customer_purchases
+FROM
+    farmers_market.customer_purchases
 WHERE
     market_date IN (
-        SELECT market_date      
+        SELECT market_date
+        FROM farmers_market.market_date_info
+        WHERE market_rain_flag = 1
+    )
+LIMIT 5;
+```
+-- Filtering using HAVING  
+```sql
+-- Query: Vendor Inventory Analysis with Filtering using Having  
+SELECT
+    vendor_id,
+    COUNT(DISTINCT product_id) AS different_products_offered,
+    SUM(quantity * original_price) AS value_of_inventory,
+    SUM(quantity) AS inventory_item_count,
+    SUM(quantity * original_price) / SUM(quantity) AS average_item_price
+FROM
+    farmers_market.vendor_inventory
+WHERE
+    market_date BETWEEN '2019-03-02' AND '2019-03-16'
+GROUP BY
+    vendor_id
+HAVING
+    inventory_item_count >= 100
+ORDER BY
+    vendor_id;
 ```
 **Note**, the SQL engine is designed to recognize and appropriately handle aliases from the SELECT clause in the HAVING and ORDER BY clauses, despite the logical processing order of SQL queries. 
