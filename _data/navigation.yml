@@ -16,6 +16,10 @@ main:
     url: ../Python & R
   - title: "SQL"
     url: ../SQL
+  - title: "Java"
+    url: ../Java
+  - title: "DSA"
+    url: ../DSA
   - title: "Data Science"
     url: ../Data Science topics
   - title: "Excel & VBA"
