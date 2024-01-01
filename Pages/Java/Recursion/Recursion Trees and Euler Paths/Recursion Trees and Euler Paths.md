@@ -28,11 +28,11 @@ An Euler tour of this tree, starting from node A, would be:
 A - B - D - B - A - C - E - C - F - C - A.
 Here, each edge is visited twice: once going down the tree and once coming back up.
 
-### Recursion Trees and Euler Paths in Recursion and Backtracking Algorithms
+## Recursion Trees and Euler Paths in Recursion and Backtracking Algorithms
 
 The concepts of recursion trees and Euler paths are indeed important in understanding and analyzing recursion and backtracking algorithms. Let's delve into how these concepts are relevant in the context of recursion and backtracking:
 
-#### Recursion Tree
+### Recursion Tree
 A recursion tree is a visual representation of the function calls in a recursive algorithm. Each node in the tree represents an instance of a recursive call, and the children of a node represent the subsequent recursive calls made by that instance.
 
 1. **Understanding the Recursive Process:** The recursion tree helps in visualizing the flow of the algorithm, showing how the problem is broken down into smaller sub-problems.
