@@ -20,9 +20,8 @@ Here's how a recursive tree diagram and an Euler tour typically work:
 
 ### Example
 Consider a simple binary tree:  
-  
-<img src="SimpleBinaryTree.png" alt="drawing" width="250"/>  
-  
+
+![png](SimpleBinaryTree.png)     
   
 An Euler tour of this tree, starting from node A, would be:
 A - B - D - B - A - C - E - C - F - C - A.
