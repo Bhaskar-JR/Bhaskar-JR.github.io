@@ -1,6 +1,5 @@
 ---
 layout : single
-classes: wide
 title : Java Principles
 author_profile: true
 toc: true
