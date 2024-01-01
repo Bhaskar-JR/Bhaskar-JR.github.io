@@ -48,7 +48,7 @@ toc_sticky: true
 
 In summary, Java's design focuses on safety and simplicity, abstracting away complexities like pointer arithmetic and memory management found in languages like C/C++. Understanding the distinction between how primitive and reference types are handled, especially in the context of method calling, is fundamental in Java programming.
 
-## Class-Level Variables in Java
+### Class-Level Variables in Java
 
 ```java
 // Class-level variable to keep track of solutions  
@@ -185,10 +185,10 @@ public class NQueensSolver {
 
 
 
-Creating a class-level variable, such as the `count` variable in your example, serves the purpose of maintaining state or shared information across multiple method calls within the same class. Here are some reasons why you might want to use a class-level variable:
+Creating a class-level variable, such as the `count` variable in above example, serves the purpose of maintaining state or shared information across multiple method calls within the same class. Here are some reasons why you might want to use a class-level variable:
 
 1. **Shared State Across Methods:**
-   The class-level variable allows different methods within the class to access and modify a shared piece of data. In your example, the `count` variable is incremented and used across the main method and the `solve` method.
+   The class-level variable allows different methods within the class to access and modify a shared piece of data. In above example, the `count` variable is incremented and used across the main method and the `solve` method.
 
 2. **Preserving State Between Method Calls:**
    Class-level variables retain their values between method calls. In scenarios where you need to preserve information or state across multiple invocations of methods, a class-level variable is useful. In your code, the `count` variable accumulates the number of solutions across different recursive calls to the `solve` method.
