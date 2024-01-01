@@ -1,5 +1,10 @@
-
-
+---
+layout : single
+author_profile : true
+toc: true
+author_profile: true
+toc_sticky: true
+---
 
 ## Recursion Trees and Euler Paths
 
@@ -15,7 +20,7 @@ Here's how a recursive tree diagram and an Euler tour typically work:
 ### Example
 Consider a simple binary tree:
 
-[Diagram: A simple binary tree]
+[Diagram: A simple binary tree](SimpleBinaryTree.png)
 
 An Euler tour of this tree, starting from node A, would be:
 A - B - D - B - A - C - E - C - F - C - A.
