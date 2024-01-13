@@ -15,7 +15,9 @@ Suppose we have the following dataset: {8, 3, 10, 1, 6, 14, 4, 7, 13}.
 
 ## Array
 If we store these elements in an array and want to search for the element 6, we would typically perform a linear search. We would iterate through the array until we find the desired element:
-
+  
+### Implementation in Java  
+  
 ```java
 int[] array = {8, 3, 10, 1, 6, 14, 4, 7, 13};
 int target = 6;
@@ -27,12 +29,13 @@ for (int i = 0; i < array.length; i++) {
     }
 }
 ```
-
+In this case, the search operation would take **O(n)** time because we might need to check each element before finding the target.  
+  
 ## Linked List
 
-In this case, the search operation in a linked list would take O(n) time.
+In this case, the search operation in a linked list would take **O(n)** time.
 
-### Implementation in Java:
+### Implementation in Java
 
 Assuming a linked list is implemented using a `Node` class:
 
@@ -59,7 +62,7 @@ while (current != null) {
 ```
 
 
-Again, this operation would take O(n) time.
+Again, this operation would take **O(n)** time.
 
 ## Binary Search Tree (BST)
 
@@ -73,7 +76,7 @@ First, let's construct a binary search tree using the provided dataset. The cons
   
 ![png](BSTConstruction.jpg) 
   
-Searching in the Binary Search Tree
+### Searching in the Binary Search Tree
 
 ```java
 public class BinarySearchTreeExample {
@@ -123,12 +126,13 @@ public class BinarySearchTreeExample {
 }
 ```  
 
-In the binary search tree, the search for the element 6 starts at the root (8), then moves to the left subtree (3), and further to the right subtree of the left child (6). The search concludes with finding the element 6. The time complexity of this operation is O(log n), making it more efficient compared to linear search in an array or linked list.
+In the binary search tree, the search for the element 6 starts at the root (8), then moves to the left subtree (3), and further to the right subtree of the left child (6). The search concludes with finding the element 6. The time complexity of this operation is **O(log n)**, making it more efficient compared to linear search in an array or linked list.
 
 ### Benefits:
 1.	**Fast Search**: Binary search in a well-balanced BST ensures that, at each step, we eliminate half of the remaining elements. This results in a logarithmic time complexity for search operations.
 2.	**Maintaining Sorted Order**: The binary search tree inherently maintains a sorted order, which means that an in-order traversal of the tree would produce the elements in ascending order. This property is useful in various scenarios where sorted data is required.
-3.	**Dynamic Operations**: BSTs support dynamic operations like insertion and deletion while maintaining their structure. This allows for efficient updates to the dataset without the need to rebuild the entire structure.
+3.	**Dynamic Operations**: BSTs support dynamic operations like insertion and deletion while maintaining their structure. This allows for efficient updates to the dataset without the need to rebuild the entire structure.  
+  
 
-In summary, a binary search tree provides a powerful and efficient data structure for searching, insertion, and deletion operations, especially when the dataset needs to be kept in a sorted order.
+  > In summary, a binary search tree provides a powerful and efficient data structure for searching, insertion, and deletion operations, especially when the dataset needs to be kept in a sorted order.
 
