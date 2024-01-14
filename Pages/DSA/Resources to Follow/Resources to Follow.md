@@ -16,7 +16,7 @@ author_profile: true
 8. **Think Data Structures - Algorithms and Information Retrieval in Java** by Allen B. Downey
 9. **Algorithms** by Robert Sedgewick and Kevin Wayne (Princeton University)
 10. **Data Structures and Algorithms - Learn from Scratch** by Rahul Maurya  
-11. **Algorithms and Data Structures The Basic Toolbox** by Kurt Mehlhorn • Peter Sanders  
+11. **Algorithms and Data Structures The Basic Toolbox** by Kurt Mehlhorn and Peter Sanders  
 12. **A Common-Sense Guide to Data Structures and Algorithms** - Level Up Your Core Programming Skills by Jay Wengrow  
 13. **Algorithms and Programming** - Problems and Solutions by Alexander Shen <Refer to chapter 3 Tree traversal (backtracking) for N-Queens Problem> 
 14. **Algorithms** by S. Dasgupta, C. H. Papadimitriou, and U. V. Vazirani  
