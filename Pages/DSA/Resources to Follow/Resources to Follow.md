@@ -17,5 +17,9 @@ author_profile: true
 9. **Data Structures and Algorithms - Learn from Scratch** by Rahul Maurya  
 10. **Algorithms and Data Structures The Basic Toolbox** by Kurt Mehlhorn • Peter Sanders  
 11. **A Common-Sense Guide to Data Structures and Algorithms** - Level Up Your Core Programming Skills by Jay Wengrow  
-12. **Algorithms and Programming** - Problems and Solutions by Alexander Shen  
-13. **Algorithms** by S. Dasgupta, C. H. Papadimitriou, and U. V. Vazirani
+12. **Algorithms and Programming** - Problems and Solutions by Alexander Shen <Refer to chapter 3 Tree traversal (backtracking) for N-Queens Problem> 
+13. **Algorithms** by S. Dasgupta, C. H. Papadimitriou, and U. V. Vazirani  
+14. **Java Software Structures - Designing and Using Data Structures** by John Lewis, Joseph Chase  
+15. **Algorithms in Action** by Victor Savvich <Definitely go through Chapter 1 : Review, Chapter 7: Netwrok Flow. Overall good overview>  
+16. **Grokking Algorithms** by Aditya Y.Bhargava <Highky recommended for quick revision and going back to basics>  
+17. **Data Structures and Algorithms- Annotated Reference with Examples** by Granville Barnett
