@@ -14,4 +14,8 @@ author_profile: true
 6. **The Algorithm Design Manual** by Steven S. Skiena
 7. **Think Data Structures - Algorithms and Information Retrieval in Java** by Allen B. Downey
 8. **Algorithms** by Robert Sedgewick and Kevin Wayne (Princeton University)
-9. **Data Structures and Algorithms - Learn from Scratch** by Rahul Maurya
+9. **Data Structures and Algorithms - Learn from Scratch** by Rahul Maurya  
+10. **Algorithms and Data Structures The Basic Toolbox** by Kurt Mehlhorn • Peter Sanders  
+11. **A Common-Sense Guide to Data Structures and Algorithms** - Level Up Your Core Programming Skills by Jay Wengrow  
+12. **Algorithms and Programming** - Problems and Solutions by Alexander Shen  
+13. **Algorithms** by S. Dasgupta, C. H. Papadimitriou, and U. V. Vazirani
