@@ -22,4 +22,6 @@ author_profile: true
 14. **Java Software Structures - Designing and Using Data Structures** by John Lewis, Joseph Chase  
 15. **Algorithms in Action** by Victor Savvich <Definitely go through Chapter 1 : Review, Chapter 7: Netwrok Flow. Overall good overview>  
 16. **Grokking Algorithms** by Aditya Y.Bhargava <Highky recommended for quick revision and going back to basics>  
-17. **Data Structures and Algorithms- Annotated Reference with Examples** by Granville Barnett
+17. **Data Structures and Algorithms- Annotated Reference with Examples** by Granville Barnett  
+18. **Guide to Competitive Programming** - Learning and Improving Algorithms Through Contests by Antti Laaksonen
+19. **DYNAMIC PROGRAMMING FOR CODING INTERVIEWS** - A BOTTOM-UP APPROACH TO PROBLEM SOLVING by MEENAKSHI & KAMAL RAWAT

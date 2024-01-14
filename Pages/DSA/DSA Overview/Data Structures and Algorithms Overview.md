@@ -12,11 +12,12 @@ toc_sticky: true
   <thead>
     <tr>
       <th rowspan="3">Data Structure</th>
-      <th colspan="4">Time Complexity</th>
-      <th colspan="4">Space Complexity</th>
+      <th colspan="8">Time Complexity</th>
+      <th colspan="1">Space Complexity</th>
     </tr>
     <tr>
       <th colspan="4">Average</th>
+      <th colspan="4">Worst</th>
       <th colspan="4">Worst</th>
     </tr>
     <tr>
@@ -28,6 +29,7 @@ toc_sticky: true
       <th>Search</th>
       <th>Insertion</th>
       <th>Deletion</th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
@@ -38,6 +40,7 @@ toc_sticky: true
       <td>O(n)</td>
       <td>O(n)</td>
       <td>O(1)</td>
+      <td>O(n)</td>
       <td>O(n)</td>
       <td>O(n)</td>
       <td>O(n)</td>
@@ -52,6 +55,7 @@ toc_sticky: true
       <td>O(n)</td>
       <td>O(1)</td>
       <td>O(1)</td>
+      <td>O(n)</td>
     </tr>
     <tr>
       <td>Queue</td>
@@ -63,6 +67,7 @@ toc_sticky: true
       <td>O(n)</td>
       <td>O(1)</td>
       <td>O(1)</td>
+      <td>O(n)</td>
     </tr>
     <tr>
       <td>Singly-Linked List</td>
@@ -74,6 +79,7 @@ toc_sticky: true
       <td>O(n)</td>
       <td>O(1)</td>
       <td>O(1)</td>
+      <td>O(n)</td>
     </tr>
     <tr>
       <td>Doubly-Linked List</td>
@@ -85,6 +91,7 @@ toc_sticky: true
       <td>O(n)</td>
       <td>O(1)</td>
       <td>O(1)</td>
+      <td>O(n)</td>  
     </tr>
     <tr>
       <td>Skip List</td>
@@ -96,6 +103,8 @@ toc_sticky: true
       <td>O(n)</td>
       <td>O(n)</td>
       <td>O(n)</td>
+      <td>O(nlog(n))</td>
+
     </tr>
     <tr>
       <td>Hash Table</td>
@@ -107,6 +116,7 @@ toc_sticky: true
       <td>O(n)</td>
       <td>O(n)</td>
       <td>O(n)</td>
+      <td>O(n)</td>
     </tr>
     <tr>
       <td>Binary Search Tree</td>
@@ -114,6 +124,7 @@ toc_sticky: true
       <td>O(log(n))</td>
       <td>O(log(n))</td>
       <td>O(log(n))</td>
+      <td>O(n)</td>
       <td>O(n)</td>
       <td>O(n)</td>
       <td>O(n)</td>
@@ -129,6 +140,7 @@ toc_sticky: true
       <td>O(n)</td>
       <td>O(n)</td>
       <td>O(n)</td>
+      <td>O(n)</td>
     </tr>
     <tr>
       <td>B-Tree</td>
@@ -140,6 +152,7 @@ toc_sticky: true
       <td>O(log(n))</td>
       <td>O(log(n))</td>
       <td>O(log(n))</td>
+      <td>O(n)</td>
     </tr>
     <tr>
       <td>Red-Black Tree</td>
@@ -151,6 +164,7 @@ toc_sticky: true
       <td>O(log(n))</td>
       <td>O(log(n))</td>
       <td>O(log(n))</td>
+      <td>O(n)</td>
     </tr>
     <tr>
       <td>Splay Tree</td>
@@ -162,6 +176,7 @@ toc_sticky: true
       <td>O(log(n))</td>
       <td>O(log(n))</td>
       <td>O(log(n))</td>
+      <td>O(n)</td>
     </tr>
     <tr>
       <td>AVL Tree</td>
@@ -173,13 +188,21 @@ toc_sticky: true
       <td>O(log(n))</td>
       <td>O(log(n))</td>
       <td>O(log(n))</td>
+      <td>O(n)</td>
     </tr>
     <tr>
       <td>KD Tree</td>
       <td>O(log(n))</td>
       <td>O(log(n))</td>
       <td>O(log(n))</td>
-      <td>O(log(n))
+      <td>O(log(n))</td>
+      <td>O(n)</td>
+      <td>O(n)</td>
+      <td>O(n)</td>
+      <td>O(n)</td>
+      <td>O(n)</td>
+    </tr>
+</tbody>
 </table>
 
 ## Basic Operations on Data Structures  
