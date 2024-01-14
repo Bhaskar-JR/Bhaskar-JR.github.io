@@ -133,6 +133,22 @@ In the binary search tree, the search for the element 6 starts at the root (8), 
 2.	**Maintaining Sorted Order**: The binary search tree inherently maintains a sorted order, which means that an in-order traversal of the tree would produce the elements in ascending order. This property is useful in various scenarios where sorted data is required.
 3.	**Dynamic Operations**: BSTs support dynamic operations like insertion and deletion while maintaining their structure. This allows for efficient updates to the dataset without the need to rebuild the entire structure.  
   
-
   > In summary, a binary search tree provides a powerful and efficient data structure for searching, insertion, and deletion operations, especially when the dataset needs to be kept in a sorted order.
 
+## Scenario - Searching an element amongst 1 million data points
+
+Let's consider the maximum number of steps/comparisons for each scenario when searching through **1 million data points**:
+
+1. Array  
+Maximum Comparisons: 1 million  
+In the worst case, where the target element is at the end of the array or not present, you may need to compare against all 1 million elements.  
+
+2. Linked List  
+Maximum Comparisons: 1 million  
+Similar to arrays, in the worst case, you might need to traverse the entire linked list to find the target element or determine its absence.  
+
+3. Binary Search Tree (BST)  
+Maximum Comparisons: Log base 2 of 1 million (approximately 20 comparisons for a well-balanced tree)  
+In a balanced binary search tree, the maximum number of comparisons is determined by the height of the tree, which is logarithmic with respect to the number of elements. For 1 million elements, log base 2 of 1 million is around 20.  
+
+>> Note : It's important to note that the actual number of comparisons may vary based on the distribution of data and the specific structure of the tree (balanced or unbalanced). In the case of an unbalanced tree, the maximum number of comparisons could be closer to 1 million, leading to a linear search scenario.
