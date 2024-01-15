@@ -27,7 +27,7 @@ author_profile : true
 | Category management by segment                             | How can I create compelling messages based on product categories purchased?                                                     |
 | Customer-centricity                                        | What organizing philosophy should I use to solidify my marketing point of view?                                                 |  
   
-References :
+### References :
 1. "**Advanced Customer Analytics** -Targeting, valuing, segmenting and loyalty techniques" by Mike Grigsby (The above table has been compiled from this book.)
 
 2. "**R for Marketing Research and Analytic**" by Chris Chapman, Elea McDonnell Feit (Highly Recommended)
@@ -35,7 +35,7 @@ References :
 4. "**Marketing Analytics**- Essential Tools for Data-Driven Decisions" by 
 Rajkumar Venkatesan,Paul W. Farris, and Ronald T. Wilcox  
 5. "**Marketing Analytics** - A Practical guide to real marketing science" by Mike Grigsby
-6. "Data Science and Analytics for Ordinary people" 
-
+6. "**Data Science and Analytics for Ordinary people**" by Jeffrey Strickland  
+7. "**Becoming a Data Head** - How to Think, Speak, and Understand Data Science, Statistics, and Machine Learning" by Alex J. Gutman, Jordan  Goldmeier
 
 
