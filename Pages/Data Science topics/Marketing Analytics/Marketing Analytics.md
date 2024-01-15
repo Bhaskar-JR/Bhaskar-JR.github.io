@@ -30,8 +30,8 @@ author_profile : true
 ### References :
 1. "**Advanced Customer Analytics** -Targeting, valuing, segmenting and loyalty techniques" by Mike Grigsby (The above table has been compiled from this book.)
 
-2. "**R for Marketing Research and Analytic**" by Chris Chapman, Elea McDonnell Feit (Highly Recommended)
-3. "**Python for Marketing Research and Analytic**" by Jason S. Schwarz, Chris Chapman, Elea McDonnell Feit (Highly Recommended)
+2. "**R for Marketing Research and Analytics**" by Chris Chapman, Elea McDonnell Feit (Highly Recommended)
+3. "**Python for Marketing Research and Analytics**" by Jason S. Schwarz, Chris Chapman, Elea McDonnell Feit (Highly Recommended)
 4. "**Marketing Analytics**- Essential Tools for Data-Driven Decisions" by 
 Rajkumar Venkatesan,Paul W. Farris, and Ronald T. Wilcox  
 5. "**Marketing Analytics** - A Practical guide to real marketing science" by Mike Grigsby
