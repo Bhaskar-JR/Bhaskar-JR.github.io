@@ -7,7 +7,7 @@ classes : wide
 
 > All the probability distributions are interrelated.  
 
-The diagram below is a framework to view probability distributions as a unified whole instead of is disparate silos.  
+The diagram below is a framework to view probability distributions as a unified whole instead of disparate silos.  
 
 ![Unified view of Probability Distributions](drawing_distributions_lesson54.png)   
 

@@ -29,3 +29,5 @@ classes : wide
 [Lattice package in R for multivariate Visualization](/Pages/Python & R/Lattice/Lattice.md)  
 
 [Numeric Univariate and Multivariate analysis in R](/Pages/Python & R/Numeric Univariate and Multivariate Analysis in R/Numeric-Univariate-Analysis.md)  
+  
+[Resources to Follow](/Pages/Python & R/Resources to Follow/Resources to Follow.md)

@@ -9,7 +9,7 @@ comments: true
 ---
 
 This post is currently under construction.  
-Check out [html version](Statistics-Using-R_Markdown.html).  
+Check out [html version](Statistics-Using-R_Markdown.html). Refer to my [notes](/Pages/Python & R/Statistics using R/Statistics-Using-R_Markdown_files/Bhaskar-Statistics-in-depth.pdf) as well as additional material. 
 <!---
 https://stackoverflow.com/questions/32530722/how-can-i-set-the-font-family-font-size-inside-of-a-div
 -->
