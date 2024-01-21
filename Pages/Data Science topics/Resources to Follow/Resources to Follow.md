@@ -17,7 +17,6 @@ comments: true
 5. "**Linear Models with R**" by Julian Faraway
 
 
-
 ## Machine Learning  
 1. "**Feature Engineering for Machine Learning** - Principles and Techniques for Data Scientists" by Alice Zheng and Amanda Casari
 2. "**The Art of Feature Engineering**"  
