@@ -10,17 +10,8 @@ toc_sticky: true
 ## Print patterns using SQL  
   
 Source : [HackerRank, Alternative Queries, Draw the Triangle 1](https://www.hackerrank.com/challenges/draw-the-triangle-1/problem?)  
-  
-\********************  
-\******************  
-\****************  
-\**************  
-\************  
-\**********  
-\********  
-\******  
-\****  
-\**
+
+![png](TrianglePattern.png)  
 
 
 -- Recursive CTE code without comments
@@ -71,23 +62,28 @@ FROM
 
 **Recursive Common Table Expressions (CTEs)** are a powerful feature in SQL that allow you to execute complex queries, particularly useful for dealing with hierarchical or recursive data structures. Here's a more detailed look at recursive CTEs:  
 
-## Basic Structure:
+## Basic Structure
 A recursive CTE consists of two parts:
 1. Anchor Member: This is the initial query that forms the base result set of the CTE. It's the starting point of the recursion.
 2. Recursive Member: This part of the CTE references the CTE itself and is used to extend or transform the result set from the anchor member.
    
 These two parts are combined using the **UNION ALL operator**, ensuring that the results of the anchor member are combined with the results of the recursive member.
   
-## How It Works:
+## How It Works
 - **Initialization**: The anchor member is executed first to create the initial set of rows.
 - **Recursion**: The recursive member is then repeatedly executed, taking the results of the previous iteration as its input, and adding to the overall result set.
 - **Termination**: The recursion continues until the recursive member returns no rows or a specified condition is met, preventing an infinite loop.
 
-## Use Cases:
+## Use Cases
 - **Generating Sequences**: Like creating a series of numbers, dates, etc.
 - **Hierarchical Data**: Navigating tree-like structures, such as organizational charts, category trees, or folder structures.
 - **Graph Data**: Traversing graph data structures, such as finding the shortest path or all paths between two nodes.
   
+> Follow the best practices : Starting with the anchor member, while ensuring that the recursive and anchor members have the same number of columns and data types, and write the termination condition.  
+> Create efficient and accurate queries to traverse hierarchical data structures
+
+### Specific Usecase
+
 ## Example:
 A simple example of a recursive CTE is generating a series of numbers:
 
@@ -105,7 +101,6 @@ This query generates a series of numbers from 1 to 10.
 
 ## Key Points to Remember:
 - **Avoid Infinite Loops**: Always ensure there is a condition to terminate the recursion, or else the query can go into an infinite loop.  
-
 - **Performance**: Recursive CTEs can be resource-intensive, especially with large data sets or complex recursive logic
 - **Database Support**: Most modern relational databases support recursive CTEs, including PostgreSQL, MySQL (from version 8.0), SQL Server, and Oracle.  
   
