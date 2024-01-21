@@ -22,4 +22,4 @@ comments: true
 1. "**Feature Engineering for Machine Learning** - Principles and Techniques for Data Scientists" by Alice Zheng and Amanda Casari
 2. "**The Art of Feature Engineering**"  
 3. "**Machine Learning Essentials** - Practical Guide in R" by Alboukadel Kassambara  
-4. "**Practical Machine Learning in R**" by Fred Nwanganga, Mike Chapple <Highly Recommended>
+4. "**Practical Machine Learning in R**" by Fred Nwanganga, Mike Chapple < Highly Recommended>
