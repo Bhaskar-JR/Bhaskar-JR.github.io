@@ -99,7 +99,7 @@ SELECT * FROM NumberSeries;
 
 This query generates a series of numbers from 1 to 10.
 
-## Key Points to Remember:
+## Key Points to Remember
 - **Avoid Infinite Loops**: Always ensure there is a condition to terminate the recursion, or else the query can go into an infinite loop.  
 - **Performance**: Recursive CTEs can be resource-intensive, especially with large data sets or complex recursive logic
 - **Database Support**: Most modern relational databases support recursive CTEs, including PostgreSQL, MySQL (from version 8.0), SQL Server, and Oracle.  
