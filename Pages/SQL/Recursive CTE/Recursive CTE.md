@@ -80,6 +80,7 @@ These two parts are combined using the **UNION ALL operator**, ensuring that the
 - **Graph Data**: Traversing graph data structures, such as finding the shortest path or all paths between two nodes.
   
 > Follow the best practices : Starting with the anchor member, while ensuring that the recursive and anchor members have the same number of columns and data types, and write the termination condition.  
+
 > Create efficient and accurate queries to traverse hierarchical data structures
 
 ### Specific Usecases  
