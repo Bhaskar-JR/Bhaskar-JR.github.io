@@ -128,7 +128,7 @@ public class BinarySearchTreeExample {
 
 In the binary search tree, the search for the element 6 starts at the root (8), then moves to the left subtree (3), and further to the right subtree of the left child (6). The search concludes with finding the element 6. The time complexity of this operation is **O(log n)**, making it more efficient compared to linear search in an array or linked list.
 
-### Benefits:
+### Benefits
 1.	**Fast Search**: Binary search in a well-balanced BST ensures that, at each step, we eliminate half of the remaining elements. This results in a logarithmic time complexity for search operations.
 2.	**Maintaining Sorted Order**: The binary search tree inherently maintains a sorted order, which means that an in-order traversal of the tree would produce the elements in ascending order. This property is useful in various scenarios where sorted data is required.
 3.	**Dynamic Operations**: BSTs support dynamic operations like insertion and deletion while maintaining their structure. This allows for efficient updates to the dataset without the need to rebuild the entire structure.  
