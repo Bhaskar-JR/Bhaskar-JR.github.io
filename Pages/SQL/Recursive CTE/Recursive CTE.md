@@ -7,18 +7,20 @@ toc_label: "Recursive CTE"
 toc_sticky: true
 ---
   
-## Print patterns using SQL (HackerRank, Alternative Queries)  
+## Print patterns using SQL  
   
-********************
-******************
-****************
-**************
-************
-**********
-********
-******
-****
-**
+Source : [HackerRank, Alternative Queries, Draw the Triangle 1](https://www.hackerrank.com/challenges/draw-the-triangle-1/problem?)  
+  
+\********************  
+\******************  
+\****************  
+\**************  
+\************  
+\**********  
+\********  
+\******  
+\****  
+\**
 
 
 -- Recursive CTE code without comments
