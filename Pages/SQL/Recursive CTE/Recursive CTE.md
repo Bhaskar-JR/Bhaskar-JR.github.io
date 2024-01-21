@@ -11,9 +11,9 @@ toc_sticky: true
   
 Source : [HackerRank, Alternative Queries, Draw the Triangle 1](https://www.hackerrank.com/challenges/draw-the-triangle-1/problem?)  
 
-![png](TrianglePattern.png)  
-
-
+<img src="TrianglePattern.png" alt="image" width="200" height="auto">  
+  
+  
 -- Recursive CTE code without comments
 ```sql
 WITH RECURSIVE num(n) AS (
