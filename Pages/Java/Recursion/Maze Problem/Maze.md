@@ -120,8 +120,11 @@ public class FourDirectionMazePath_V2{
 
         // specifying start row, start cols as 0,0
         // specifying end row, cols as rows-1, cols-1 respectively representing the bottom-right corner of the maze.  
-        
-        /* The print method uses recursive backtracking to explore all possible paths in the maze, and the variable ways is assigned the number of valid paths found by the print method. After the recursive calls, ways will contain the count of different paths from the starting point to the destination in the maze. */  
+
+        /* The print method uses recursive backtracking to explore all possible paths in the maze,  
+        and the variable ways is assigned the number of valid paths found by the print method.  
+        After the recursive calls, ways will contain the count of different paths from   
+        the starting point to the destination in the maze. */  
           
         int ways = print(0, 0, rows - 1, cols - 1, "", isVisited);
         System.out.println(ways);
