@@ -14,17 +14,17 @@ toc_sticky: true
 by Dick Kusleika
 4. **Principles of Financial Modelling** - Model Design and Best Practices using Excel and VBA by Michael Rees
 5. **VBA for Modelers** by Chris Albright
-6. **100 Excel Simulations**: Using Excel VBA to Model Risk, Investments, Genetics. Growth, Gambling, and Monte Carlo Analysis by Gerard M Verschuuren 
-1. **Programming Excel with VBA**: A Practical Real-World Guide by Flavio Morgado
-2. **Financial Modelling with Excel and VBA** by Chandan Sengupta
-3. [CPearson site - VBA Arrays And Worksheet Ranges] (http://www.cpearson.com/excel/ArraysAndRanges.aspx) < Excellent Resource | Highly Recommended >
-4.  [On Arrays](https://www.snb-vba.eu/VBA_Arrays_en.html)
-5.  **Introduction to VBA for Excel** by Steven C Chopra
-6.  **Implementing Models of Financial Derivatives** - Object Oriented Applications with VBA by Nick Webber
-7.  **Introduction to Programming with Visual Basic for Applications (VBA)** by Jakov Crnkovic
-8.  **How to Implement Market Models Using VBA** by FRANÇOIS GOOSSENS
-9.  **Using Excel for Business and Financial Modelling** by Danielle Stein FairHurst  
-10. **Microsoft Excel 2019 Programming by Example with VBA, XML, and ASP** by Julitta Korol
+6. **100 Excel Simulations**: Using Excel VBA to Model Risk, Investments, Genetics. Growth, Gambling, and Monte Carlo Analysis by Gerard M Verschuuren
+7. **Programming Excel with VBA**: A Practical Real-World Guide by Flavio Morgado
+8. **Financial Modelling with Excel and VBA** by Chandan Sengupta
+9. VBA Arrays And Worksheet Ranges[CPearson site](http://www.cpearson.com/excel/ArraysAndRanges.aspx) < Excellent Resource | Highly Recommended >
+10. [On Arrays](https://www.snb-vba.eu/VBA_Arrays_en.html)
+11. **Introduction to VBA for Excel** by Steven C Chopra
+12. **Implementing Models of Financial Derivatives** - Object Oriented Applications with VBA by Nick Webber
+13. **Introduction to Programming with Visual Basic for Applications (VBA)** by Jakov Crnkovic
+14. **How to Implement Market Models Using VBA** by FRANÇOIS GOOSSENS
+15. **Using Excel for Business and Financial Modelling** by Danielle Stein FairHurst  
+16. **Microsoft Excel 2019 Programming by Example with VBA, XML, and ASP** by Julitta Korol
 
 ## Dashboarding
 
