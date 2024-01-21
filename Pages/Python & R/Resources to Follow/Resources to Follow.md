@@ -1,6 +1,10 @@
 ---
 layout : single  
 author_profile : true
+title : "Python & R - Resources"
+toc: true
+toc_label: "Resources to Follow"
+toc_sticky: true
 ---
 
 ## Resources to Follow

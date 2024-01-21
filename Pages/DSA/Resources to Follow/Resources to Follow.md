@@ -2,6 +2,9 @@
 layout : single
 title : DSA Resources to Follow
 author_profile: true
+toc: true
+toc_sticky: true
+toc_label: "Resources to Follow"
 ---
 
 #### Highly Recommended
