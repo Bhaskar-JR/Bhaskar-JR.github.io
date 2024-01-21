@@ -1,7 +1,11 @@
 ---
 layout : single
 author_profile : true
+toc: true
+author_profile: true
 ---
+
+## Data Science  
 
 [Unified view of Probability Distribution](/Pages/Data Science topics/Probability distributions/Probability distributions)  
 [Fundamental theorem of Linear Algebra](/Pages/Data Science topics/Linear Algebra/Fundamental Theorem of Linear Algebra/Fundamental Theorem of Linear Algebra)  

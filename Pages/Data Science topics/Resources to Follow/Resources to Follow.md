@@ -1,8 +1,11 @@
 ---
 layout : single
-author_profile : true
+title : "Data Science - Resources"
 toc: true
+toc_label: "Resources to Follow"
+toc_sticky: true
 author_profile: true
+comments: true
 ---
 
 ## Statistics  
