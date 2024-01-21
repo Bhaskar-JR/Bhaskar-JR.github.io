@@ -157,6 +157,12 @@ public class FourDirectionMazePath_V2{
 }
 ```  
 
+**Quick Check in jshell**:  
+We can create this class and run below commands in jshell  
+```java
+FourDirectionMazePath_V2.main(new String[]{"3", "3"});
+```  
+
 ### Code Review and Assessment by ChatGPT
 
 The updated version of your **FourDirectionMazePath_V2 class** introduces some refinements and additional functionality compared to the original version. Let's review the key aspects:
