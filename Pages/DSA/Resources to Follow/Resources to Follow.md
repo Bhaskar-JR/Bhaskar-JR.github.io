@@ -25,4 +25,5 @@ author_profile: true
 17. **Grokking Algorithms** by Aditya Y.Bhargava <Highky recommended for quick revision and going back to basics>  
 18. **Data Structures and Algorithms- Annotated Reference with Examples** by Granville Barnett  
 19. **Guide to Competitive Programming** - Learning and Improving Algorithms Through Contests by Antti Laaksonen
-20. **Dynamic Programming for Coding Interviews** - A Bottom-up approach to problem solving by Meenakshi & Kamal Rawat
+20. **Dynamic Programming for Coding Interviews** - A Bottom-up approach to problem solving by Meenakshi & Kamal Rawat  
+21. **Data Structures and Algorithms** by Kartik Kapoor ([Link](https://www.kartikkapur.com/documents/DataStructuresAndAlgorithms.pdf))
