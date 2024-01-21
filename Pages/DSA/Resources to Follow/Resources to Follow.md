@@ -30,4 +30,6 @@ toc_label: "Resources to Follow"
 19. **Guide to Competitive Programming** - Learning and Improving Algorithms Through Contests by Antti Laaksonen
 20. **Dynamic Programming for Coding Interviews** - A Bottom-up approach to problem solving by Meenakshi & Kamal Rawat  
 21. **Data Structures and Algorithms** by Kartik Kapoor ([Link](https://www.kartikkapur.com/documents/DataStructuresAndAlgorithms.pdf))
-22. **Data Structures & Algorithms in Python** by John Canning, Alan Broder, Robert Lafore
+22. **Data Structures & Algorithms in Python** by John Canning, Alan Broder, Robert Lafore  
+23. **Data Structures and Algorithms Using Python** by Rance D. Necaise [Link](https://doc.lagout.org/science/0_Computer%20Science/2_Algorithms/Data%20Structures%20and%20Algorithms%20using%20Python%20%5BNecaise%202010-12-21%5D.pdf)
+24. Introduction to Algorithms by MIT Press
