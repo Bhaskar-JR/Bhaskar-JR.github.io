@@ -83,13 +83,14 @@ These two parts are combined using the **UNION ALL operator**, ensuring that the
 > Create efficient and accurate queries to traverse hierarchical data structures
 
 ### Specific Usecases  
+  
 | Scenario              | Description                                                                                                     |
 |-----------------------|-----------------------------------------------------------------------------------------------------------------|
 | Employee Hierarchies  | Traverse a tree of employees and their managers to calculate total compensation of all employees in a given branch |
 | Product Categories    | Traverse a tree of product categories to find all the products in a given category and its subcategories          |
 | Social Networks       | Traverse a graph of social network connections to find all friends of a given user and their connections          |
-| Task dependencies     | Traverse a tree of task dependencies to calculate time required to complete a project                              |
-
+| Task dependencies     | Traverse a tree of task dependencies to calculate time required to complete a project                              |  
+  
 
 ## Example
 A simple example of a recursive CTE is generating a series of numbers:
