@@ -21,7 +21,7 @@ We cover the following topics. A quick read will suffice to revise and ramp up. 
 
 #### Filtering data – Concise Summary with Sample codes
 
-#### Recursive CTEs – Food for thought
+#### [Recursive CTEs](../Recursive CTE/Recursive CTE.md) – Food for thought
 - Basic Structure
 - How It Works
 - Use Cases
