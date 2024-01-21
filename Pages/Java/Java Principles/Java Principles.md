@@ -47,7 +47,7 @@ toc_sticky: true
 - Utilize abstract data types to define common interfaces for related classes.
 
 ## 9. Effective Use of Data Structures
-- Be proficient in using various data structures from the [Java Collections Framework](/Pages/Java/Java Collections Framework/Java Collections Framework.md).  
+- Be proficient in using various data structures from the [Java Collections Framework](../Java Collections Framework/Java Collections Framework.md).  
 - Choose appropriate data structures based on application needs.
 
 ## 10. Understand Java Specifics
