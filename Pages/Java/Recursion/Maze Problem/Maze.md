@@ -6,7 +6,10 @@ toc: true
 toc_sticky: true
 ---
 
-**A maze** typically consists of cells. In the context of a maze, a "cell" refers to an individual unit or space within the maze's structure. A maze is generally composed of numerous cells, which can be square, rectangular, or even hexagonal, depending on the design of the maze. These cells are arranged in a specific pattern and are interconnected by pathways, while some cells may be blocked by walls to create the puzzle element of the maze. The goal in a maze is to find a path through these cells from a starting point to an endpoint.
+**A maze** typically consists of cells. In the context of a maze, a "cell" refers to an individual unit or space within the maze's structure. A maze is generally composed of numerous cells, which can be square, rectangular, or even hexagonal, depending on the design of the maze. These cells are arranged in a specific pattern and are interconnected by pathways, while some cells may be blocked by walls to create the puzzle element of the maze. The goal in a maze is to find a path through these cells from a starting point to an endpoint.  
+  
+**Maze sample**
+![png](Maze2.png)  
 
 ## Rat in a Maze problem
 
