@@ -24,9 +24,10 @@ toc_label: "Resources to Follow"
 13. **Algorithms and Programming** - Problems and Solutions by Alexander Shen <Refer to chapter 3 Tree traversal (backtracking) for N-Queens Problem> 
 14. **Algorithms** by S. Dasgupta, C. H. Papadimitriou, and U. V. Vazirani  
 15. **Java Software Structures - Designing and Using Data Structures** by John Lewis, Joseph Chase  
-16. **Algorithms in Action** by Victor Savvich <Definitely go through Chapter 1 : Review, Chapter 7: Netwrok Flow. Overall good overview>  
+16. **Algorithms in Action** by Victor Savvich <Definitely go through Chapter 1 : Review, Chapter 7: Network Flow. Overall good overview>  
 17. **Grokking Algorithms** by Aditya Y.Bhargava <Highky recommended for quick revision and going back to basics>  
 18. **Data Structures and Algorithms- Annotated Reference with Examples** by Granville Barnett  
 19. **Guide to Competitive Programming** - Learning and Improving Algorithms Through Contests by Antti Laaksonen
 20. **Dynamic Programming for Coding Interviews** - A Bottom-up approach to problem solving by Meenakshi & Kamal Rawat  
 21. **Data Structures and Algorithms** by Kartik Kapoor ([Link](https://www.kartikkapur.com/documents/DataStructuresAndAlgorithms.pdf))
+22. **Data Structures & Algorithms in Python** by John Canning, Alan Broder, Robert Lafore
