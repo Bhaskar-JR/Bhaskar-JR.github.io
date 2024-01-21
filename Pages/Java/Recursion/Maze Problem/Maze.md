@@ -8,10 +8,10 @@ toc_sticky: true
 
 **A maze** typically consists of cells. In the context of a maze, a "cell" refers to an individual unit or space within the maze's structure. A maze is generally composed of numerous cells, which can be square, rectangular, or even hexagonal, depending on the design of the maze. These cells are arranged in a specific pattern and are interconnected by pathways, while some cells may be blocked by walls to create the puzzle element of the maze. The goal in a maze is to find a path through these cells from a starting point to an endpoint.  
   
-**Maze sample**
+**Maze sample**  
 ![png](Maze2.png)  
 
-## Rat in a Maze problem
+# Rat in a Maze problem
 
 ## Movement in four directions - Version 1
 
@@ -71,7 +71,7 @@ public class FourDirectionMazePath{
 
 ```  
   
-#### Code Assessment from ChatGPT
+### Code Assessment from ChatGPT
 
 The **FourDirectionMazePath class** in Java that you've provided is designed to print all possible paths through a 3x3 maze, moving up, down, left, or right, without revisiting any cell. Let's review the code in detail:
 
@@ -147,7 +147,7 @@ public class FourDirectionMazePath_V2{
 }
 ```  
 
-#### Code Review and Assessment by ChatGPT
+### Code Review and Assessment by ChatGPT
 
 The updated version of your **FourDirectionMazePath_V2 class** introduces some refinements and additional functionality compared to the original version. Let's review the key aspects:
 
