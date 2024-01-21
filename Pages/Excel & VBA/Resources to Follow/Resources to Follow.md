@@ -22,7 +22,7 @@ by Dick Kusleika
 11. **Introduction to VBA for Excel** by Steven C Chopra
 12. **Implementing Models of Financial Derivatives** - Object Oriented Applications with VBA by Nick Webber
 13. **Introduction to Programming with Visual Basic for Applications (VBA)** by Jakov Crnkovic
-14. **How to Implement Market Models Using VBA** by FRANÇOIS GOOSSENS
+14. **How to Implement Market Models Using VBA** by Francois Goossens
 15. **Using Excel for Business and Financial Modelling** by Danielle Stein FairHurst  
 16. **Microsoft Excel 2019 Programming by Example with VBA, XML, and ASP** by Julitta Korol
 
