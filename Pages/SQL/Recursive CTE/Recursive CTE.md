@@ -11,7 +11,7 @@ toc_sticky: true
   
 Source : [HackerRank, Alternative Queries, Draw the Triangle 1](https://www.hackerrank.com/challenges/draw-the-triangle-1/problem?)  
 
-<img src="TrianglePattern.png" alt="image" width="150" height="auto">  
+<img src="TrianglePattern.png" alt="image" width="175" height="auto">  
   
   
 -- Recursive CTE code without comments
