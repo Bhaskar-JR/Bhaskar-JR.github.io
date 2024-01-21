@@ -17,7 +17,7 @@ by Dick Kusleika
 6. **100 Excel Simulations**: Using Excel VBA to Model Risk, Investments, Genetics. Growth, Gambling, and Monte Carlo Analysis by Gerard M Verschuuren
 7. **Programming Excel with VBA**: A Practical Real-World Guide by Flavio Morgado
 8. **Financial Modelling with Excel and VBA** by Chandan Sengupta
-9. VBA Arrays And Worksheet Ranges[CPearson site](http://www.cpearson.com/excel/ArraysAndRanges.aspx) < Excellent Resource | Highly Recommended >
+9. VBA Arrays And Worksheet Ranges [CPearson site](http://www.cpearson.com/excel/ArraysAndRanges.aspx) < Excellent Resource, Highly Recommended >
 10. [On Arrays](https://www.snb-vba.eu/VBA_Arrays_en.html)
 11. **Introduction to VBA for Excel** by Steven C Chopra
 12. **Implementing Models of Financial Derivatives** - Object Oriented Applications with VBA by Nick Webber
