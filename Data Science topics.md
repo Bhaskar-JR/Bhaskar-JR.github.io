@@ -8,4 +8,4 @@ author_profile : true
 [SVD and Eigen Value Decomposition](/Pages/Data Science topics/Linear Algebra/SVD and Eigen Decomposition/SVD and Eigen Decomposition)  
 [ROC AUC curve](/Pages/Data Science topics/Evaluation Metrics/ROC AUC curve/ROC AUC curve)  
 [Marketing Analytics Overview](/Pages/Data Science topics/Marketing Analytics/Marketing Analytics.md)  
-[Resources to Follow](/Pages/Data Science topics/Resources to Follow.md)
+[Resources to Follow](/Pages/Data Science topics/Resources to Follow/Resources to Follow.md)
