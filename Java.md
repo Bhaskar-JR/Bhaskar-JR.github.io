@@ -8,7 +8,7 @@ author_profile : true
 [Java is strictly "pass by value"](/Pages/Java/Java is strictly pass by value/Java is strictly pass by value.md)  
 [Java Collections Framework](/Pages/Java/Java Collections Framework/Java Collections Framework.md)  
 [Recursion and Backtracking](/Pages/Java/Recursion/Recursion and Backtracking/Recursion and Backtracking.md)  
-[Maze Traversal Problem](/Pages/Java/Recursion/Maze Problem/Maze.md)  
+[Maze Traversal Problem](/Pages/Java/Recursion/Maze Traversal Problem/Maze Traversal Problem.md)  
 String Permutation  
 N-Queens Problem  
 [Recursion Trees and Euler Paths](/Pages/Java/Recursion/Recursion Trees and Euler Paths/Recursion Trees and Euler Paths.md)  

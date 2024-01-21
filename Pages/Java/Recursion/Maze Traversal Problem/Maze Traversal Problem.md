@@ -1,6 +1,6 @@
 ---
 layout : single
-title : Maze Problem
+title : Maze Traversal Problem
 author_profile: true
 toc: true
 toc_sticky: true
