@@ -108,6 +108,8 @@ WHERE
   
 # First Iteration
   
+The first iteration will take the output of the base query as the input and generate row entries.  
+  
 ```sql 
 WITH RECURSIVE FlightRoutes AS (
 SELECT FlightID, Origin, Destination, CAST(CONCAT(Origin,',',Destination) AS CHAR(100)) As Route, 1 as Step
@@ -140,7 +142,7 @@ from FlightRoutes;
 | 3        | F      | G           | F,G   | 1    |
 | 4        | M      | D           | M,D   | 1    |
   
-### Rows getting generated at the First Iteration  
+## Rows getting generated at the First Iteration  
   
 | FlightID | Origin | Destination | Route  | Step |
 |----------|--------|-------------|--------|------|
@@ -148,7 +150,9 @@ from FlightRoutes;
 | 3        | F      | H           | F,G,H  | 2    |
 | 4        | M      | A           | M,D,A  | 2    |
   
-## Overall Output at the end of first iteration  
+## Overall Output at the end of first iteration 
+
+The row entries generated will be appended to the output of the base query. 
   
 | FlightID | Origin | Destination | Route   | Step |
 |----------|--------|-------------|---------|------|
@@ -160,7 +164,10 @@ from FlightRoutes;
 | 3        | F      | H           | F,G,H   | 2    |
 | 4        | M      | A           | M,D,A   | 2    |
 
-# Second Iteration
+# Second Iteration  
+  
+- The second iteration will take the generated row entries/records of the first iteration as input.
+- The inputs to the second iteration will only be the records fetched as output from the first iteration.
 
 ```sql
 WITH RECURSIVE FlightRoutes AS (
