@@ -5,6 +5,53 @@ author_profile: true
 toc: true
 toc_sticky: true
 --- 
+# Flights Table
+We will start from scratch in MySQL.  
+Let's create a Flights table and populate it with dummy data.
+
+```sql
+SHOW tables;
+SELECT * from Flights;
+DROP TABLE Flights;
+```
+  
+```sql
+-- Create the table
+CREATE TABLE Flights (
+    FlightID INT,
+    Origin CHAR(1),
+    Destination CHAR(1)
+);
+```
+
+```sql
+-- Insert data into the table
+INSERT INTO Flights (FlightID, Origin, Destination) VALUES
+(1, 'A', 'B'),
+(1, 'B', 'C'),
+(2, 'D', 'E'),
+(3, 'F', 'G'),
+(3, 'G', 'H'),
+(3, 'H', 'I'),
+(4, 'A', 'N'),
+(4, 'M', 'D'),
+(4, 'D', 'A');
+```
+  
+**Results of the Insert Query**  
+  
+| FlightID | Origin | Destination |
+|----------|--------|-------------|
+| 1        | A      | B           |
+| 1        | B      | C           |
+| 2        | D      | E           |
+| 3        | F      | G           |
+| 3        | G      | H           |
+| 3        | H      | I           |
+| 4        | A      | N           |
+| 4        | M      | D           |
+| 4        | D      | A           |
+  
 
 # Base Query
 
@@ -59,7 +106,7 @@ WHERE
 | 3        | F      | G           | F,G   | 1    |
 | 4        | M      | D           | M,D   | 1    |
   
-## First Iteration
+# First Iteration
   
 ```sql 
 WITH RECURSIVE FlightRoutes AS (
@@ -84,7 +131,7 @@ select *
 from FlightRoutes;
 ```
 
-### Input to First Iteration
+## Input to First Iteration
 
 | FlightID | Origin | Destination | Route | Step |
 |----------|--------|-------------|-------|------|
@@ -101,7 +148,7 @@ from FlightRoutes;
 | 3        | F      | H           | F,G,H  | 2    |
 | 4        | M      | A           | M,D,A  | 2    |
   
-### Overall Output at the end of first iteration  
+## Overall Output at the end of first iteration  
   
 | FlightID | Origin | Destination | Route   | Step |
 |----------|--------|-------------|---------|------|
@@ -113,7 +160,7 @@ from FlightRoutes;
 | 3        | F      | H           | F,G,H   | 2    |
 | 4        | M      | A           | M,D,A   | 2    |
 
-## Second Iteration
+# Second Iteration
 
 ```sql
 WITH RECURSIVE FlightRoutes AS (
@@ -138,7 +185,7 @@ select *
 from FlightRoutes;
 ``` 
   
-### Input to Second Iteration
+## Input to Second Iteration
   
 | FlightID | Origin | Destination | Route   | Step |
 |----------|--------|-------------|---------|------|
@@ -146,7 +193,7 @@ from FlightRoutes;
 | 3        | F      | H           | F,G,H   | 2    |
 | 4        | M      | A           | M,D,A   | 2    |
 
-### Rows getting generated at the Second Iteration
+## Rows getting generated at the Second Iteration
 
 | FlightID | Origin | Destination | Route     | Step |
 |----------|--------|-------------|-----------|------|
@@ -155,7 +202,7 @@ from FlightRoutes;
   
 > The newly generated rows will get appended to the continuously expanding table in the recursive CTE.
 
-### Overall Output at the end of second iteration
+## Overall Output at the end of second iteration
   
 | FlightID | Origin | Destination | Route     | Step |
 |----------|--------|-------------|-----------|------|
@@ -217,7 +264,7 @@ WHERE RowNumber = 1;
 
 ```  
   
-### Output  
+## Output  
   
 | FlightID | Origin | Destination | Route     | Step |
 |----------|--------|-------------|-----------|------|
@@ -228,6 +275,6 @@ WHERE RowNumber = 1;
 
 
 
-## Summary  
+# Summary  
   
 > The base query retrieves the initial set of records from the source table based on specified conditions. The recursive portion then takes the output of the base query and generates additional row entries. These new entries are appended to the output of the base query. In each iteration, the input for the next iteration consists of the records generated in the previous iteration. This process continues, and the overall output table grows with each iteration. The number of iterations can be separately tracked, providing a clear view of the flow of input and output across subsequent iterations.
