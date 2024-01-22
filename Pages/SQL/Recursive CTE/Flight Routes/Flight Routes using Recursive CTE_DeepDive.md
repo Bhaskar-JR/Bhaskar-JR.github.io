@@ -216,7 +216,7 @@ from FlightRoutes;
 | 3        | F      | I           | F,G,H,I   | 3    |
 | 4        | M      | N           | M,D,A,N   | 3    |
 
-## Extracting the relevant records from the overall table from recursive CTE  
+# Extracting the relevant records from the overall table from recursive CTE  
   
 ```sql
 WITH RECURSIVE FlightRoutes AS (
