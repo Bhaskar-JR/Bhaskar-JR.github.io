@@ -34,15 +34,21 @@ toc_sticky: true
   
 # How the Solution Works
 
-> The base query will fetch the relevant records from the source table using the conditions specified.
-> It will then call then call the recursive portion of the query.
-> The first iteration will take the output of the base query as the input and generate row entries.
-> These row entries will be appended to the output of the base query.
-> The second iteration will take the generated row entries/records of the first iteration as input.
->The inputs to the second iteration will only the records fetched as output from the first iteration.  
-> Meanwhile, that the overall output table would will continue to update with rows from each iteration getting appended.
-> We can declare/separately track the number of iterations.
-> It is easy to appreciate the flow of input, output across subsequent iterations and the continuously growing target table through the concrete example.  
+- The base query will fetch the relevant records from the source table using the conditions specified.  
+- It will then call then call the recursive portion of the query.
+- The first iteration will take the output of the base query as the input and generate row entries.
+- These row entries will be appended to the output of the base query.
+- The second iteration will take the generated row entries/records of the first iteration as input.
+- The inputs to the second iteration will only the records fetched as output from the first iteration.  
+-  Meanwhile, that the overall output table would will continue to update with rows from each iteration getting appended.
+-  We can declare/separately track the number of iterations.
+- It is easy to appreciate the flow of input, output across subsequent iterations and the continuously growing target table through the concrete example.  
+
+To deep-dive, go to this [link]
+  
+## Summary  
+  
+> The base query retrieves the initial set of records from the source table based on specified conditions. The recursive portion then takes the output of the base query and generates additional row entries. These new entries are appended to the output of the base query. In each iteration, the input for the next iteration consists of the records generated in the previous iteration. This process continues, and the overall output table grows with each iteration. The number of iterations can be separately tracked, providing a clear view of the flow of input and output across subsequent iterations.
   
 
 
