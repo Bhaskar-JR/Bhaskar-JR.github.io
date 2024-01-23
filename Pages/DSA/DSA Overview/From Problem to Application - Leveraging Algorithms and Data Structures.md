@@ -7,7 +7,7 @@ toc_sticky: true
 toc_title : "From Problem to Application - Leveraging Algorithms and Data Structures"
 ---
   
-Let's explore the entire breadth of the problems and associated tools in the below condensed with distilled information.
+Let's explore the entire breadth of the problems and associated tools in the below table with condensed, distilled information.
   
   
 | Problem Type          | Category                                     | Examples                                                          | Algorithms                                                        | Prevalent Fields                                               | Widely Used Data Structures                                       | Less Frequently Used Data Structures                             |
