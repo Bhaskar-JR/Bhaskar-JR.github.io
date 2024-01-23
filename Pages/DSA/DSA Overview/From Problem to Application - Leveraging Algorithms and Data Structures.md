@@ -51,7 +51,7 @@ So, grab your keyboard and sharpen your coding wits! The world of problem-solvin
  >Imagine wielding the power of data and algorithms not just to close deals, but to build groundbreaking software applications that revolutionize industries. This table is your launchpad!
 
 
-### Think of it as your Industry 4.0 toolkit:
+### Think of it as your Industry 4.0 toolkit
 
 - **Problem Type Category**: Master the challenges of a hyper-connected world - sorting sensor data, searching for anomalies in real-time, analyzing customer feedback on the fly.
 - **Examples**: Build cutting-edge solutions - optimize factory operations, personalize mobile experiences, develop real-time condition monitoring applications.
