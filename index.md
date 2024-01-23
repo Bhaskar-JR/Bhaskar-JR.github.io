@@ -15,4 +15,7 @@ author_profile: true
 
 [Statistics using R](/Pages/Python & R/Statistics using R/Statistics-Using-R_Markdown.md)  
 
-<img src="/Pages/Python & R/Statistics using R/Statistics-Using-R_Markdown_files/figure-markdown_github/CLT.png" alt="drawing" width="500"/> 
+<img src="/Pages/Python & R/Statistics using R/Statistics-Using-R_Markdown_files/figure-markdown_github/CLT.png" alt="drawing" width="500"/>  
+  
+  
+[From Problem to Application - Leveraging Algorithms and Data Structures](/Pages/DSA/DSA Overview/From Problem to Application - Leveraging Algorithms and Data Structures.md)
