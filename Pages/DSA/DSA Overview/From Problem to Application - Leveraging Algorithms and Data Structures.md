@@ -22,7 +22,7 @@ Let's explore the entire breadth of the problems and associated tools in the bel
 | Numerical problems     | Performing calculations involving numbers    | Finding roots, approximating pi, simulating physical phenomena    | Numerical integration, differentiation, root finding, linear algebra| Scientific Computing, Engineering, Physics                      | Arrays, Matrices, Linked Lists, Trees, Stacks, Queues            | Interval Trees, Z-Order Curve, Balanced Trees, Wavelet Trees     |
   
 ## Drive  
-The Intent is very important to understand why a thing is worth exploring. The sole driving force for me is to learn, explore and push the frontiers of problem solving seamlessly acorss multiple domains. However, that is indeed a broad statement. To relate better and appreciate the above table, Lets explore it through the lens of the personas : 
+The Intent is very important to understand why a thing is worth exploring. The sole driving force for me is to learn, explore and push the frontiers of problem solving seamlessly across multiple domains. However, that is indeed a broad statement. To relate better and appreciate the above table, Lets explore it through the lens of the personas : 
 - Problem Solver Coding Ninja
 - The Sales Samurai and AI Alchemist
 
