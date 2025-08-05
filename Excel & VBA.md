@@ -12,4 +12,5 @@ author_profile : true
 [Convert Long to Wide](/Pages/Excel & VBA/Convert Long to Wide/Convert Long to Wide)  
 [Machinewise running cycle data](/Pages/Excel & VBA/Machinewise running cycle data/Machinewise running cycle data)  
 [Split Data to new or existing sheets](/Pages/Excel & VBA/Split Data to new or existing sheets/Split Data to new or existing sheets)  
+[Consolidating Data from Multiple Worksheets](/Pages/Excel & VBA/Consolidating Data from Multiple Worksheets/Consolidating Data from Multiple Worksheets.md)
 [Resources to Follow](/Pages/Excel & VBA/Resources to Follow/Resources to Follow.md)
