@@ -1,0 +1,139 @@
+Sub ConsolidateSelectedSheets_SourceFirst()
+    Dim ws As Worksheet, wsCons As Worksheet
+    Dim sheetName As String, userInput As String
+    Dim i As Long, j As Long, k As Long, x As Long
+    Dim header As String
+    Dim headerFound As Boolean
+    Dim selectedSheetNames() As String
+    Dim selectedWorksheets() As Worksheet
+    Dim masterHeaders() As String
+    Dim headerCount As Long
+    Dim outputRow As Long
+    Dim lastRow As Long, lastCol As Long
+    Dim timestamp As String
+    Dim newSheetName As String
+    Dim matchCol As Long
+    Dim addSourceSheetColumn As Boolean
+    Dim addColPrompt As String
+
+    ' Ask if Source Sheet column should be added
+    addColPrompt = InputBox("Do you want to add a column showing the source sheet name in the consolidated data? (Y/N)", _
+                            "Include Source Sheet Column", "Y")
+    If UCase(Trim(addColPrompt)) = "Y" Then
+        addSourceSheetColumn = True
+    Else
+        addSourceSheetColumn = False
+    End If
+
+    ' Prompt for sheet names
+    Dim sheetList As String
+    sheetList = "Available sheets:" & vbNewLine
+    For Each ws In ThisWorkbook.Worksheets
+        sheetList = sheetList & ws.Name & vbNewLine
+    Next ws
+
+    userInput = InputBox(sheetList & vbNewLine & _
+        "Enter the names of the sheets you want to consolidate, separated by commas:", _
+        "Select Worksheets")
+
+    If Trim(userInput) = "" Then
+        MsgBox "No sheets selected. Exiting.", vbExclamation
+        Exit Sub
+    End If
+
+    selectedSheetNames = Split(userInput, ",")
+    ReDim selectedWorksheets(0 To UBound(selectedSheetNames))
+    k = 0
+
+    ' Validate sheet names
+    For i = LBound(selectedSheetNames) To UBound(selectedSheetNames)
+        sheetName = Trim(selectedSheetNames(i))
+        For Each ws In ThisWorkbook.Worksheets
+            If LCase(ws.Name) = LCase(sheetName) Then
+                Set selectedWorksheets(k) = ws
+                k = k + 1
+                Exit For
+            End If
+        Next ws
+    Next i
+    If k = 0 Then
+        MsgBox "No valid sheets selected.", vbCritical
+        Exit Sub
+    End If
+    ReDim Preserve selectedWorksheets(0 To k - 1)
+
+    ' Build masterHeaders array
+    headerCount = 0
+    ReDim masterHeaders(1 To 1)
+    For k = LBound(selectedWorksheets) To UBound(selectedWorksheets)
+        With selectedWorksheets(k)
+            lastCol = .Cells(1, .Columns.Count).End(xlToLeft).Column
+            For i = 1 To lastCol
+                header = Trim(.Cells(1, i).Value)
+                If Len(header) > 0 Then
+                    headerFound = False
+                    For j = 1 To headerCount
+                        If masterHeaders(j) = header Then
+                            headerFound = True
+                            Exit For
+                        End If
+                    Next j
+                    If Not headerFound Then
+                        headerCount = headerCount + 1
+                        ReDim Preserve masterHeaders(1 To headerCount)
+                        masterHeaders(headerCount) = header
+                    End If
+                End If
+            Next i
+        End With
+    Next k
+
+    ' Create new consolidated sheet with timestamped name
+    timestamp = Format(Now, "yyyy-mm-dd_hhmmss")
+    newSheetName = "Consolidated_" & timestamp
+    Set wsCons = ThisWorkbook.Sheets.Add(Before:=Sheets(1))
+    wsCons.Name = newSheetName
+
+    ' Write headers (SourceSheet as first column)
+    Dim headerOffset As Long
+    headerOffset = IIf(addSourceSheetColumn, 1, 0)
+
+    If addSourceSheetColumn Then
+        wsCons.Cells(1, 1).Value = "SourceSheet"
+    End If
+
+    For i = 1 To headerCount
+        wsCons.Cells(1, i + headerOffset).Value = masterHeaders(i)
+    Next i
+
+    ' Copy data
+    outputRow = 2
+    For k = LBound(selectedWorksheets) To UBound(selectedWorksheets)
+        With selectedWorksheets(k)
+            lastCol = .Cells(1, .Columns.Count).End(xlToLeft).Column
+            lastRow = .Cells(.Rows.Count, 1).End(xlUp).Row
+
+            For i = 2 To lastRow
+                If addSourceSheetColumn Then
+                    wsCons.Cells(outputRow, 1).Value = .Name
+                End If
+                For j = 1 To headerCount
+                    header = masterHeaders(j)
+                    matchCol = 0
+                    For x = 1 To lastCol
+                        If Trim(.Cells(1, x).Value) = header Then
+                            matchCol = x
+                            Exit For
+                        End If
+                    Next x
+                    If matchCol > 0 Then
+                        wsCons.Cells(outputRow, j + headerOffset).Value = .Cells(i, matchCol).Value
+                    End If
+                Next j
+                outputRow = outputRow + 1
+            Next i
+        End With
+    Next k
+
+    MsgBox "Data consolidated into sheet: " & newSheetName, vbInformation
+End Sub
