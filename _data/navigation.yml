@@ -24,5 +24,7 @@ main:
     url: ../Data Science topics
   - title: "Excel & VBA"
     url: ../Excel & VBA
+  - title: "GeoSpatial Analytics"
+    url: ../GeoSpatial Analytics
   - title: "Eclectic"
     url: ../Eclectic
